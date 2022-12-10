@@ -10,5 +10,7 @@ int main(void)
         printf("good job! \n")
     }
     else if (points >2)
-    {}
+    {
+        printf("You have lost a lot of points! \n")
+    }
 }

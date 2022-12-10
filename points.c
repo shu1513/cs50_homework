@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    int points = get_int("How many points did you lose? ")
+    int points = get_int("How many points did you lose? ");
 
     if (points < 2)
     {

@@ -6,7 +6,5 @@ int main(void)
     long x = get_int("x: ");
     long y = get_int("y: ");
     if (x < y)
-
-    printf("eawef"/n);
-
+    printf("hello");
 }

@@ -7,10 +7,14 @@ int main(void)
 
     if (points < 2)
     {
-        printf("good job! \n")
+        printf("good job! \n");
     }
     else if (points >2)
     {
-        printf("You have lost a lot of points! \n")
+        printf("You have lost a lot of points! \n");
+    }
+    else
+    {
+        print("we have the same points. \n");
     }
 }

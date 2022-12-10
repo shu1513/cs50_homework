@@ -7,6 +7,8 @@ int main(void)
 
     if (points < 2)
     {
-        
+        printf("good job! \n")
     }
+    else if (points >2)
+    {}
 }

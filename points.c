@@ -15,6 +15,6 @@ int main(void)
     }
     else
     {
-        print("we have the same points. \n");
+        printf("we have the same points. \n");
     }
 }

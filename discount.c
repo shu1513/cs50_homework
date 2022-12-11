@@ -6,9 +6,9 @@ float discount(float y);
 
 int main (void)
 {
-    float x = get_float("Regular price: ")
-    float z = discount(x)
-    printf("sale price is %.2f/n", z)
+    float x = get_float("Regular price: ");
+    float z = discount(x);
+    printf("sale price is %.2f/n", z);
 }
 
 float discount(flaot y)

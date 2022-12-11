@@ -2,14 +2,15 @@
 #include<stdio.h>
 
 
-float discount(float price);
+float discount(float y);
 
 int main (void)
 {
-    float regular_price = get float("Regular price: ")
+    float x = get_float("Regular price: ")
+    float z =
 }
 
-float discount(flaot price)
+float discount(flaot y)
 {
-    return price *.85;
+    return y *.85;
 }

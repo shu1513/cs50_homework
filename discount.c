@@ -6,4 +6,4 @@ int main (void)
 
 }
 
-float 
+float discount()

@@ -1,5 +1,5 @@
-#include <CS50.h>
-#include<stdio.h>
+#include <cs50.h>
+#include <stdio.h>
 
 
 float discount(float y);
@@ -11,7 +11,7 @@ int main (void)
     printf("sale price is %.2f/n", z);
 }
 
-float discount(flaot y)
+float discount(float y)
 {
     return y *.85;
 }

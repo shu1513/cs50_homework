@@ -7,12 +7,12 @@ float discount(float y);
 int main (void)
 {
     float x = get_float("Regular price: ");
-    float z = get_float("How many percent off for sales discount ");
-    float a = x * (100-z)/100;
-    printf("sale price is %.2f\n", a);
+    float y = get_float("Perfect Off: ");
+    float z = discount()
+    printf("sale price is %.2f\n", z);
 }
 
 float discount_conversion(float y)
 {
-    return y *.85;
+    return x * (100-y)/100;
 }

@@ -6,4 +6,9 @@ int main (void)
 
 }
 
-float discount()
+float discount(flaot price)
+{
+    float sale = price *.85;
+    return sale;
+    
+}

@@ -2,17 +2,17 @@
 #include <stdio.h>
 
 
-float discount(float price,float y);
+float discount(float a,float b);
 
 int main (void)
 {
     float x = get_float("Regular price: ");
     float y = get_float("Perfect Off: ");
-    float z = discount()
+    float z = discount(x,y);
     printf("sale price is %.2f\n", z);
 }
 
-float discount_conversion(float price, float y)
+float discount_conversion(float a, float b)
 {
-    return x * (100-y)/100;
+    return a * (100-b)/100;
 }

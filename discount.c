@@ -12,7 +12,7 @@ int main (void)
     printf("sale price is %.2f\n", z);
 }
 
-float discount_conversion(float a, float b)
+float discount(float a, float b)
 {
     return a * (100-b)/100;
 }

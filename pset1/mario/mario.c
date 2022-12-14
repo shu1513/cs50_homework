@@ -3,7 +3,6 @@
 
 int main(void)
 {
-    int c;
-    int c = 17
-    printf(c)
+    int c = 17;
+    printf(c);
 }

@@ -3,6 +3,6 @@
 
 int main(void)
 {
-    int c = 17;
-    printf(c);
+    int c = 7;
+    printf("%i\n", c);
 }

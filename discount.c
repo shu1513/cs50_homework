@@ -4,8 +4,7 @@
 
 float discount(float a,float b);
 
-int main (void)
-{
+k
     float x = get_float("Regular price: ");
     float y = get_float("Perfect Off: ");
     float z = discount(x,y);

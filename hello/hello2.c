@@ -13,6 +13,10 @@ int main (void)
     {
         for(int y = 0; y < n-1-i; y++)
         {
+            printf(" ");
+        }
+        for(int j = 0; j < i+1; j++)
+        {
             printf("#");
         }
         printf("\n");

@@ -19,7 +19,7 @@ int main (void)
         {
             printf("#");
         }
-        printf("  ")
+        printf("aa");
         printf("\n");
     }
 }

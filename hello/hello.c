@@ -8,11 +8,13 @@ int main (void)
     {
         n = get_int ("Enter Height: ");
         }
-    while ( n < 1 || n > 9);
-
-    i = 0
-    while (i<n)
+    while (n<1 || n>8);
+    for (int i = 0; i < n; i++)
     {
-        printf("#")
+        for(int j = 0; j < n; j++)
+        {
+            printf("#\n");
+        }
+        printf("\n");
     }
 }

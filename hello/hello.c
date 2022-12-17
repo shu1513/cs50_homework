@@ -12,6 +12,11 @@ int main (void)
 
     for (int i = 1; i <= n; i++)
     {
-        printf("#\n"*i);
+        int j = n-1;
+        while (j>=1)
+        {
+            printf("a");
+        }
+        printf("#\n");
     }
 }

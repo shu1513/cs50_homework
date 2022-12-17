@@ -16,6 +16,7 @@ int main (void)
         while (j>=1)
         {
             printf("a");
+            j--;
         }
         printf("#\n");
     }

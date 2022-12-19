@@ -47,7 +47,8 @@ int get_cents(void)
 
 int calculate_quarters(int cents)
 {
-    
+    int y;
+    y = cents
 
     return 0;
 }

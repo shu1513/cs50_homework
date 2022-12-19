@@ -6,15 +6,15 @@ int main(void)
    int x;
    do
    {
-    x = get_int("Number: ")
+    x = get_int("Number: ");
    }
-   while (x < 1)
+   while (x < 1);
 
     //booleon valid or not checksum()
     int y;
-    y = x/100
+    y = x/100;
 
-    printf("y")
+    printf("%i\n", y);
     //print invalid,
     //break
 

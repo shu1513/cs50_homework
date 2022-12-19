@@ -10,5 +10,8 @@ int main(void)
    }
    while (x < 1)
 
-    checksum()
+    //booleon valid or not checksum()
+    // switch function for card types
+    
+
 }

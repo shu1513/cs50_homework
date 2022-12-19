@@ -3,12 +3,12 @@
 
 int main(void)
 {
-   int x;
+   int card_number;
    do
    {
-    x = get_int("Number: ")
+    card_number = get_int("Number: ")
    }
    while (x < 1)
 
-   
+
 }

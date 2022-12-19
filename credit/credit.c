@@ -11,8 +11,8 @@ int main(void)
    while (x < 1)
 
     //booleon valid or not checksum()
-    int checksum;
-    for 
+    int y;
+    
     //print invalid,
     //break
 

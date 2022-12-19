@@ -11,7 +11,12 @@ int main(void)
    while (x < 1)
 
     //booleon valid or not checksum()
-    // switch function for card types
-    
+    //print invalid,
+    //break
+
+    // switch function for card types and card digits
+    //print card types if match
+    //print invalid if don't match
+
 
 }

@@ -9,4 +9,6 @@ int main(void)
     x = get_int("Number: ")
    }
    while (x < 1)
+
+   
 }

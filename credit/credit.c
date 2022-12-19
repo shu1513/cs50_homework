@@ -8,5 +8,5 @@ int main(void)
    {
     x = get_int("Number: ")
    }
-   while (x < 1000000000000)
+   while (x < 1)
 }

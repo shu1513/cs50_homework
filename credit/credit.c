@@ -12,7 +12,7 @@ int main(void)
 
     //booleon valid or not checksum()
     int y;
-    y = x/100;
+    y = x%100;
 
     printf("%i\n", y);
     //print invalid,

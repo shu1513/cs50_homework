@@ -10,5 +10,5 @@ int main(void)
    }
    while (x < 1)
 
-
+    checksum()
 }

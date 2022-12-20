@@ -11,10 +11,11 @@ int main(void)
    while (x < 0);
 
     //booleon valid or not checksum()
-    for (x; x>0; x/10)
+    for (int x; x > 0; x/10)
     {
-        
+        y = y + 1;
     }
+    printf("%i\n", y)
 
     //print invalid,
     //break

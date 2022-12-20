@@ -10,7 +10,6 @@ int main(void)
    }
    while (x < 0);
 
-    //booleon valid or not checksum()
     int y = 0;
     while (x>0)
     {

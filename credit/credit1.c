@@ -10,8 +10,6 @@ int main(void)
    }
    while (x < 0);
 
-    //booleon valid or not checksum()
-
     for (x; x > 0, x/10)
     {
         y++;

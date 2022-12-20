@@ -10,6 +10,7 @@ int main(void)
    }
    while (x < 0);
 
+    int y = 0;
     for (x; x > 0; x/10)
     {
         y++;

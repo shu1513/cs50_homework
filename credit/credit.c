@@ -3,14 +3,15 @@
 
 int main(void)
 {
-   int x;
+   long x;
    do
    {
     x = get_int("Number: ");
    }
-   while (x < 1);
+   while (x < 0);
 
     //booleon valid or not checksum()
+    for (x; x>0; x/10)
     int y;
     y = x%100;
 

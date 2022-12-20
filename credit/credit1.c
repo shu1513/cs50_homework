@@ -14,14 +14,9 @@ int main(void)
 
     for (int y = 0; x > 0, x/10)
     {
-        
-    }
-    int y = 0;
-    while (x>0)
-    {
-        x = x/10;
         y++;
     }
+    
     printf("%i\n", y);
 
     //print invalid,

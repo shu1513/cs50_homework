@@ -12,10 +12,10 @@ int main(void)
 
     //booleon valid or not checksum()
     for (x; x>0; x/10)
-    int y;
-    y = x%100;
+    {
+        
+    }
 
-    printf("%i\n", y);
     //print invalid,
     //break
 

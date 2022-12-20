@@ -12,11 +12,12 @@ int main(void)
 
     //booleon valid or not checksum()
     int y = 0;
-    for (x; x > 0; x/10)
+    while (x>0)
     {
-        y = y + 1;
+        x = x/10;
+        y++;
     }
-    printf("%i\n", y)
+    printf("%i\n", y);
 
     //print invalid,
     //break

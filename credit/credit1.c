@@ -11,6 +11,11 @@ int main(void)
    while (x < 0);
 
     //booleon valid or not checksum()
+
+    for (int y = 0; x > 0, x/10)
+    {
+        
+    }
     int y = 0;
     while (x>0)
     {

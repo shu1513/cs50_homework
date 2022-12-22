@@ -57,7 +57,7 @@ int main(void)
         else if (ccn >=51e14 && cnn < 56e14)
         {
             printf("Mastercard\n")
-        else if ()
+        else if (ccn >= 4e12 && ccn < 5e14 ||)
         }
     }
 

@@ -12,5 +12,8 @@ int main(void)
 
    if (check_validity(credit_card_number))
    {print_credicard_brand(credit_card_number)}
+   else
+   {printf("Invalid\n")}
+   
 
 }

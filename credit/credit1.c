@@ -31,4 +31,9 @@ int main(void)
     return len;
    }
 
+   bool checksum(long ccn)
+   {
+    
+   }
+
 }

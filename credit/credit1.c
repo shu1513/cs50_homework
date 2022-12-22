@@ -25,7 +25,10 @@ int main(void)
 
    int find_length (long n)
    {
-    for (int length = 0)
+    int len;
+    for (int leng = 0; n!=0; n/=10)
+    len++;
+    return len
    }
 
 }

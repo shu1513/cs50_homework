@@ -3,6 +3,7 @@
 
 int main(void)
 {
+    //get credit card number
     long credit_card_number
    do
    {
@@ -10,6 +11,7 @@ int main(void)
    }
    while (credit_card_number < 0);
 
+    //qualify 
    if (check_validity(credit_card_number))
    {print_credicard_brand(credit_card_number)}
    else
@@ -20,7 +22,7 @@ int main(void)
     int length = find_length (credit_card_number);
     return (length == 13 || length == 15 || length == 16) && checksum(credit_card_number)
 
-
+int find_length ()
    }
 
 }

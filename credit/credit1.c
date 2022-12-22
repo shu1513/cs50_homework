@@ -3,27 +3,13 @@
 
 int main(void)
 {
-    long creditcard_N
+    long creditcard_number
    do
    {
-    x = get_int("Number: ");
+    creditcard_number = get_long("Number: ");
    }
-   while (x < 0);
+   while (credicard_number < 0);
 
-    int y = 0;
-    for (x; x > 0; x/10)
-    {
-        y++;
-    }
-
-    printf("%i\n", y);
-
-    //print invalid,
-    //break
-
-    // switch function for card types and card digits
-    //print card types if match
-    //print invalid if don't match
-
+    
 
 }

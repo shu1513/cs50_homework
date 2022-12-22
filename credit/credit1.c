@@ -3,7 +3,7 @@
 
 int main(void)
 {
-   long x;
+    long creditcard_N
    do
    {
     x = get_int("Number: ");

@@ -49,5 +49,8 @@ int main(void)
         return (sum%10) == 0
    }
     void print_credicard_brand(credit_card_number)
+    {
+        if ((ccn >= 34e13 && ccn<35e13) || (ccn >= 37e13 && ccn <= 37e13))
+    }
 
 }

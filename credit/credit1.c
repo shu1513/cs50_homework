@@ -52,9 +52,13 @@ int main(void)
     {
         if ((ccn >= 34e13 && ccn<35e13) || (ccn >= 37e13 && ccn <= 37e13))
         {
-            printf("AMEX")
+            printf("AMEX\n")
         }
-        else if (ccn >=51e14 && cnn <)
+        else if (ccn >=51e14 && cnn < 56e14)
+        {
+            printf("Mastercard\n")
+        else if ()
+        }
     }
 
 }

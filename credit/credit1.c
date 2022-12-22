@@ -18,7 +18,8 @@ int main(void)
    bool check_validity(credit_card_number)
    {
     int length = find_length (credit_card_number);
-    if (length == 13 || length == 15 || length == 16) && checksum(credit_card_number)
+    return (length == 13 || length == 15 || length == 16) && checksum(credit_card_number)
+
 
    }
 

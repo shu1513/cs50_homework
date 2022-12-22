@@ -42,7 +42,8 @@ int main(void)
             }
             else
             {
-                sum
+                int digit = 2*(ccn%10)
+                sum = sum + (digit/10 + digit)
             }
         }
    }

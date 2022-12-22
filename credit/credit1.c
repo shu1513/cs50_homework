@@ -34,7 +34,10 @@ int main(void)
    bool checksum(long ccn)
    {
         int sum = 0;
-        for (i = 10;ccn!=0;ccn/=10)
+        for (i = 10;ccn!=0;i++,ccn/=10)
+        {
+            if (i%2==0)
+        }
    }
 
 }

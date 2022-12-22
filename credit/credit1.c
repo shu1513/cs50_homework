@@ -1,10 +1,13 @@
 #include <cs50.h>
 #include <stdio.h>
 
-void print_credicard_brand(credit_card_number)
-bool checksum(long ccn)
+void print_credicard_brand(credit_card_number);
+bool check_validity(credit_card_number);
+bool checksum(long ccn);
+int find_length (long n);
 
 int main(void)
+
 {
     //get credit card number
     long credit_card_number

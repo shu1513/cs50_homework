@@ -28,7 +28,7 @@ int main(void)
     int len;
     for (int leng = 0; n!=0; n/=10)
     len++;
-    return len
+    return len;
    }
 
 }

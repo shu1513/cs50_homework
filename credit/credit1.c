@@ -33,8 +33,10 @@ int main(void)
 
    int find_length (long n)
    {
-    return (int len = 0; n!=0; n/=10)
-    len++;
+    int length;
+    for (int length = 0; n != 0; n/=10
+    length++);
+    return length;
 
    }
 

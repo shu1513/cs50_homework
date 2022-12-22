@@ -1,6 +1,9 @@
 #include <cs50.h>
 #include <stdio.h>
 
+void print_credicard_brand(credit_card_number)
+bool checksum(long ccn)
+
 int main(void)
 {
     //get credit card number
@@ -16,6 +19,8 @@ int main(void)
    {print_credicard_brand(credit_card_number)}
    else
    {printf("Invalid\n")}
+
+}
 
    bool check_validity(credit_card_number)
    {
@@ -57,8 +62,11 @@ int main(void)
         else if (ccn >=51e14 && cnn < 56e14)
         {
             printf("Mastercard\n")
-        else if (ccn >= 4e12 && ccn < 5e14 ||)
+        else if ((ccn >= 4e12 && ccn < 5e14) ||(ccn >= 4e15 && ccn < 5e16))
+        {
+            printf("VISA")
+        }
+        else printf("INVALID")
         }
     }
 
-}

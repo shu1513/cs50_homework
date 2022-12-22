@@ -33,7 +33,7 @@ int main(void)
 
    bool checksum(long ccn)
    {
-    
+        for (i = 10;ccn/=10)
    }
 
 }

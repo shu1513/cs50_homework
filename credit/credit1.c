@@ -24,5 +24,8 @@ int main(void)
    }
 
    int find_length (long n)
+   {
+    for (int length = 0)
+   }
 
 }

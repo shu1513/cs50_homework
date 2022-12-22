@@ -34,7 +34,7 @@ int main(void)
    bool checksum(long ccn)
    {
         int sum = 0;
-        for (i = 0;ccn!=0;i++,ccn/=10)
+        for (i = 0; ccn! = 0; i++, ccn /= 10)
         {
             if (i%2==0)
             {
@@ -42,8 +42,8 @@ int main(void)
             }
             else
             {
-                int digit = 2*(ccn%10)
-                sum = sum + (digit/10 + digit)
+                int digit = 2*(ccn % 10)
+                sum = sum + (digit / 10 + digit % 10)
             }
         }
    }

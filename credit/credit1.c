@@ -21,8 +21,8 @@ int main(void)
    {
     int length = find_length (credit_card_number);
     return (length == 13 || length == 15 || length == 16) && checksum(credit_card_number)
-
-int find_length (long n)
    }
+
+   int find_length (long n)
 
 }

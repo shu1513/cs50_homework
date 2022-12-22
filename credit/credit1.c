@@ -3,13 +3,14 @@
 
 int main(void)
 {
-    long creditcard_number
+    long credit_card_number
    do
    {
-    creditcard_number = get_long("Number: ");
+    credit_card_number = get_long("Number: ");
    }
-   while (credicard_number < 0);
+   while (credit_card_number < 0);
 
-    
+   if (check_validity(credit_card_number))
+   {print_credicard_brand(credit_card_number)}
 
 }

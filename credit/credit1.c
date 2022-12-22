@@ -37,7 +37,13 @@ int main(void)
         for (i = 10;ccn!=0;i++,ccn/=10)
         {
             if (i%2==0)
-            {sum += cnn}
+            {
+                sum += cnn%10
+            }
+            else
+            {
+                sum 
+            }
         }
    }
 

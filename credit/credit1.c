@@ -17,7 +17,9 @@ int main(void)
 
    bool check_validity(credit_card_number)
    {
+    int length = find_length (credit_card_number);
     
+
    }
 
 }

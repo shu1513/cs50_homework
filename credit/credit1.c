@@ -46,6 +46,7 @@ int main(void)
                 sum = sum + (digit / 10 + digit % 10)
             }
         }
+        return (sum%10) == 0
    }
 
 }

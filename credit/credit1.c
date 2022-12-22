@@ -48,5 +48,6 @@ int main(void)
         }
         return (sum%10) == 0
    }
+    void print_credicard_brand(credit_card_number)
 
 }

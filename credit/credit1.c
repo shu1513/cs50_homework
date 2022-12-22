@@ -1,8 +1,8 @@
 #include <cs50.h>
 #include <stdio.h>
 
-void print_credicard_brand(credit_card_number);
-bool check_validity(credit_card_number);
+void print_credicard_brand(long credit_card_number);
+bool check_validity(long credit_card_number);
 bool checksum(long ccn);
 int find_length (long n);
 
@@ -10,7 +10,7 @@ int main(void)
 
 {
     //get credit card number
-    long credit_card_number
+    long credit_card_number;
    do
    {
     credit_card_number = get_long("Number: ");
@@ -56,7 +56,7 @@ int main(void)
         }
         return (sum%10) == 0
    }
-    void print_credicard_brand(credit_card_number)
+    void print_credicard_brand(long credit_card_number)
     {
         if ((ccn >= 34e13 && ccn<35e13) || (ccn >= 37e13 && ccn <= 37e13))
         {

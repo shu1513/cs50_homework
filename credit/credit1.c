@@ -54,7 +54,7 @@ int main(void)
         {
             printf("AMEX")
         }
-        else if 
+        else if (ccn >=51e14 && cnn <)
     }
 
 }

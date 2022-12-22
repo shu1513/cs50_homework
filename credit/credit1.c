@@ -19,24 +19,23 @@ int main(void)
 
     //qualify
    if (check_validity(credit_card_number))
-   {print_credicard_brand(credit_card_number)};
+   {print_credicard_brand(credit_card_number);}
    else
-   {printf("Invalid\n")};
+   {printf("Invalid\n");}
 
 }
 
    bool check_validity(long credit_card_number)
    {
     int length = find_length (credit_card_number);
-    return (length == 13 || length == 15 || length == 16) && checksum(credit_card_number)
+    return (length == 13 || length == 15 || length == 16) && checksum(credit_card_number);
    }
 
    int find_length (long n)
    {
-    int len;
-    for (int leng = 0; n!=0; n/=10)
+    return (int len = 0; n!=0; n/=10)
     len++;
-    return len;
+
    }
 
    bool checksum(long ccn)

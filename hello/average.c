@@ -26,5 +26,5 @@ int get_average_scores (int times_of_exams)
     {
         sum = sum + get_int ("Whats your score for exam %i ?", (i+1))
     }
-    return sum/times_of_exams
+    return int sum/times_of_exams
 }

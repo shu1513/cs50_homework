@@ -14,9 +14,9 @@ int main(void)
 int get_number_of_exams (void)
 {
    int exam_times;
-   do {exam_times = get_int ("How many exams did you take? ")};
-   while (exam_times < 0)
-   return exam_times
+   do {exam_times = get_int ("How many exams did you take? ");}
+   while (exam_times < 0);
+   return exam_times;
 }
 
 int get_average_scores (int times_of_exams)
@@ -24,7 +24,7 @@ int get_average_scores (int times_of_exams)
     int sum = 0;
     for (int i = 0; i < times_of_exams; i++)
     {
-        sum = sum + get_int ("Whats your score for exam %i ?", (i+1))
+        sum = sum + get_int ("Whats your score for exam %i ?", (i+1));
     }
-    return int sum/times_of_exams
+    return sum/times_of_exams;
 }

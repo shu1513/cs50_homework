@@ -18,3 +18,7 @@ int get_number_of_exams (void)
    while (exam_times < 0)
 }
 
+int get_average_scores (number_of_exams)
+{
+    
+}

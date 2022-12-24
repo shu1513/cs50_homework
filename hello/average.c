@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int get_number_of_exams (void);
-int get_average_scores (int times_of_exams);
+double get_average_scores (int times_of_exams);
 
 int main(void)
 {
@@ -19,7 +19,7 @@ int get_number_of_exams (void)
    return exam_times;
 }
 
-int get_average_scores (int times_of_exams)
+double get_average_scores (int times_of_exams)
 {
     int sum = 0;
     for (int i = 0; i < times_of_exams; i++)

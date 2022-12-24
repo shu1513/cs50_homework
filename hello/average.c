@@ -15,7 +15,7 @@ int get_number_of_exams (void)
 {
    int exam_times;
    do {exam_times = get_int ("How many exams did you take? ")}
-   while (exam_times < 1)
+   while (exam_times < 0)
 }
 
 int get_average_scores (int number_of_exams)

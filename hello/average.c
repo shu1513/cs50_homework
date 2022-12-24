@@ -21,5 +21,9 @@ int get_number_of_exams (void)
 
 int get_average_scores (int times_of_exams)
 {
-
+    int sum = 0
+    for (i = 0; i < times_of_exams; i++)
+    {
+        sum = sum + get_int ("Whats your score for exam %i ?", (i+1))
+    }
 }

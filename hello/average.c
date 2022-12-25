@@ -17,7 +17,7 @@ int get_number_of_exams (void)
    do {exam_times = get_int ("How many exams did you take? ");
    if (exam_times < 0) {
                 printf("Please enter a non-negative number.\n");
-            }
+            }}
    while (exam_times < 0);
    return exam_times;
 }

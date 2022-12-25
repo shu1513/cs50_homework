@@ -15,10 +15,10 @@ int get_number_of_exams (void)
 {
    int exam_times;
    do {exam_times = get_int ("How many exams did you take? ");
-   if (exam_times < 0) {
-                printf("Please enter a non-negative number.\n");
+   if (exam_times < 1) {
+                printf("Please enter a positve number.\n");
             }}
-   while (exam_times < 0);
+   while (exam_times < 1);
    return exam_times;
 }
 
@@ -33,7 +33,7 @@ double get_average_scores (int times_of_exams)
             }
         while (score < 0);
         sum = (sum + score);}
-    
+
     double average = sum/times_of_exams;
     return average;
 }

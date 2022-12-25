@@ -33,7 +33,7 @@ double get_average_scores (int times_of_exams)
             }
         while (score < 0);
         sum = (sum + score);}
-    }
+    
     double average = sum/times_of_exams;
     return average;
 }

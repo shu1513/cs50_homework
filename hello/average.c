@@ -26,12 +26,12 @@ double get_average_scores (int times_of_exams)
 {
     int sum = 0;
     for (int i = 0; i < times_of_exams; i++)
-    {
-        do {int score = get_int ("Whats your score for exam %i ?", (i+1));
+    {   int score;
+        do {score = get_int ("Whats your score for exam %i ?", (i+1));
         if (score < 0) {
                 printf("Please enter a non-negative number.\n");}}
-        while (score < 0)
-        sum = sum + score}
+        while (score < 0);
+        sum = (sum + score);}
     }
     double average = sum/times_of_exams;
     return average;

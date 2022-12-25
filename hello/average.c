@@ -27,7 +27,7 @@ double get_average_scores (int times_of_exams)
     double sum = 0;
     for (int i = 0; i < times_of_exams; i++)
     {   int score;
-        do {score = get_int ("Whats your score for exam %i ?", (i+1));
+        do {score = get_int ("Whats your score for exam %i? ", (i+1));
         if (score < 0) {
                 printf("Please enter a non-negative number.\n");}
             }

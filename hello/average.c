@@ -24,7 +24,9 @@ double get_average_scores (int times_of_exams)
     int sum = 0;
     for (int i = 0; i < times_of_exams; i++)
     {
-        sum = sum + get_int ("Whats your score for exam %i ?", (i+1));
+        do {int score = get_int ("Whats your score for exam %i ?", (i+1));}
+        while score < 0
+        sum = sum + score
     }
     double average = sum/times_of_exams;
     return average;

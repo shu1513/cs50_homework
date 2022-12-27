@@ -3,22 +3,7 @@
 
 int main (void)
 {
-    int n;
-    do
-    {
-        n = get_int ("Enter Height: ");
-        }
-    while (n<1 || n>8);
-    for (int i = 0; i < n; i++)
-    {
-        for(int y = 0; y < n-1-i; y++)
-        {
-            printf(" ");
-        }
-        for(int j = 0; j < i+1; j++)
-        {
-            printf("#");
-        }
-        printf("\n");
-    }
+
+   string s = "hi!";
+   printf ("%i%i%i\n", s[0],s[1],s[2]);
 }

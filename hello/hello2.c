@@ -8,7 +8,7 @@ int main (void)
 
    for (int i = 0; s[i]!= 0; i++)
    {
-      printf (i);
+      
    }
-
+   printf ("%i\n", i);
 }

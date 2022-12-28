@@ -7,7 +7,7 @@ int main (void)
    string s = get_string ("Type String here ");
    for (int i = 0; i!= 0; i++)
    {
-      s[i] 
+      s[i]
    }
-   printf ();
+   printf (i);
 }

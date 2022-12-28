@@ -4,6 +4,10 @@
 int main (void)
 {
 
-   string s = "0";
-   printf ("%i %i %i %i\n", s[0],s[1],s[2],s[3]);
+   string s = get_string ("Type String here ");
+   for (int i = 0; i!= 0; i++)
+   {
+      s[i] 
+   }
+   printf ();
 }

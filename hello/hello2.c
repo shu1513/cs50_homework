@@ -6,9 +6,9 @@ int main (void)
 
    string s = get_string ("Type String here ");
 
-   for (int i = 0; s[i]!= 0; i++)
+   int i = 0;
+   while (s[i]!=0)
    {
-      
+      i
    }
-   printf ("%i\n", i);
 }

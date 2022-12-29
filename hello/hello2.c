@@ -8,9 +8,9 @@ int main (void)
    printf("Out put:  ");
    for (int i = 0; i < strlen(s); i++)
    {
-      printf("%c", )
+      printf("%c",s[i]);
    }
 
 
-   printf ("%i\n",i);
+   printf ("\n");
 }

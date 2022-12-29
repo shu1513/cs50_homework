@@ -1,13 +1,16 @@
 #include <stdio.h>
 #include <cs50.h>
-
+#include <string.h>
 int main (void)
 {
 
-   string s = get_string ("Type String here ");
+   string s = get_string ("Type input here  ");
+   printf("Out put:  ");
+   for (int i = 0; i < strlen(s); i++)
+   {
+      printf("%c", )
+   }
 
-   int i;
-   for (i = 0; s[i] != 0; i++)
-   {}
+
    printf ("%i\n",i);
 }

@@ -26,3 +26,8 @@ int get_number_of_exams (void)
    }
    while (n <= 0)
 }
+
+float average (int x[])
+{
+   
+}

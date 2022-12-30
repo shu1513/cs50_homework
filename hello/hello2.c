@@ -18,6 +18,11 @@ int get_number_of_exams (void)
 {
    do
    {
-      get_int ("How many exams did you take?  ")
+     int n = get_int ("How many exams did you take?  ")
+     if (n <= 0)
+     {
+      printf("The number ")
+     }
    }
+   while (n <= 0)
 }

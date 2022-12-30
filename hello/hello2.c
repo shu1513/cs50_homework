@@ -16,5 +16,8 @@ int main (void)
 
 int get_number_of_exams (void)
 {
-   get_int ("Please enter your ")
+   do
+   {
+      get_int ("How many exams did you take?  ")
+   }
 }

@@ -8,7 +8,8 @@ int get_number_of_exams (void);
 int main (void)
 {
 
-   number_of_exams = get_number_of_exams ();
+   number_of_exams[i] = get_number_of_exams ();
+   scores[number_of_exams]
    printf("Average score is %f\n", average());
 }
 

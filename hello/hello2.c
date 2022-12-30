@@ -9,8 +9,7 @@ int main (void)
 {
 
    int number_of_exams = get_number_of_exams ();
-   float average_score = average ();
-   printf("%f\n", average_score);
+   printf("Average score is %f\n", average(number_of_exams));
 }
 
 int get_number_of_exams (void)

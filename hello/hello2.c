@@ -8,7 +8,7 @@ float average (int x[])
 int main (void)
 {
 
-   int number_of_exams = get_int ("How many exams did you take?  ");
-   float average_score = average (number_of_exams)
-   printf("%f\n", average_score)
+   int number_of_exams = get_number_of_exams;
+   float average_score = average (number_of_exams);
+   printf("%f\n", average_score);
 }

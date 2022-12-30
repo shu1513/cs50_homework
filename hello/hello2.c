@@ -29,5 +29,8 @@ int get_number_of_exams (void)
 
 float average (int x[])
 {
-   
+   for (i =0; i < number_of_exams, i++)
+   {
+      
+   }
 }

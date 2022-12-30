@@ -23,7 +23,7 @@ int get_number_of_exams (void)
      }
    }
    while (n <= 0)
-   return n
+   return n;
 }
 
 float average (int x[])

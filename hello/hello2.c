@@ -14,3 +14,7 @@ int main (void)
    printf("%f\n", average_score);
 }
 
+int get_number_of_exams (void)
+{
+   get_int ("Please enter your ")
+}

@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <cs50.h>
 
-
+int number_of_exams;
 float average (int x[]);
 int get_number_of_exams (void);
 
 int main (void)
 {
 
-   int number_of_exams = get_number_of_exams ();
-   printf("Average score is %f\n", average(number_of_exams));
+   number_of_exams = get_number_of_exams ();
+   printf("Average score is %f\n", average());
 }
 
 int get_number_of_exams (void)

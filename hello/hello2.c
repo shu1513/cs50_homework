@@ -16,7 +16,7 @@ int get_number_of_exams (void)
 {
    do
    {
-     int n = get_int ("How many exams did you take?  ")
+     int n = get_int ("How many exams did you take?  ");
      if (n <= 0)
      {
       printf("The number needs to be a positive number");
@@ -27,10 +27,10 @@ int get_number_of_exams (void)
 
 float average (int x[])
 {
-   int sum = 0
+   int sum = 0;
    for (i =0; i < number_of_exams, i++)
    {
-      sum = sum + x[number_of_exams]
+      sum = sum + x[number_of_exams];
    }
    return sum/ ((float) number_of_exams);
 }

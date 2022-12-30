@@ -21,7 +21,7 @@ int get_number_of_exams (void)
      int n = get_int ("How many exams did you take?  ")
      if (n <= 0)
      {
-      printf("The number ")
+      printf("The number needs to be a positive number")
      }
    }
    while (n <= 0)

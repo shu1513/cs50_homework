@@ -11,7 +11,7 @@ int main (void)
 
 int get_string_length(string x);
 {
-    for (int i = 0; x[i] != 0; i++)
+    for (int i = 0; x[i] != "\0"; i++)
     {}
     return i;
 }

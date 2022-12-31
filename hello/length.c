@@ -11,5 +11,6 @@ int main (void)
 
 int get_string_length(string x)
 {
-    
+    int i = 0
+    for (s[i] != 0
 }

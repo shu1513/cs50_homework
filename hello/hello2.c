@@ -2,7 +2,7 @@
 #include <cs50.h>
 
 
-float average (int y, int x[]);
+float average (int x[], int y);
 int get_number_of_exams (void);
 
 int main (void)
@@ -21,7 +21,7 @@ int main (void)
       }
       while (scores[i] <= 0);
    }
-   printf("Average score is %f\n", average(number_of_exams, scores));
+   printf("Average score is %f\n", average(scores, number_of_exams));
 }
 
 int get_number_of_exams (void)
@@ -39,7 +39,7 @@ int get_number_of_exams (void)
    return n;
 }
 
-float average (int y, int x[])
+float average (int x[], int y)
 {
    int sum = 0;
    for (int i =0; i < y; i++)

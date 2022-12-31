@@ -11,9 +11,6 @@ int main (int argc, string argv[])
     }
     else
     {
-        for (int i = 0; i < (strlen argv[i]); i++)
-        printf("hi %s", argv[i]);
-        return 0;
+        printf("hi %s\n", argv[1]);
     }
-    printf {"\n"}
 }

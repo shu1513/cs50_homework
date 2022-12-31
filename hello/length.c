@@ -5,7 +5,7 @@ int get_string_length(string x);
 
 int main (void)
 {
-    string s = get_string ("type your string here ");
+    string s = string get_string ("type your string here ");
     printf("your string has %i characters.\n", get_string_length(s));
 }
 

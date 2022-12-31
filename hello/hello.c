@@ -6,14 +6,14 @@ int main (int argc, string argv[])
 {
     if (argc != 2)
     {
-        printf("false\n")
-        return 1
+        printf("false\n");
+        return 1;
     }
     else
     {
-        for (int i = 0; i < strlen argv; i++)
-        printf("hi %s", argv[i])
-        return 0
+        for (int i = 0; i < (strlen argv[i]); i++)
+        printf("hi %s", argv[i]);
+        return 0;
     }
     printf {"\n"}
 }

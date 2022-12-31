@@ -9,7 +9,7 @@ int main (void)
     printf("your string has %i characters.\n", get_string_length(s));
 }
 
-int get_string_length(string x);
+int get_string_length(string x)
 {
     for (int i = 0; x[i] != "\0"; i++)
     {}

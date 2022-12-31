@@ -9,7 +9,7 @@ int main (int argc, string argv[])
         return 1
     }
     else
-    for (int i = 0; i < strlen )
+    for (int i = 0; i < strlen argv)
     printf("hi %s\n", argv[1])
 
 }

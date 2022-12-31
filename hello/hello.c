@@ -1,20 +1,15 @@
 #include <stdio.h>
 #include <cs50.h>
 
-int main (void)
+int main (int argc, string argv[])
 {
-    int n;
-    do
+    if (argc != 2)
     {
-        n = get_int ("Enter Height: ");
-        }
-    while (n<1 || n>8);
-    for (int i = 0; i < n; i++)
-    {
-        for(int j = 0; j < i+1; j++)
-        {
-            printf("#");
-        }
-        printf("\n");
+        printf("false\n")
+        return 1
     }
+    else
+    for (int i = 0; i < strlen )
+    printf("hi %s\n", argv[1])
+
 }

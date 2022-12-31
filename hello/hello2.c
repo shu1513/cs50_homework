@@ -4,13 +4,13 @@
 
 float average (int x[], int y);
 int get_number_of_exams (void);
-int get_scores (int n)
+int *get_scores (int n)
 
 int main (void)
 {
 
    int number_of_exams = get_number_of_exams ();
-   int scores[] = get_scores(number_of_exams);
+   int *scores = get_scores(number_of_exams);
    printf("Average score is %f\n", average(scores, number_of_exams));
 }
 

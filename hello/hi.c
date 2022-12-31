@@ -3,10 +3,11 @@
 
 int main (void)
 {
-char a[3];
-a[0] = 'H';
-a[1] = 'i';
-a[2] = '!';
+string a[2];
+a[0] = "Hi!";
+a[1] = "Bye!";
 
-printf("%a", a[])
+
+printf("%c\n", a[0][2]);
+printf("%c\n", a[1][0]);
 }

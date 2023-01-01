@@ -18,7 +18,7 @@ int main (void)
             }
         while (sides[i] <= 0;)
     }
-    bool valid = check_valid ( array[])
+    bool valid = check_valid (int array[])
 
 }
 int get_3_sides (void)

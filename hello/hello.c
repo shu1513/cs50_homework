@@ -18,10 +18,11 @@ int main (void)
             }
         while (sides[i] <= 0;)
     }
+    bool valid = check_valid ( array[])
 
 }
 int get_3_sides (void)
 {
    for
-
 }
+bool check_valid ()

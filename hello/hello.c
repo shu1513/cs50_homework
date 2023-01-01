@@ -6,19 +6,16 @@ int get_3_sides (void);
 
 int main (void)
 {
+    int sides[3]
+    for (int i = 0; i < 3; i++)
+    {
+        sides[i] = get_int("What's the length of side %i ?  ", (i+1))
+
+    }
 
 }
 int get_3_sides (void)
 {
-   int n;
-   do
-   {
-     n = get_int ("How many exams did you take?  ");
-     if (n <= 0)
-     {
-      printf("The number needs to be a positive number\n");
-     }
-   }
-   while (n <= 0);
-   return n;
+   for
+
 }

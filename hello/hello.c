@@ -3,7 +3,7 @@
 #include <string.h>
 
 string check_valid (int array[]);
-void get_sides (int array[])
+void get_sides (int array[]);
 
 int main (void)
 {
@@ -25,14 +25,17 @@ string check_valid (int array[])
     {return ("this is not valid");}
 }
 
-for (int i = 0; i < 3; i++)
+void get_sides(int array[])
+{
+    for (int i = 0; i < 3; i++)
     {
         do {
-            sides[i] = get_int("What's the length of side %i ?  ", (i+1));
-            if (sides[i] <= 0)
+            array[i] = get_int("What's the length of side %i ?  ", (i+1));
+            if (array[i] <= 0)
             {
                 printf("side %i lengh needs to be a positive integer.\n", (i+1));
             }
             }
-        while (sides[i] <= 0);
+        while (array[i] <= 0);
     }
+}

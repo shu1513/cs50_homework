@@ -2,15 +2,23 @@
 #include <cs50.h>
 #include <string.h>
 
-int main (int argc, string argv[])
+int get_3_sides (void);
+
+int main (void)
 {
-    if (argc != 2)
-    {
-        printf("false\n");
-        return 1;
-    }
-    else
-    {
-        printf("hi %s\n", argv[1]);
-    }
+
+}
+int get_3_sides (void)
+{
+   int n;
+   do
+   {
+     n = get_int ("How many exams did you take?  ");
+     if (n <= 0)
+     {
+      printf("The number needs to be a positive number\n");
+     }
+   }
+   while (n <= 0);
+   return n;
 }

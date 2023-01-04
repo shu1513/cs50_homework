@@ -16,8 +16,7 @@ int main(void)
 
     for (int i = 0; i < string_length; i++)
     {
-        x = char array[i];
-        printf("%i\n", )
+        printf("%i\n", user_input[i]);
     }
 
 

@@ -13,7 +13,7 @@ int main(void)
     // string to array
     //calculate the length of the string
     int user_input_string_length = strlen(user_input);
-    
+    int user_input_int = 
 
 
     // conver the user input into decimal

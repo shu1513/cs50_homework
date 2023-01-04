@@ -10,6 +10,7 @@ int main(void)
 {
     // TODO
     // Get the user input
+    
     // conver the user input into decimal
     // conver the decimal into 8 digit binary, with proper format
     // print into bulb

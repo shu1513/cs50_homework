@@ -10,8 +10,8 @@ void print_bulb(int bit);
 int main(void)
 {
     // Get the user input
-    string user_input = get_string ("Type your input here and we will conver it into binary light bulbs ")
-    int user_input_in_numbers = 
+    string user_input = get_string ("Type your input here and we will conver it into binary light bulbs ");
+    int user_input_in_numbers = atoi(user_input)
     // conver the user input into decimal
     // conver the decimal into 8 digit binary, with proper format
     // print into bulb

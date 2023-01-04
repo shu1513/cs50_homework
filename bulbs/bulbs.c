@@ -13,7 +13,7 @@ int main(void)
     // string to array
     //calculate the length of the string
     int user_input_string_length = strlen(user_input);
-    printf("string length %i", user_input_string_length)
+    
 
     // conver the user input into decimal
     // conver the decimal into 8 digit binary, with proper format

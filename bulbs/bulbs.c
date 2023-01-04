@@ -14,7 +14,10 @@ int main(void)
     //calculate the length of the string
     int string_length = strlen(user_input);
     int user_input_int [string_length];
-    for
+    for (int i = 0; i < string_length; i++)
+    {
+        printf("%i\n", )
+    }
 
 
     // conver the user input into decimal

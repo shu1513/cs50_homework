@@ -15,6 +15,7 @@ int main(void)
     int user_input_string_length = strlen(user_input);
     
 
+
     // conver the user input into decimal
     // conver the decimal into 8 digit binary, with proper format
     // print into bulb

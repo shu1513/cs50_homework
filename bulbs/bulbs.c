@@ -10,6 +10,8 @@ int main(void)
 {
     // TODO
     // Get the user input
+    // conver the user input into decimal
+    // conver the decimal into binary
     // 
 }
 

@@ -12,8 +12,9 @@ int main(void)
     string user_input = get_string ("Type your input here and we will conver it into binary light bulbs ");
     // string to array
     //calculate the length of the string
-    int user_input_string_length = strlen(user_input);
-    int user_input_int = 
+    int string_length = strlen(user_input);
+    int user_input_int [string_length];
+    for
 
 
     // conver the user input into decimal

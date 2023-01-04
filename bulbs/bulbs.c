@@ -13,10 +13,10 @@ int main(void)
     // string to array
     //calculate the length of the string
     int string_length = strlen(user_input);
-    int user_input_int [string_length];
+
     for (int i = 0; i < string_length; i++)
     {
-        int user_input_int = 
+        x = char array[i];
         printf("%i\n", )
     }
 

@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 const int BITS_IN_BYTE = 8;
 
@@ -10,7 +11,7 @@ int main(void)
 {
     // Get the user input
     string user_input = get_string ("Type your input here and we will conver it into binary light bulbs ")
-    
+    int user_input_in_numbers = 
     // conver the user input into decimal
     // conver the decimal into 8 digit binary, with proper format
     // print into bulb

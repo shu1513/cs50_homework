@@ -16,6 +16,7 @@ int main(void)
     int user_input_int [string_length];
     for (int i = 0; i < string_length; i++)
     {
+        int user_input_int = 
         printf("%i\n", )
     }
 

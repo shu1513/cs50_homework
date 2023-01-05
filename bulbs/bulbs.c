@@ -12,20 +12,20 @@ int main(void)
     string user_input = get_string ("Type your input here ");
     //calculate the length of the string
     int string_length = strlen(user_input);
-    
+
     // conver string into binary
     for (int i = 0; i < string_length; i++)
         {int ascii = (int) user_input[i];
-        char bin[BITS_IN_BYTE + 1];
+        char bin[BITS_IN_BYTE];
         for (int j = 0; j < BITS_IN_BYTE; j++)
         {
             if (ascii % 2 == 0)
             {
-                bin[BITS_IN_BYTE - 1 - j] = '0';
+                bin[BITS_IN_BYTE - j] = '0';
             }
             else
             {
-                bin[BITS_IN_BYTE - 1 - j] = '1';
+                bin[BITS_IN_BYTE - j] = '1';
             }
             ascii /= 2;
 

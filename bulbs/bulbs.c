@@ -19,7 +19,7 @@ int main(void)
         int remainder = ascii % 2
         ascii /= 2;
         }
-        printf(%i)
+        printf(%i")
     // 8 digits
     int num_zeros = BITS_IN_BYTE - strlen(bin);
         for (int j = 0; j < num_zeros; j++)

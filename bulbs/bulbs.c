@@ -11,7 +11,9 @@ int main(void)
     // Get the user input
     string user_input = get_string ("Type your input here ");
     // conver string into binary
-    int ascii = (int) user_input[i];
+    for (int i = 0; i < string_length; i++)
+
+    {int ascii = (int) user_input[i];
         char bin[BITS_IN_BYTE + 1];
         for (int j = 0; j < BITS_IN_BYTE; j++)
         {
@@ -24,6 +26,8 @@ int main(void)
                 bin[BITS_IN_BYTE - 1 - j] = '1';
             }
             ascii /= 2;
+
+        }
 
     // 8 digits
     int num_zeros = BITS_IN_BYTE - strlen(bin);

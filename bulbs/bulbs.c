@@ -16,7 +16,7 @@ int main(void)
     // conver string into binary
     for (int i = 0; i < string_length; i++)
         {int ascii = (int) user_input[i];
-        int remainder = ascii % 2
+        int remainder = ascii % 2;
         ascii /= 2;
         }
         printf("%i", ascii)

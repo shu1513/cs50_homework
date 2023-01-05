@@ -18,23 +18,11 @@ int main(void)
         {int ascii = (int) user_input[i];
         int remainder = ascii % 2;
         ascii /= 2;
+        printf("%i", ascii);
         }
-        printf("%i", ascii)
+
     // 8 digits
-    int num_zeros = BITS_IN_BYTE - strlen(bin);
-        for (int j = 0; j < num_zeros; j++)
-        {
-            printf("0");
-        }
-
-
-    for (int i = 0; i < string_length; i++)
-    {
-        printf("%i\n", user_input[i]);
-    }
-
-
-    // conver the user input into decimal
+     // conver the user input into decimal
     // conver the decimal into 8 digit binary, with proper format
     // print into bulb
 }

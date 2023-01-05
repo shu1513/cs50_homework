@@ -9,8 +9,28 @@ void print_bulb(int bit);
 int main(void)
 {
     // Get the user input
-    string user_input = get_string ("Type your input here and we will conver it into binary light bulbs ");
-    // string to array
+    string user_input = get_string ("Type your input here ");
+    // conver string into binary
+    int ascii = (int) user_input[i];
+        char bin[BITS_IN_BYTE + 1];
+        for (int j = 0; j < BITS_IN_BYTE; j++)
+        {
+            if (ascii % 2 == 0)
+            {
+                bin[BITS_IN_BYTE - 1 - j] = '0';
+            }
+            else
+            {
+                bin[BITS_IN_BYTE - 1 - j] = '1';
+            }
+            ascii /= 2;
+
+    // 8 digits
+    int num_zeros = BITS_IN_BYTE - strlen(bin);
+        for (int j = 0; j < num_zeros; j++)
+        {
+            printf("0");
+        }
     //calculate the length of the string
     int string_length = strlen(user_input);
 

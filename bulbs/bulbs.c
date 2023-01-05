@@ -17,10 +17,9 @@ int main(void)
     for (int i = 0; i < string_length; i++)
         {int ascii = (int) user_input[i];
         int remainder = ascii % 2
-            ascii /= 2;
-
+        ascii /= 2;
         }
-
+        printf(%i)
     // 8 digits
     int num_zeros = BITS_IN_BYTE - strlen(bin);
         for (int j = 0; j < num_zeros; j++)

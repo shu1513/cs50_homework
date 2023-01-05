@@ -18,7 +18,7 @@ int main(void)
         {int ascii = (int) user_input[i];
         int remainder = ascii % 2;
         ascii /= 2;
-        printf("%i", ascii);
+        printf("%i", remainder);
         }
 
     // 8 digits

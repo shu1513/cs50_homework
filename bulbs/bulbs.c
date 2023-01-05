@@ -16,17 +16,7 @@ int main(void)
     // conver string into binary
     for (int i = 0; i < string_length; i++)
         {int ascii = (int) user_input[i];
-        char bin[BITS_IN_BYTE];
-        for (int j = 0; j < BITS_IN_BYTE; j++)
-        {
-            if (ascii % 2 == 0)
-            {
-                bin[BITS_IN_BYTE - j] = '0';
-            }
-            else
-            {
-                bin[BITS_IN_BYTE - j] = '1';
-            }
+        int remainder = ascii % 2
             ascii /= 2;
 
         }

@@ -26,11 +26,11 @@ bool only_digits (string x)
 
    if ((int)argv[1][j] <48 || (int)argv[1][j]>57)
    {
-    return 1;
+    return false;
     }
    else
    {
-    return 0;
+    return true;
    }
 
 }

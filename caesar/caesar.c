@@ -23,14 +23,14 @@ bool only_digits (string x)
     int i = strlen(x);
 
     for (int j =0; j < i; j++)
+    {
 
    if ((int)x[j] <48 || (int)x[j]>57)
    {
     return false;
     }
-   else
-   {
-    return true;
-   }
+    else
+    
+
 
 }

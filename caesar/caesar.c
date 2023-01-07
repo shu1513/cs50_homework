@@ -29,6 +29,7 @@ bool only_digits (string x)
    {
     return false;
     }
-    return true;
     }
+    return true;
+
 }

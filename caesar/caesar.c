@@ -20,11 +20,11 @@ int main(int argc, string argv[])
 
 bool only_digits (string x)
 {
-    int i = strlen (argv[1]);
+    int i = strlen(x);
 
     for (int j =0; j < i; j++)
 
-   if ((int)argv[1][j] <48 || (int)argv[1][j]>57)
+   if ((int)x[j] <48 || (int)x[j]>57)
    {
     return false;
     }

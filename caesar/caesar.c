@@ -22,9 +22,9 @@ bool only_digits (string x)
 {
     int i = strlen (argv[1]);
 
-    if (for (int j =0; j < i; j++)
+    for (int j =0; j < i; j++)
 
-   (int)argv[1][j] <48 || (int)argv[1][j]>57)
+   if ((int)argv[1][j] <48 || (int)argv[1][j]>57)
    {
     return false;
     }

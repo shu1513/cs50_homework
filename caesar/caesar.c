@@ -29,8 +29,6 @@ bool only_digits (string x)
    {
     return false;
     }
-    else
-    
-
-
+    return true;
+    }
 }

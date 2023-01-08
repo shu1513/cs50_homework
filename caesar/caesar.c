@@ -31,7 +31,7 @@ int main(int argc, string argv[])
     //get string length of the plain text
     int string_length = strlen (plain_text);
 
-    printf("cipher text: ");
+    printf("ciphertext: ");
 
     for (int i = 0; i < string_length; i++)
     {if (isalpha(plain_text[i]) && isupper(plain_text[i]))

@@ -24,6 +24,8 @@ int main(int argc, string argv[])
     // get user plaintext
     string plain_text = get_int("Plaintext:  ")
 
+    //encipher the plaintext 
+
 
 }
 

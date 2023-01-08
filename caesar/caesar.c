@@ -32,7 +32,7 @@ int main(int argc, string argv[])
     for (i = 0; i < string_length; i++)
     if (isalpha(plain_text[i]) && isupper(plain_text[i]))
     {
-        
+        char x = plain_text[i] - 65 
     }
 
 

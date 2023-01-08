@@ -23,12 +23,12 @@ int main(int argc, string argv[])
     int key = atoi(argv[1]);
 
     // get user plaintext
-    string plain_text = get_string("Plaintext:  ")
+    string plain_text = get_string("Plaintext:  ");
 
     //encipher the plaintext
 
     //get string length of the plain text
-    int string_length = strlen (plain_text)
+    int string_length = strlen (plain_text);
 
     for (int i = 0; i < string_length; i++)
     if (isalpha(plain_text[i]) && isupper(plain_text[i]))

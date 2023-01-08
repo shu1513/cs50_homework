@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 bool only_digits (string x);
 
@@ -19,7 +20,7 @@ int main(int argc, string argv[])
     return 1;}
 
     //convert string into integers
-    int key = int atoi(argv[1]);
+    int key = atoi(argv[1]);
 
     // get user plaintext
     string plain_text = get_string("Plaintext:  ")
@@ -35,8 +36,8 @@ int main(int argc, string argv[])
         char x = plain_text[i] - 65;
         char y = (x + key) %26;
         plain_text[i] = y +65;
-    
     }
+    printf("%c",plain_text[i])
 
 }
 

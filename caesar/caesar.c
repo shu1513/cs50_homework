@@ -38,7 +38,14 @@ int main(int argc, string argv[])
         char y = (x + key) %26;
         plain_text[i] = y +65;
     }
-    printf("Ciphertext %c",plain_text[i]);}
+    if (isalpha(plain_text[i]) && islower(plain_text[i]))
+    {
+        char x = plain_text[i] - 97;
+        char y = (x + key) %26;
+        plain_text[i] = y +65;
+    }
+
+    printf("ciphertext: %c",plain_text[i]);}
 
 }
 

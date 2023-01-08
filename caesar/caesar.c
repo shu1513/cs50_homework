@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 bool only_digits (string x);
 
@@ -37,7 +38,7 @@ int main(int argc, string argv[])
         char y = (x + key) %26;
         plain_text[i] = y +65;
     }
-    printf("%c",plain_text[i])}
+    printf("Ciphertext %c",plain_text[i]);}
 
 }
 

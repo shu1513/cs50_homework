@@ -30,7 +30,10 @@ int main(int argc, string argv[])
     int string_length = strlen (plain_text)
 
     for (i = 0; i < string_length; i++)
-    if (plain_text[i])
+    if (isalpha(plain_text[i]) && isupper(plain_text[i]))
+    {
+        
+    }
 
 
 }

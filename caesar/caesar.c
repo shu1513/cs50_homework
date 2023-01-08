@@ -30,7 +30,7 @@ int main(int argc, string argv[])
     int string_length = strlen (plain_text)
 
     for (i = 0; i < string_length; i++)
-    if ()
+    if (plain_text[i])
 
 
 }

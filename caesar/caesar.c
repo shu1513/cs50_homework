@@ -22,13 +22,15 @@ int main(int argc, string argv[])
     int key = int atoi(string argv1);
 
     // get user plaintext
-    string plain_text = get_int("Plaintext:  ")
+    string plain_text = get_string("Plaintext:  ")
 
     //encipher the plaintext
 
     //get string length of the plain text
-    
+    int string_length = strlen (plain_text)
 
+    for (i = 0; i < string_length; i++)
+    if ()
 
 
 }

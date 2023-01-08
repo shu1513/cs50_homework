@@ -44,7 +44,7 @@ int main(int argc, string argv[])
     {
         char x = plain_text[i] - 97;
         char y = (x + key) %26;
-        plain_text[i] = y +65;
+        plain_text[i] = y +97;
     }
 
     printf("%c",plain_text[i]);}

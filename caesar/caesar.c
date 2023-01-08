@@ -22,7 +22,7 @@ int main(int argc, string argv[])
     int key = int atoi(string argv1);
 
     // get user plaintext
-    string plain_text = get_int("Plain text:  ")
+    string plain_text = get_int("Plaintext:  ")
 
 
 }

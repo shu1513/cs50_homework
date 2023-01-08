@@ -29,10 +29,11 @@ int main(int argc, string argv[])
     //get string length of the plain text
     int string_length = strlen (plain_text)
 
-    for (i = 0; i < string_length; i++)
+    for (int i = 0; i < string_length; i++)
     if (isalpha(plain_text[i]) && isupper(plain_text[i]))
     {
-        char x = plain_text[i] - 65 
+        char x = plain_text[i] - 65
+        char y = x 
     }
 
 

@@ -24,7 +24,11 @@ int main(int argc, string argv[])
     // get user plaintext
     string plain_text = get_int("Plaintext:  ")
 
-    //encipher the plaintext 
+    //encipher the plaintext
+
+    //get string length of the plain text
+    
+
 
 
 }

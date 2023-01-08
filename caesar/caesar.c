@@ -19,7 +19,7 @@ int main(int argc, string argv[])
     return 1;}
 
     //convert string into integers
-    int key = int atoi(string argv1);
+    int key = int atoi(argv[1]);
 
     // get user plaintext
     string plain_text = get_string("Plaintext:  ")
@@ -32,10 +32,11 @@ int main(int argc, string argv[])
     for (int i = 0; i < string_length; i++)
     if (isalpha(plain_text[i]) && isupper(plain_text[i]))
     {
-        char x = plain_text[i] - 65
-        char y = x 
+        char x = plain_text[i] - 65;
+        char y = (x + key) %26;
+        plain_text[i] = y +65;
+    
     }
-
 
 }
 

@@ -5,7 +5,7 @@ int main(int argc, string argv[])
 {
     //check if only typed 2 things
      if(argc != 2 )
-    {printf("Usage: ./caesar key\n");
+    {printf("Usage: ./substitution key\n");
     return 1;}
 
 }

@@ -22,7 +22,7 @@ bool only_letter (string x)
     for (int j =0; j < i; j++)
     {
 
-   if ((int)x[j] <48 || (int)x[j]>57)
+   if (((int)x[j] > 64 && (int)x[j] < 91) || ((int)x[j] > 96 && (int)x[j] < 123))
    {
     return true;
     }

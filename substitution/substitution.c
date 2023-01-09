@@ -11,6 +11,7 @@ int main(int argc, string argv[])
     return 1;}
     //check if the input is only letter
     if only_letter (argv[1])
+    {printf("Usage: ./substitution key\n")}
 
 }
 

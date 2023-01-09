@@ -24,8 +24,8 @@ bool only_letter (string x)
 
    if ((int)x[j] <48 || (int)x[j]>57)
    {
-    return false;
-    }
-    }
     return true;
+    }
+    }
+    return false;
 }

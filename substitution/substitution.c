@@ -10,6 +10,7 @@ int main(int argc, string argv[])
     {printf("Usage: ./substitution key\n");
     return 1;}
     //check if the input is only letter
+    if only_letter (argv[1])
 
 }
 

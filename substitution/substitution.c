@@ -32,7 +32,7 @@ int main(int argc, string argv[])
 
 bool charaterunits(y)
 {
-   int a = strlen (y);
+   int a = strlen(y);
    if (a == 26)
    {return false;}
    else

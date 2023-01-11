@@ -30,7 +30,7 @@ int main(int argc, string argv[])
 
 }
 
-bool charaterunits(y)
+bool charaterunits(string y)
 {
    int a = strlen(y);
    if (a == 26)
@@ -42,7 +42,7 @@ bool charaterunits(y)
 bool only_letter (string x)
 {
     int a = strlen(x);
-    for (i = 0; i < a; i++)
+    for (int i = 0; i < a; i++)
     {
         if (isalpha(x[i]) == 0)
         {

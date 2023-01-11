@@ -32,7 +32,11 @@ int main(int argc, string argv[])
 
 bool charaterunits(y)
 {
-
+   int a = strlen (y);
+   if (a == 26)
+   {return false;}
+   else
+   {return true;}
 }
 
 bool only_letter (string x)
@@ -44,5 +48,5 @@ bool only_letter (string x)
         {return true;
         break;}
     }
-    return false
+    return false;
 }

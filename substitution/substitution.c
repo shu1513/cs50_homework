@@ -35,8 +35,8 @@ bool charaterunits(y)
     int a = strlen(y)
     for (i = 0; i < a; i++)
     {
-        if isalpha(y[i])
-        {return }
+        if (isalpha(y[i]) == 0)
+
     }
 }
 

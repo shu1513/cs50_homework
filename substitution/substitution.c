@@ -13,11 +13,11 @@ int main(int argc, string argv[])
     {printf("Usage: ./substitution key\n");
     return 1;}
     //check if the input is only letter
-    if only_letter (argv[1])
-    {printf("Usage: ./substitution key should only contain non-repeat alphabet\n")}
+    if (only_letter (argv[1]))
+    {printf("Usage: ./substitution key should only contain non-repeat alphabet\n");}
 
     //check if the input is 26 characters
-    if charactersunits(argv[1])
+    if (charactersunits(argv[1]))
     {
         printf("Key must contain 26 characters.\n");
     }

@@ -37,7 +37,7 @@ bool charaterunits(y)
     {
         if (isalpha(y[i]) == 0)
         {return true;
-        break}
+        break;}
     }
     return false
 }

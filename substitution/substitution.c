@@ -32,27 +32,17 @@ int main(int argc, string argv[])
 
 bool charaterunits(y)
 {
-    int a = strlen(y)
-    for (i = 0; i < a; i++)
-    {
-        if (isalpha(y[i]) == 0)
-        {return true;
-        break;}
-    }
-    return false
+
 }
 
 bool only_letter (string x)
 {
-    int i = strlen(x);
-
-    for (int j =0; j < i; j++)
+    int a = strlen(x)
+    for (i = 0; i < a; i++)
     {
-
-   if (((int)x[j] > 64 && (int)x[j] < 91) || ((int)x[j] > 96 && (int)x[j] < 123))
-   {
-    return true;
+        if (isalpha(x[i]) == 0)
+        {return true;
+        break;}
     }
-    }
-    return false;
+    return false
 }

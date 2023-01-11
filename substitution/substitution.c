@@ -36,8 +36,10 @@ bool charaterunits(y)
     for (i = 0; i < a; i++)
     {
         if (isalpha(y[i]) == 0)
-
+        {return true
+        break}
     }
+    return false
 }
 
 bool only_letter (string x)

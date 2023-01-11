@@ -29,6 +29,11 @@ int main(int argc, string argv[])
 
 }
 
+bool charaterunits(y)
+{
+    for(i = 0; i )
+}
+
 bool only_letter (string x)
 {
     int i = strlen(x);

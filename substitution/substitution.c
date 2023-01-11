@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <ctype.h>
 
 bool only_letter (string x)
 
@@ -15,7 +16,7 @@ int main(int argc, string argv[])
     //make sure no letter repeats
 
     //get plaintext
-    //assign plaintext 
+    //assign plaintext
     //conver everything into upper case
 
 }

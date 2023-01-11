@@ -41,12 +41,14 @@ bool charaterunits(y)
 
 bool only_letter (string x)
 {
-    int a = strlen(x)
+    int a = strlen(x);
     for (i = 0; i < a; i++)
     {
         if (isalpha(x[i]) == 0)
-        {return true;
-        break;}
+        {
+            return true;
+            break;
+        }
     }
     return false;
 }

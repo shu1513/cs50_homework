@@ -17,7 +17,7 @@ int main(int argc, string argv[])
     {printf("Usage: ./substitution key should only contain non-repeat alphabet\n");}
 
     //check if the input is 26 characters
-    if (charactersunits(argv[1]))
+    if (characterunits(argv[1]))
     {
         printf("Key must contain 26 characters.\n");
     }

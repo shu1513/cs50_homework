@@ -14,7 +14,7 @@ int main(int argc, string argv[])
     return 1;}
     //check if the input is only letter
     if (only_letter (argv[1]))
-    {printf("Usage: ./substitution key should only contain non-repeat alphabet\n");}
+    {printf("Usage: ./substitution \nkey should only contain non-repeat alphabet\n");}
 
     //check if the input is 26 characters
     if (characterunits(argv[1]))

@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
 
 bool only_letter (string x);
 bool characterunits(string y);
@@ -31,7 +32,7 @@ int main(int argc, string argv[])
 
 bool charaterunits(y)
 {
-    for(i = 0; i )
+    int a = strlen(y)
 }
 
 bool only_letter (string x)

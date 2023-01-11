@@ -33,6 +33,10 @@ int main(int argc, string argv[])
 bool charaterunits(y)
 {
     int a = strlen(y)
+    for (i = 0; i < a; i++)
+    {
+        i
+    }
 }
 
 bool only_letter (string x)

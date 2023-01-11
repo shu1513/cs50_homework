@@ -30,7 +30,7 @@ int main(int argc, string argv[])
 
 }
 
-bool charaterunits(string y)
+bool characterunits(string y)
 {
    int a = strlen(y);
    if (a == 26)

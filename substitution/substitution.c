@@ -29,6 +29,9 @@ int main(int argc, string argv[])
     //get plaintext
     //assign plaintext
     //conver everything into upper case
+    // make that A-Z
+    //conver ecerything to lower case
+    // make that a-z
 
 }
 

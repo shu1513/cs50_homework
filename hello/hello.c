@@ -6,11 +6,12 @@ void draw(int n);
 
 int main (void)
 {
-    int n = get_int("Enter Height here  ");
-    draw(n);
+    int height = get_int("Enter Height here  ");
+    draw(height);
 }
 
 void draw(int n)
 {
+    draw(n-1);
     
 }

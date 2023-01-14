@@ -2,9 +2,10 @@
 #include <cs50.h>
 #include <string.h>
 
+void draw(int n)
 
 int main (void)
 {
-    int i = 8 % 10000;
-    printf("%i\n", i);
+    int 
+    draw()
 }

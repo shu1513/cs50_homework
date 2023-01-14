@@ -2,10 +2,15 @@
 #include <cs50.h>
 #include <string.h>
 
-void draw(int n)
+void draw(int n);
 
 int main (void)
 {
-    int 
-    draw()
+    int n = get_int("Enter Height here  ");
+    draw(n);
+}
+
+void draw(int n)
+{
+    
 }

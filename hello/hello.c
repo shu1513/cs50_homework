@@ -14,5 +14,17 @@ int main (void)
 
 int collatz (int x)
 {
+    if x == 1;
+    (
+        return;
+    )
+    if (x % 2 == 0)
+    {
+        x = x/2
+    }
+    if x % 2 !=0
+    {
+        x = x*3+1
+    }
 
 }

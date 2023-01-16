@@ -29,7 +29,7 @@ int collatz (int x)
         n++;
        // again loop back
     }
-    if (x % 2 != 0)
+    if (x % 2 != 0 && x != 1)
     {
         x = x*3 +1;
         n++;

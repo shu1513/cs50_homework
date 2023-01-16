@@ -20,11 +20,11 @@ int collatz (int x)
     )
     elif (x % 2 == 0)
     {
-        collatz(x/2)
+        collatz(x/2);
     }
     else (x % 2 != 0)
     {
-        collatz(x*3+1)
+        collatz(x*3+1);
     }
     // get the number to 1 using collatz
     // get how many times it took to get to collatz

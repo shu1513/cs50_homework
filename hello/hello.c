@@ -19,7 +19,7 @@ int collatz (int x)
     //count times
     // int n = count times
 
-    int n = 1;
+    int n = 0;
     while (x != 1)
     {
 

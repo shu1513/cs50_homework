@@ -20,7 +20,7 @@ int collatz (int x)
     )
     elif (x % 2 == 0)
     {
-        x = x/2
+        collatz(x) = x/2
     }
     elif (x % 2 != 0)
     {

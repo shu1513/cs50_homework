@@ -27,6 +27,6 @@ int collatz (int x)
         x = x*3+1
     }
     // return how many steps it took
-    return
+    return n;
 
 }

@@ -22,7 +22,7 @@ int collatz (int x)
         return n;
     }
     if( x % 2 == 0)
-    {collatz(x); 
+    {collatz(x/2);
     n++;
     //do a collatz process and add 1 to N
     //count times

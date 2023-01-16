@@ -16,7 +16,7 @@ int collatz (int x)
 {
     if x == 1;
     (
-        return;
+        return 1;
     )
     elif (x % 2 == 0)
     {
@@ -26,5 +26,6 @@ int collatz (int x)
     {
         x = x*3+1
     }
+    // return how many steps it took
 
 }

@@ -18,11 +18,11 @@ int collatz (int x)
     (
         return;
     )
-    if (x % 2 == 0)
+    elif (x % 2 == 0)
     {
         x = x/2
     }
-    if (x % 2 != 0)
+    elif (x % 2 != 0)
     {
         x = x*3+1
     }

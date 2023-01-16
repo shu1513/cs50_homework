@@ -20,12 +20,14 @@ int collatz (int x)
     )
     elif (x % 2 == 0)
     {
-        collatz(x) = x/2
+        collatz(x/2)
     }
-    elif (x % 2 != 0)
+    else (x % 2 != 0)
     {
-        x = x*3+1
+        collatz(x*3+1)
     }
+    // get the number to 1 using collatz
+    // get how many times it took to get to collatz
     // return how many steps it took
     return n;
 

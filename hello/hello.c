@@ -22,7 +22,7 @@ int collatz (int x)
     {
         x = x/2
     }
-    if x % 2 !=0
+    if (x % 2 != 0)
     {
         x = x*3+1
     }

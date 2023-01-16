@@ -32,7 +32,5 @@ int collatz (int x)
     {collatz(x*3+1);
     n++;
     }
-
-
     return n;
 }

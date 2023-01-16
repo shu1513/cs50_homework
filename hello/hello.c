@@ -17,7 +17,8 @@ int main (void)
 int collatz (int x)
 {
     int n = 0;
-    collatz
+    collatz()
+    n++
     //do a collatz process and add 1 to N
     //count times
     // int n = count times

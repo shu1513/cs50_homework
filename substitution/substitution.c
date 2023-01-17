@@ -25,7 +25,7 @@ int main(int argc, string argv[])
         return 1;
     }
     //make sure no letter repeats
-    if repeat(argv[1])
+    if (repeat(argv[1]))
     {
         printf("letters can't repeat.");
         return 1;
@@ -69,7 +69,7 @@ bool repeat(string z)
 {
     // conver everything into upper case
     int n = strlen(z);
-    for (int i = 0; i < n, i++)
+    for (int i = 0; i < n; i++)
     {
        z[i] = toupper(z[i]);
     }

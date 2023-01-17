@@ -67,5 +67,11 @@ bool only_letter (string x)
 
 bool repeat(string z)
 {
-    
+    // conver everything into upper case
+    int n = strlen(z);
+    for (int i = 0; i < n, i++)
+    {
+        z[i]
+    }
+    //
 }

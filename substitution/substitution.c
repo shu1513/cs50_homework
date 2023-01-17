@@ -24,6 +24,11 @@ int main(int argc, string argv[])
         return 1;
     }
     //make sure no letter repeats
+    if repeat(argv[1])
+    {
+        printf("letters can't repeat.")
+    }
+
 
 
     //get plaintext

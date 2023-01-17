@@ -5,6 +5,7 @@
 
 bool only_letter (string x);
 bool characterunits(string y);
+bool repeat(string z);
 
 int main(int argc, string argv[])
 {
@@ -26,7 +27,8 @@ int main(int argc, string argv[])
     //make sure no letter repeats
     if repeat(argv[1])
     {
-        printf("letters can't repeat.")
+        printf("letters can't repeat.");
+        return 1;
     }
 
 
@@ -61,4 +63,9 @@ bool only_letter (string x)
         }
     }
     return false;
+}
+
+bool repeat(string z)
+{
+    
 }

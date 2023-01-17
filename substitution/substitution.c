@@ -71,7 +71,7 @@ bool repeat(string z)
     int n = strlen(z);
     for (int i = 0; i < n, i++)
     {
-        z[i]
+       z[i] = toupper(z[i]);
     }
     //
 }

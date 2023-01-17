@@ -75,7 +75,13 @@ bool repeat(string z)
     }
     for (int i = 0; i < n; i++)
     {
-        for (int j = i + 1; j < n)
+        for (int j = i + 1; j < n; j++)
+        {
+            if (z[i] == z[j])
+            {
+                return true;
+            }
+        }
     }
-    //
+    return false;
 }

@@ -27,7 +27,7 @@ int main(int argc, string argv[])
     //make sure no letter repeats
     if (repeat(argv[1]))
     {
-        printf("letters can't repeat.");
+        printf("letters can't repeat.\n");
         return 1;
     }
 

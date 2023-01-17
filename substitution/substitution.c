@@ -73,5 +73,9 @@ bool repeat(string z)
     {
        z[i] = toupper(z[i]);
     }
+    for (int i = 0; i <n, i++)
+    {
+        
+    }
     //
 }

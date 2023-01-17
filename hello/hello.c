@@ -16,21 +16,14 @@ int main (void)
 
 int collatz (int x)
 {
-    int n = 0;
     if (x == 1)
     {
-        return n;
+        return 0;
     }
-    if( x % 2 == 0)
-    {collatz(x/2);
-    n++;
-    //do a collatz process and add 1 to N
-    //count times
-    // int n = count times
+    else if( x % 2 == 0)
+    {return 1 + collatz(x/2);
     }
     else
-    {collatz(x*3+1);
-    n++;
+    {return 1 + collatz(x*3+1);
     }
-    return n;
 }

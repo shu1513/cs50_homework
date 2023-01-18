@@ -89,7 +89,7 @@ bool repeat(string z)
     return false;
 }
 
-string convert (string a)
+string convert (string a, string b)
 {
-    toupper(argv[1])
+    toupper(b)
 }

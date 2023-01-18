@@ -6,6 +6,7 @@
 bool only_letter (string x);
 bool characterunits(string y);
 bool repeat(string z);
+string convert (string a);
 
 int main(int argc, string argv[])
 {
@@ -31,7 +32,7 @@ int main(int argc, string argv[])
         return 1;
     }
     //convert plain text into ciphertext
-    
+    string b = convert(argv[1])
 
 
 

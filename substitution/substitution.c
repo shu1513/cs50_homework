@@ -91,5 +91,9 @@ bool repeat(string z)
 
 string convert (string a, string b)
 {
-    toupper(b)
+    
+    for (i = 0, i <26; i++)
+    {
+        toupper(b[i])
+    }
 }

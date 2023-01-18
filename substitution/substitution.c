@@ -103,6 +103,6 @@ string convert (string a, string b)
     int n = strlen(a);
     for (i = 0; i < n; i++)
     {
-        if 
+        if (a[i] >= 'A' && <= 'Z')
     }
 }

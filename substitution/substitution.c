@@ -91,9 +91,14 @@ bool repeat(string z)
 
 string convert (string a, string b)
 {
-    
+    char uarray[26];
     for (i = 0, i <26; i++)
     {
-        toupper(b[i])
+        uarray[i] = toupper(b[i]);
     }
+    char larray[26];
+    {
+        larray[i] = tolower(b[i]);
+    }
+    
 }

@@ -104,5 +104,8 @@ string convert (string a, string b)
     for (i = 0; i < n; i++)
     {
         if (a[i] >= 'A' && <= 'Z')
+        {
+            if a[i] = 
+        }
     }
 }

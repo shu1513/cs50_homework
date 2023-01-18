@@ -32,7 +32,9 @@ int main(int argc, string argv[])
         return 1;
     }
     //convert plain text into ciphertext
-    string b = convert(argv[1])
+    string b = convert(argv[1]);
+
+    printf("ciphertext: %s\n", b)
 
 
 

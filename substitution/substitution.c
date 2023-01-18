@@ -90,5 +90,5 @@ bool repeat(string z)
 
 string convert (string a)
 {
-    
+    toupper()
 }

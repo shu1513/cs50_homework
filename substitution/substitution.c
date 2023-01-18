@@ -6,7 +6,7 @@
 bool only_letter (string x);
 bool characterunits(string y);
 bool repeat(string z);
-string convert (string a);
+string convert (string a, string b);
 
 int main(int argc, string argv[])
 {
@@ -33,7 +33,7 @@ int main(int argc, string argv[])
     }
     //convert plain text into ciphertext
 
-    string c = convert(get_string("plaintext:  \n"));
+    string c = convert(get_string("plaintext:  \n"), argv[1]);
 
     printf("ciphertext: %s\n", c);
     //get plaintext

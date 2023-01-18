@@ -107,7 +107,7 @@ string convert (string a, string b)
         {
             if (a[i] = 'A')
             {
-                a[i] = uarray[0]
+                a[i] = uarray[0];
             }
         }
     }

@@ -32,9 +32,10 @@ int main(int argc, string argv[])
         return 1;
     }
     //convert plain text into ciphertext
-    string b = convert(argv[1]);
 
-    printf("ciphertext: %s\n", b);
+    string c = convert(get_string("plaintext:  \n"));
+
+    printf("ciphertext: %s\n", c);
     //get plaintext
     //assign plaintext
     //conver everything into upper case
@@ -90,5 +91,5 @@ bool repeat(string z)
 
 string convert (string a)
 {
-    toupper()
+    toupper(argv[1])
 }

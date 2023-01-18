@@ -100,5 +100,9 @@ string convert (string a, string b)
     {
         larray[i] = tolower(b[i]);
     }
-    
+    int n = strlen(a);
+    for (i = 0; i < n; i++)
+    {
+        
+    }
 }

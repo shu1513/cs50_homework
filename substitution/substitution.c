@@ -105,7 +105,10 @@ string convert (string a, string b)
     {
         if (a[i] >= 'A' && <= 'Z')
         {
-            if a[i] = 
+            if (a[i] = 'A')
+            {
+                a[i] = uarray[0]
+            }
         }
     }
 }

@@ -87,3 +87,8 @@ bool repeat(string z)
     }
     return false;
 }
+
+string convert (string a)
+{
+    
+}

@@ -30,6 +30,7 @@ int main(int argc, string argv[])
         printf("letters can't repeat.\n");
         return 1;
     }
+    //convert 
 
 
 

@@ -70,6 +70,7 @@ bool vote(string name)
 
 void print_winner(void)
 {
+    int max_votes = 0;
     for (int i = 0; i < candidate_count; i++)
     {
        // candidates[i].votes biggest

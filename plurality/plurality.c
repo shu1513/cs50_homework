@@ -25,7 +25,7 @@ int main(int argc, string argv[])
         printf("Usage: plurality [candidate ...]\n");
         return 1;
     }
-    
+
     candidate_count = argc - 1;
     if (candidate_count > MAX)
     {
@@ -40,12 +40,10 @@ int main(int argc, string argv[])
 
     int voter_count = get_int("Number of voters: ");
 
-    // Loop over all voters
     for (int i = 0; i < voter_count; i++)
     {
         string name = get_string("Vote: ");
 
-        // Check for invalid vote
         if (!vote(name))
         {
             printf("Invalid vote.\n");

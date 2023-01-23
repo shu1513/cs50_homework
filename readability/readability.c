@@ -4,6 +4,7 @@
 int get_characters(string x);
 int get_words(string y);
 int get_sentences(string z);
+int get_grade_level(int a, int b, int c)
 
 int main(void)
 {
@@ -15,6 +16,7 @@ int main(void)
     int number_of_words = get_words(user_input);
     //count sentences by special characters
     int number_of_sentences = get_sentences(user_input);
-    //calculate grade level using formular 
+    //calculate grade level using formular
     int grade_level = get_grade_level(number_of_characters, number_of_words, number_of_sentences);
+    printf("Grade \n")
 }

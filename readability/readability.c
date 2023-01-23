@@ -9,7 +9,7 @@ int get_grade_level(int a, int b, int c)
 int main(void)
 {
     string user_input = get_string ("Text: \n");
-
+    int string_length = 
     //count characters
     int number_of_characters = get_characters(user_input);
     //count words using spaces

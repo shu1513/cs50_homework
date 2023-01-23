@@ -18,5 +18,22 @@ int main(void)
     int number_of_sentences = get_sentences(user_input);
     //calculate grade level using formular
     int grade_level = get_grade_level(number_of_characters, number_of_words, number_of_sentences);
-    printf("Grade \n")
+    void print_grade(grade_level);
+}
+
+void print_grade(grade_level)
+
+{
+    if (grade_level < 1)
+    {
+        printf("Before Grade 1\n");
+    }
+    if (grade_level >1)
+    {
+        printf("Grade 16+\n");
+    }
+    else
+    {
+        printf("Grade \n");
+    }
 }

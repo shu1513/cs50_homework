@@ -127,7 +127,10 @@ int main(int argc, string argv[])
 // Record preference if vote is valid
 bool vote(int voter, int rank, string name)
 {
-    // TODO
+    if (strcmp(name, candidates[i].name) == 0)
+    {
+        
+    }
     return false;
 }
 

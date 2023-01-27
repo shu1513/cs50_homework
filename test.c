@@ -11,7 +11,10 @@ int main(void)
 
 void draw(int n)
 {
-
+    if (n <= 0)
+    {
+        printf("Height needs to be a positive number. \n")
+    }
     for(int i = 0; i < 1; i++)
     {
         printf("#");

@@ -6,18 +6,19 @@ void draw(int n);
 int main(void)
 {
     int a = get_int("height:  ");
-    draw(a)
+    draw(a);
 }
 
 void draw(int n)
 {
     if (n <= 0)
     {
-        printf("Height needs to be a positive number. \n")
+        return;
     }
-    for(int i = 0; i < 1; i++)
+    draw(n-1);
+    for (int i = 0; i < n; i++)
     {
         printf("#");
     }
-    draw(n);
+    printf("\n");
 }

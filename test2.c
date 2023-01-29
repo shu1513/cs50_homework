@@ -4,6 +4,6 @@
 int main(void)
 {
     char a = 'q';
-    char *p = &a;
+    int *p = &a;
     printf("%p\n", p);
 }

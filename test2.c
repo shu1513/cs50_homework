@@ -4,5 +4,6 @@
 int main(void)
 {
     string a = "Hi!";
-    string 
+    string *b = &a;
+    printf("%p\n", &a);
 }

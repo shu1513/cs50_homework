@@ -3,8 +3,6 @@
 
 int main(void)
 {
-    char a = 'q';
-    char *p = &a;
-    char *x = &p;
-    printf("%p\n", x);
+    string a = "Hi!";
+    string 
 }

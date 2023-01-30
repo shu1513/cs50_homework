@@ -5,6 +5,6 @@ int main(void)
 {
     char a = 'q';
     char *p = &a;
-    int *x = &p;
+    char *x = &p;
     printf("%p\n", x);
 }

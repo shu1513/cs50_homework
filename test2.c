@@ -1,8 +1,12 @@
-
+#include <cs50.h>
 #include <stdio.h>
 
 int main(void)
 {
-    char *a = "Hi!";
-    printf("%p\n", a);
+    string a = "Hi!";
+    string b = get_string("b: ");
+    if (*a == *b)
+    {printf("same\n");}
+    else
+    {printf("different\n");}
 }

@@ -5,12 +5,12 @@ void calculate (&a)
 int main(void)
 {
  int a = 20;
- *p = NULL
+ int *p = NULL
  void calcualte(p)
     printf("%i\n", *p);
 }
 
 void calcualte(&a)
 {
-    *a = 21;
+    a = 21;
 }

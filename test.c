@@ -1,16 +1,17 @@
 # include <cs50.h>
 #include <stdio.h>
 
-void calculate (&a)
+void calculate (void);
 int main(void)
 {
  int a = 20;
- int *p = NULL
- void calcualte(p)
-    printf("%i\n", *p);
+
+ calcualte();
+    printf("%i\n", a);
 }
 
-void calcualte(&a)
+void calcualte(void);
 {
-    a = 21;
+    int *p = &a;
+    *p = 21
 }

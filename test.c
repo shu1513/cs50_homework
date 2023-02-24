@@ -1,16 +1,16 @@
 # include <cs50.h>
 #include <stdio.h>
 
-void calcualate (int *b);
+void math (int *b);
 int main(void)
 {
     int a = 20;
     int *p = &a;
-    calcualte(p);
+    math(p);
     printf("%i\n", a);
 }
 
-void calcualte(int *b)
+void math(int *b)
 {
-    b = 21;
+    *b = 21;
 }

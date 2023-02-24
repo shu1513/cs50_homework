@@ -5,5 +5,7 @@ int main(void)
 {
  int a = 20;
     int *p = &a;
-    printf("%p", p);
+    int x = *p;
+    printf("%i", x);
+
 }

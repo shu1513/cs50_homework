@@ -3,5 +3,5 @@
 
 int main (int argc, string argv[])
 {
-    FILE *filelocation = fopen(argv[1])
+    FILE *filelocation = fopen(argv[1], "r");
 }

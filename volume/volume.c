@@ -24,14 +24,6 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    uint8_t header[HEADER_SIZE];
-
-    fread(header, sizeof(uint8_t), HEADER_SIZE, input);
-    fwrite(header, sizeof(uint8_t), HEADER_SIZE, output);
-
-    int16_t buffer;
-    while (fread(&buffer, sizeof(int16_t), 1, input) != 0)
-
     FILE *output = fopen(argv[2], "w");
     if (output == NULL)
     {
@@ -40,6 +32,19 @@ int main(int argc, char *argv[])
     }
 
     float factor = atof(argv[3]);
+    uint8_t header[HEADER_SIZE];
+
+    fread(header, sizeof(uint8_t), HEADER_SIZE, input);
+    fwrite(header, sizeof(uint8_t), HEADER_SIZE, output);
+
+    int16_t buffer;
+    while (fread(&buffer, sizeof(int16_t), 1, input) != 0)
+    {
+        buffer *= factor;
+        fwrite((&buffer, sizeof(int16_t), 1, output));
+    }
+
+
 
 
     // TODO: Copy header from input file to output file

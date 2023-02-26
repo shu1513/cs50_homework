@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    uint8_t header[n];
+    uint8_t header[HEADER_SIZE];
 
     FILE *output = fopen(argv[2], "w");
     if (output == NULL)
@@ -34,6 +34,7 @@ int main(int argc, char *argv[])
     }
 
     float factor = atof(argv[3]);
+
 
     // TODO: Copy header from input file to output file
 

@@ -25,7 +25,8 @@ int main(int argc, char *argv[])
     }
 
     uint8_t header[HEADER_SIZE];
-    fread(header, uint8_t, )
+
+    fread(header, sizeof(uint8_t), HEADER_SIZE, )
 
     FILE *output = fopen(argv[2], "w");
     if (output == NULL)

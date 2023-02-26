@@ -1,12 +1,12 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void)
 {
-    string a = "Hi!";
-    string b = get_string("b: ");
-    if (*a == *b)
-    {printf("same\n");}
-    else
-    {printf("different\n");}
+    int *a = malloc((sizeof(int)));
+    *a = 20;
+    printf("%i \n", *a);
+   
+
 }

@@ -30,7 +30,8 @@ int main(int argc, char *argv[])
     fwrite(header, sizeof(uint8_t), HEADER_SIZE, output);
 
     int16_t buffer;
-    
+    while (fread(&buffer, sizeof(int16_t), 1, input) != 0)
+
     FILE *output = fopen(argv[2], "w");
     if (output == NULL)
     {

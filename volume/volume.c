@@ -29,6 +29,8 @@ int main(int argc, char *argv[])
     fread(header, sizeof(uint8_t), HEADER_SIZE, input);
     fwrite(header, sizeof(uint8_t), HEADER_SIZE, output);
 
+    int16_t buffer;
+    
     FILE *output = fopen(argv[2], "w");
     if (output == NULL)
     {

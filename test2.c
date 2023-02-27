@@ -4,7 +4,8 @@
 
 int main(void)
 {
-    char array[] = "Here is the string";
+    char array[50];
+    printf("input 50 characters or less ");
     printf("%s\n", array);
 
 }

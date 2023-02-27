@@ -5,6 +5,6 @@
 int main(void)
 {
     char array[] = "Here is the string";
-
+    printf("%s\n", array);
 
 }

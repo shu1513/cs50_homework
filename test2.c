@@ -4,10 +4,7 @@
 
 int main(void)
 {
-    int n;
-    printf("enter number here ");
-    scanf("%i", &n);
-    printf("n is %i\n", n);
+    char array[] = "Here is the string";
 
 
 }

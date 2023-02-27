@@ -5,7 +5,8 @@
 int main(void)
 {
     int n;
-    scanf("")
+    printf("enter number her \n")
+    scanf("%i", &n)
 
 
 }

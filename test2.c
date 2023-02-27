@@ -5,8 +5,9 @@
 int main(void)
 {
     int n;
-    printf("enter number her \n")
-    scanf("%i", &n)
+    printf("enter number here ");
+    scanf("%i", &n);
+    printf("n is %i\n", n);
 
 
 }

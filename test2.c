@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
         }
         n->number = atoi(argv[i]);
         n->next = NULL;
-        n->nest = list;
+        n->next = list;
         list = n;
     }
 }

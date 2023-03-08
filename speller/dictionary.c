@@ -24,6 +24,7 @@ bool check(const char *word)
 {
     // TODO
     int n = hash(word);
+    while table[n]
     return false;
 }
 

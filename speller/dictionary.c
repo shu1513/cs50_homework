@@ -25,7 +25,10 @@ bool check(const char *word)
     // TODO
     int n = hash(word);
     node *cursor = //linked list head
-    while cursor != NULL
+    while (cursor != NULL)
+    {
+        strcasecmp(word, head->word)
+    }
     return false;
 }
 

@@ -32,7 +32,7 @@ bool check(const char *word)
             return true;
             break;
         }
-        if (strcasecmp(word, cursor->word,) != 0)
+        else
         {
             cursor = cursor -> next;
         }

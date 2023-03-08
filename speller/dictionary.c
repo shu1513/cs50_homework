@@ -27,17 +27,17 @@ bool check(const char *word)
     node *cursor = table[n];
     while (cursor != NULL)
     {
-        if (strcasecmp(word, table[n]->word,) == o)
+        if (strcasecmp(word, cursor->word) == 0)
         {
             return true;
             break;
         }
-        if (strcasecmp(word, table[n]->word,) != 0)
+        if (strcasecmp(word, cursor->word,) != 0)
         {
             cursor = cursor -> next;
         }
     }
-    return true;
+    return false;
 }
 
 // Hashes word to a number

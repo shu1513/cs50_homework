@@ -24,7 +24,8 @@ bool check(const char *word)
 {
     // TODO
     int n = hash(word);
-    while table[n]
+    node *cursor = //linked list head
+    while cursor != NULL
     return false;
 }
 

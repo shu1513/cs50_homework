@@ -24,10 +24,10 @@ bool check(const char *word)
 {
     // TODO
     int n = hash(word);
-    node *cursor = //linked list head
+    node *cursor = &table[n];
     while (cursor != NULL)
     {
-        strcasecmp(word, head->word)
+        strcasecmp(word, table[n]->word,)
     }
     return false;
 }

@@ -27,7 +27,15 @@ bool check(const char *word)
     node *cursor = &table[n];
     while (cursor != NULL)
     {
-        if strcasecmp(word, table[n]->word,)
+        if (strcasecmp(word, table[n]->word,) == o)
+        {
+            return true;
+            break;
+        }
+        if (strcasecmp(word, table[n]->word,) != 0)
+        {
+            cursor = cursor -> next
+        }
     }
     return false;
 }

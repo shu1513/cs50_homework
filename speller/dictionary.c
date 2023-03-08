@@ -24,7 +24,7 @@ bool check(const char *word)
 {
     // TODO
     int n = hash(word);
-    node *cursor = &table[n];
+    node *cursor = table[n];
     while (cursor != NULL)
     {
         if (strcasecmp(word, table[n]->word,) == o)
@@ -67,7 +67,8 @@ bool unload(void)
     // TODO
     for (int i = 0, i < N, i++)
     {
-        node *temp 
+        node *temp;
+        
     }
     return false;
 }

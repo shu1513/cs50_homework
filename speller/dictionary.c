@@ -56,7 +56,8 @@ bool load(const char *dictionary)
     {
         return false;
     }
-    while (fscanf(dictfile, "%s",))
+    char str[LENGTH +1]
+    while (fscanf(dictfile, "%s", str) != EOF)
     return false;
 }
 

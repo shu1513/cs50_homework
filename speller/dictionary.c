@@ -75,7 +75,8 @@ bool load(const char *dictionary)
     {
         temp->next = &table[hashnum];
     }
-    return false;
+    fclose(dictfile);
+    return true;
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded

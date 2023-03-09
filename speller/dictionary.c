@@ -56,15 +56,16 @@ unsigned int hash(const char *word)
 bool load(const char *dictionary)
 {
     // TODO
-    FILE *dictfile = fopen(dictionary, 'r');
+    FILE *dictfile = fopen(dictionary, "r");
     if (dictfile == NULL)
     {
         return false;
     }
     char str[LENGTH +1];
+    node *temp = malloc(sizeof(node));
     while (fscanf(dictfile, "%s", str) != EOF)
     {
-        node *temp = malloc(sizeof(node));
+
         if(temp == NULL)
         {
             return false;

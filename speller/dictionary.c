@@ -67,6 +67,14 @@ bool load(const char *dictionary)
         strcpy(temp->word, str);
     }
     int hashnum = hash(str);
+    if (table(hashnum) == NULL)
+    {
+        temp->next = NULL;
+    }
+    else
+    {
+        temp->next = &table(hashnum);
+    }
     return false;
 }
 

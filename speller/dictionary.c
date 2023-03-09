@@ -1,5 +1,5 @@
 // Implements a dictionary's functionality
-
+#include <stdio.h>
 #include <ctype.h>
 #include <stdbool.h>
 
@@ -58,7 +58,7 @@ bool load(const char *dictionary)
     {
         return false;
     }
-    char str[LENGTH +1]
+    char str[LENGTH +1];
     while (fscanf(dictfile, "%s", str) != EOF)
     {
         node *temp = malloc(sizeof(node));

@@ -1,6 +1,3 @@
-def main():
-    meow("hello")
-def meow(n):
-    for i in range(n):
-        print("meow")
-main()
+for i in range(3):
+    for j in range(3):
+        print("#",end="")

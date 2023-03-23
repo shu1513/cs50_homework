@@ -4,5 +4,5 @@ while True:
     if 1 <= a <= 8:
         break
 for i in range(1, a-1):
-    print(" "* (a-i) + "#"*i)
+    print(" "* (a-i) + "#"*i + "  " + "#"*i)
 

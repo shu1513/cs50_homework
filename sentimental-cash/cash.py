@@ -6,10 +6,13 @@ def main():
     cents = get_cents()
 
     quaters = get_quaters(cents)
+    cents = cents - quaters*25
 
     dimes = get_dimes(cents)
+    cents = cents - dimes*10
 
     nickels = get_nickels(cents)
+    cents = cents - nickels*5
 
     pennies = get_pennies(cents)
 
@@ -26,6 +29,19 @@ def get_cents():
     return cents
 
 def get_quaters(cents):
-    cents 
+    quaters = int(cents/25)
+    return quaters
+
+def get_dimes(cents):
+    dimes = int(cents/10)
+    return dimes
+
+def get_nickels(cents):
+    nickels = int(cents/5)
+    return nickels
+
+def get_pennies(cents):
+    pennies = cents
+    return pennies
 
 main()

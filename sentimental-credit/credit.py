@@ -20,9 +20,9 @@ def get_number():
 def check_validity(number):
     length = len(str(number))
     if (length == 13 or length == 15 or length == 16) and checksum(number):
-
-
-
+        return True
+    else:
+        return False
 
 
 def checksum(number):

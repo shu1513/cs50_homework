@@ -18,7 +18,14 @@ def get_number():
         break
 
 def check_validity(number):
-    
+    length = len(str(number))
+    if (length == 13 or length == 15 or length == 16) and checksum(number):
+
+
+
+
+
+def checksum(number):
 
 def print_brand(number):
 

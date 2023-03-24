@@ -1,2 +1,2 @@
-a = int(2/3)
+a = int(4/3)
 print(a)

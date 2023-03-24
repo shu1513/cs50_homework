@@ -1,4 +1,2 @@
-for i in range(3):
-    for j in range(3):
-        print("#",end="")
-    print()
+a = int(2/3)
+print(a)

@@ -1,9 +1,12 @@
-def main()
+def main():
 
-credit_card_number = get_number()
+number = get_number()
+
+if check_validity
 
 
 
+def get_number();
 
 
 main()

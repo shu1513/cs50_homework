@@ -16,7 +16,7 @@ def main():
 
     pennies = get_pennies(cents)
 
-    coins = quaters + dimes + nickels + pennies
+    coins = int(quaters + dimes + nickels + pennies)
 
     print(coins)
 

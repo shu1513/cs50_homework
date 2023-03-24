@@ -22,7 +22,8 @@ def get_cents()
         change_owed = cs50.get_float("Change owed: ")
         if change_owed > 0:
             break
-    cents = change_owed %.2 1
+    cents = round(change_owed % 1, 2)
+    return cents
 
 
 

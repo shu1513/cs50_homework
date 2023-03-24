@@ -14,7 +14,7 @@ def main():
     nickels = get_nickels(cents)
     cents = cents - nickels*5
 
-    pennies = get_pennies(cents)
+    pennies = cents
 
     coins = int(quaters + dimes + nickels + pennies)
 
@@ -39,9 +39,5 @@ def get_dimes(cents):
 def get_nickels(cents):
     nickels = int(cents/5)
     return nickels
-
-def get_pennies(cents):
-    pennies = cents
-    return pennies
 
 main()

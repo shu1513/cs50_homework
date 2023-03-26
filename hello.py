@@ -1,2 +1,3 @@
-a = int(4/3)
-print(a)
+print("what's your name? ", end="")
+name = input()
+print(f"hi {name}")

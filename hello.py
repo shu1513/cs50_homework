@@ -1,3 +1,5 @@
 print("what's your name? ", end="")
 name = input()
-print("hi ", name, sep="")
+print("what's your last name? ", end="")
+y = input()
+print("hi ", name, " ", y, sep="")

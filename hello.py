@@ -1,5 +1,5 @@
 print("what's your name? ", end="")
-name = input()
+name = input().strip().capitalize()
 print("what's your last name? ", end="")
 y = input()
 print("hi ", name, " ", y , sep="", end="")

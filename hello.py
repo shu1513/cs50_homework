@@ -1,3 +1,3 @@
 print("what's your name? ", end="")
 name = input()
-print("hi", end="", name)
+print("hi ", name, sep="")

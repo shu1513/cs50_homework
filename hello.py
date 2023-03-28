@@ -1,5 +1,4 @@
 print("what's your name? ", end="")
-name = input().strip().capitalize()
-print("what's your last name? ", end="")
-y = input()
-print("hi ", name, " ", y , sep="", end="")
+name = input().strip().capitalize().split
+
+print("hi ", name[0], " ", sep="",)

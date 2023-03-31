@@ -16,7 +16,9 @@ index = 0.0588 * L - 0.296 * S - 15.8
 def countletters(text):
     sum = 0
     for i in text:
-        if i 
+        if 64 < i < 91 or 96 < i < 123:
+            sum += 1
+return sum 
 
 
 main()

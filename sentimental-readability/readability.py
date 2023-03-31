@@ -27,8 +27,7 @@ def countwords(text):
     sum = 0
     for i in text:
         match ord(i):
-            case ord(i):
-        32:
+            case 32:
                 sum += 1
     return sum + 1
 

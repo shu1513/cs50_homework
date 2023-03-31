@@ -27,7 +27,16 @@ def check_validity(number):
 
 def checksum(number):
     sum = 0
-    
+    i = 0
+    while ccn != 0:
+        if i % 2 == 0:
+            sum += ccn % 10
+        else:
+            digit = 2 * (ccn % 10)
+            sum = sum + (digit // 10 + digit % 10)
+        i += 1
+        ccn //= 10
+    return sum % 10 == 0
 
 def print_brand(number):
 

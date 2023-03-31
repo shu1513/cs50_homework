@@ -24,7 +24,8 @@ def countletters(text):
 def countwords(text):
     sum = 0
     for i in text:
-        if i = 32:
+        match i:
+            case 32:
             sum += 1
     return sum
 

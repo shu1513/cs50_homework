@@ -14,11 +14,11 @@ def main():
     S = sentences/words *100
     index = 0.0588 * L - 0.296 * S - 15.8
 # print grade level
-    print(round(index))
+    printgradelevel(index)
 def countletters(text):
     sum = 0
     for i in text:
-        if 64 < i < 91 or 96 < i < 123:
+        if 64 < ord(i) < 91 or 96 < ord(i) < 123:
             sum += 1
     return sum
 
@@ -26,7 +26,7 @@ def countletters(text):
 def countwords(text):
     sum = 0
     for i in text:
-        match i:
+        match ord(i):
             case 32:
                 sum += 1
     return sum
@@ -41,4 +41,6 @@ def countsentences(text):
     return sum
 
 
+def printgradelevel(index):
+    
 main()

@@ -31,8 +31,8 @@ def countwords(text):
 
 def countsentences(text):
     sum = 0
-    for i in text:
-        if i = 
+    match text:
+        
 
 
 main()

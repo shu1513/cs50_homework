@@ -6,7 +6,7 @@ def main():
 #count numnber of letters
     letters = countletters(text)
 #count number of words
-    words = countwords
+    words = countwords(text)
 #count number of sentences
 
 #formular and round up
@@ -18,7 +18,12 @@ def countletters(text):
     for i in text:
         if 64 < i < 91 or 96 < i < 123:
             sum += 1
-return sum 
+return sum
+
+
+def countwords(text):
+    sum = 0
+    if 
 
 
 main()

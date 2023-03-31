@@ -8,7 +8,7 @@ def main():
 #count number of words
     words = countwords(text)
 #count number of sentences
-
+    sentences = countsentences(text)
 #formular and round up
 
 index = 0.0588 * L - 0.296 * S - 15.8
@@ -18,12 +18,21 @@ def countletters(text):
     for i in text:
         if 64 < i < 91 or 96 < i < 123:
             sum += 1
-return sum
+    return sum
 
 
 def countwords(text):
     sum = 0
-    if 
+    for i in text:
+        if i = 32:
+            sum += 1
+    return sum
+
+
+def countsentences(text):
+    sum = 0
+    for i in text:
+        if i = 
 
 
 main()

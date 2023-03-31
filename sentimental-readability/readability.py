@@ -34,7 +34,8 @@ def countwords(text):
 def countsentences(text):
     sum = 0
     for i in text:
-       if i == "." or i == "!" or i == "?":
+       match i:
+           case "."|"!" | "?":
                 sum += 1
     return sum
 

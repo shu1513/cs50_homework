@@ -28,18 +28,27 @@ def check_validity(number):
 def checksum(number):
     sum = 0
     i = 0
-    while ccn != 0:
+    while number != 0:
         if i % 2 == 0:
-            sum += ccn % 10
+            sum += number % 10
         else:
-            digit = 2 * (ccn % 10)
+            digit = 2 * (number % 10)
             sum = sum + (digit // 10 + digit % 10)
         i += 1
-        ccn //= 10
+        number //= 10
     return sum % 10 == 0
 
 def print_brand(number):
-
+    if ((number >= 34e13 and number < 35e13) or
+            (number >= 37e13 and number < 38e13)):
+        print("AMEX")
+    elif (number >= 51e14 and number < 56e14):
+        print("Mastercard")
+    elif ((number >= 4e12 and number < 5e14) or
+            (number >= 4e15 and number < 5e16)):
+        print("VISA")
+    else:
+        print("INVALID")
 
 
 

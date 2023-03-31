@@ -26,7 +26,9 @@ def countletters(text):
 def countwords(text):
     sum = 0
     for i in text:
-        if ord(i) == 32:
+        match ord(i):
+            case ord(i):
+        32:
                 sum += 1
     return sum + 1
 
@@ -35,7 +37,7 @@ def countsentences(text):
     sum = 0
     for i in text:
        match i:
-           case "."|"!" | "?":
+           case "." | "!" | "?":
                 sum += 1
     return sum
 

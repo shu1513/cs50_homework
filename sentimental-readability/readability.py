@@ -1,14 +1,14 @@
 def main():
 
 # get user input
-    text = input("Text: ")
+    user_text = input("Text: ")
 
 #count numnber of letters
-    letters = countletters(text)
+    letters = countletters(user_text)
 #count number of words
-    words = countwords(text)
+    words = countwords(user_text)
 #count number of sentences
-    sentences = countsentences(text)
+    sentences = countsentences(user_text)
 #formular and round up
     L = letters/words *100
     S = sentences/words *100
@@ -41,6 +41,11 @@ def countsentences(text):
     return sum
 
 
-def printgradelevel(index):
-    
+def printgradelevel(result):
+    if result < 1:
+        print("Before Grade 1")
+    elif result > 16:
+        print("Grade 16+")
+    else:
+        print(f"Grade {round(result)}")
 main()

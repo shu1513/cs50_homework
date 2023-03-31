@@ -14,5 +14,9 @@ def main():
 index = 0.0588 * L - 0.296 * S - 15.8
 # print grade level
 def countletters(text):
+    sum = 0
+    for i in text:
+        if i 
+
 
 main()

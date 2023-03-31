@@ -10,9 +10,11 @@ def main():
 #count number of sentences
     sentences = countsentences(text)
 #formular and round up
-
-index = 0.0588 * L - 0.296 * S - 15.8
+    L = letters/words *100
+    S = sentences/words *100
+    index = 0.0588 * L - 0.296 * S - 15.8
 # print grade level
+    print(round(index))
 def countletters(text):
     sum = 0
     for i in text:

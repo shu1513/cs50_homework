@@ -1,7 +1,7 @@
 def main():
 
 # get user input
-    user_text = input("Text: ")
+    user_text = input("Text: ").strip()
 
 #count numnber of letters
     letters = countletters(user_text)

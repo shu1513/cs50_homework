@@ -26,7 +26,8 @@ def check_validity(number):
 
 
 def checksum(number):
-
+    sum = 0
+    
 
 def print_brand(number):
 

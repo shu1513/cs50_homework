@@ -26,17 +26,15 @@ def countletters(text):
 def countwords(text):
     sum = 0
     for i in text:
-        match ord(i):
-            case 32:
+        if ord(i) == 32:
                 sum += 1
     return sum
 
 
 def countsentences(text):
     sum = 0
-    for char in text:
-        match char:
-            case "." | "!" | "?":
+    for i in text:
+       if i == "." or i == "!" or i == "?":
                 sum += 1
     return sum
 

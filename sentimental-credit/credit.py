@@ -15,7 +15,7 @@ def get_number():
     while True:
         number = get_int("Number: ")
         if number >0:
-        break
+            break
 
 
 def check_validity(number):

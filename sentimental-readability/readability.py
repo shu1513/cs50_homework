@@ -32,7 +32,9 @@ def countwords(text):
 def countsentences(text):
     sum = 0
     match text:
-        case "." | "!" | "?"
+        case "." | "!" | "?":
+            sum += 1
+    return sum
 
 
 main()

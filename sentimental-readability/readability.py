@@ -28,7 +28,7 @@ def countwords(text):
     for i in text:
         if ord(i) == 32:
                 sum += 1
-    return sum
+    return sum + 1
 
 
 def countsentences(text):

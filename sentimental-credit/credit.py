@@ -4,18 +4,19 @@ def main():
 
 number = get_number()
 
+
 if check_validity(number):
     print_brand(number)
 else:
     print("Invalid")
 
 
-
 def get_number():
     while True:
         number = get_int("Number: ")
-        if number >0
+        if number >0:
         break
+
 
 def check_validity(number):
     length = len(str(number))
@@ -38,6 +39,7 @@ def checksum(number):
         number //= 10
     return sum % 10 == 0
 
+
 def print_brand(number):
     if ((number >= 34e13 and number < 35e13) or
             (number >= 37e13 and number < 38e13)):
@@ -49,7 +51,6 @@ def print_brand(number):
         print("VISA")
     else:
         print("INVALID")
-
 
 
 main()

@@ -2,13 +2,13 @@ from cs50 import get_int
 
 def main():
 
-number = get_number()
+    number = get_number()
 
 
-if check_validity(number):
-    print_brand(number)
-else:
-    print("Invalid")
+    if check_validity(number):
+        print_brand(number)
+    else:
+        print("Invalid")
 
 
 def get_number():

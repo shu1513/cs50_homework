@@ -4,14 +4,15 @@ def main():
     text = input("Text: ")
 
 #count numnber of letters
-    count(text)
+    letters = countletters(text)
 #count number of words
-
+    words = countwords
 #count number of sentences
 
 #formular and round up
-#
+
+index = 0.0588 * L - 0.296 * S - 15.8
 # print grade level
-def count(text):
+def countletters(text):
 
 main()

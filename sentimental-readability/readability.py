@@ -31,7 +31,8 @@ def countwords(text):
 
 def countsentences(text):
     sum = 0
-    match text:
+    for char in text:
+    match char:
         case "." | "!" | "?":
             sum += 1
     return sum

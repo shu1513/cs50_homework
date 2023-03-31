@@ -8,7 +8,7 @@ def main():
     if check_validity(number):
         print_brand(number)
     else:
-        print("Invalid")
+        print("INVALID\n")
 
 
 def get_number():
@@ -45,10 +45,10 @@ def print_brand(number):
             (number >= 37e13 and number < 38e13)):
         print("AMEX\n")
     elif (number >= 51e14 and number < 56e14):
-        print("Mastercard")
+        print("MASTERCARD\n")
     elif ((number >= 4e12 and number < 5e14) or
             (number >= 4e15 and number < 5e16)):
-        print("VISA")
+        print("VISA\n")
     else:
         print("INVALID\n")
 

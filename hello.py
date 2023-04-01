@@ -7,7 +7,8 @@ for i in range(3):
     book["author"]= input("author ")
     books.append(book)
 
-print(books)
+for book in books:
+    print(book["author"])
 
 
 

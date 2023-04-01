@@ -1,8 +1,13 @@
-book = {}
-book["title"]="Harry Potter"
-book["author"]= "J.K Rolling"
-print(book["title"])
-print(book["author"])
+books=[]
+
+for i in range(3):
+
+    book = {}
+    book["title"]= input("title ")
+    book["author"]= input("author ")
+    books.append(book)
+
+print(books)
 
 
 

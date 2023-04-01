@@ -1,4 +1,4 @@
-book = dict()
+book = {}
 book["title"]="Harry Potter"
 book["author"]= "J.K Rolling"
 print(book["title"])

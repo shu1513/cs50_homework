@@ -6,7 +6,8 @@ def main():
 
     # TODO: Check for command-line usage
     if len(sys.argv) != 3:
-        
+        print("error")
+        break
 
     # TODO: Read database file into a variable
 

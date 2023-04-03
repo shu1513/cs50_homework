@@ -9,20 +9,23 @@ def main():
         print("Usage: python dna.py data.csv sequence.txt")
         return 1
 
-    # TODO: Read database file into a variable
-    with open(sys.argv[1]) as file:
-        database = csv.DictReader(file)
+        
+    else:
 
-    # TODO: Read DNA sequence file into a variable
-    with open(sys.argv[2]) as file:
-        sequence = f.read(file)
+        # TODO: Read database file into a variable
+        with open(sys.argv[1]) as file:
+            database = csv.DictReader(file)
+
+        # TODO: Read DNA sequence file into a variable
+        with open(sys.argv[2]) as file:
+            sequence = f.read(file)
 
 
-    # TODO: Find longest match of each STR in DNA sequence
+        # TODO: Find longest match of each STR in DNA sequence
 
-    # TODO: Check database for matching profiles
+        # TODO: Check database for matching profiles
 
-    return
+        return
 
 
 def longest_match(sequence, subsequence):

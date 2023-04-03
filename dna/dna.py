@@ -22,14 +22,14 @@ def main():
 
         # TODO: Read DNA sequence file into a variable
         with open(sys.argv[2],'r') as file:
-            dna_sequence = f.read(file)
+            dna_sequence = file.read(file)
 
 
         # TODO: Find longest match of each STR in DNA sequence
         subsequences = list(database[0].keys())[1:]
-        result{}
+        result={}
         for subsequence in susequences:
-            result[subsequence] = longest_match(dna_subsequence, subsequence)
+            result[subsequence] = longest_match(dna_sequence, subsequence)
 
         # TODO: Check database for matching profiles
         for person in database:

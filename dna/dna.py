@@ -26,7 +26,10 @@ def main():
 
 
         # TODO: Find longest match of each STR in DNA sequence
-        list 
+        subsequence_list = []
+        with open(sys.argv[1],'r') as file:
+            reader = csv.DictReader(file)
+            subsequence_list = filednames[1:]
 
         # TODO: Check database for matching profiles
 

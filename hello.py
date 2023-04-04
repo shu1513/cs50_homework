@@ -1,7 +1,7 @@
 def main():
 
-    x = int(input("x here "))
-    print(x)
+    x = input("x here ")
+    cowsay.cow(x)
 
 main()
 

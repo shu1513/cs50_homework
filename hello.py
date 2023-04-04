@@ -1,14 +1,20 @@
-books=[]
+def main():
 
-for i in range(3):
+    x= get_int("what's the number? ")
+    print(x)
 
-    book = {}
-    book["title"]= input("title ")
-    book["author"]= input("author ")
-    books.append(book)
+def get_int(x):
+    while True:
+        try:
+            x = int(input(x))
 
-for book in books:
-    print(book["author"])
+        except ValueError:
+            pass
+        else:
+            break
+    return x
 
+
+main()
 
 

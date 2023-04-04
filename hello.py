@@ -3,16 +3,16 @@ def main():
     x= get_int("what's the number? ")
     print(x)
 
-def get_int(x):
+def get_int(a):
     while True:
         try:
-            x = int(input(x))
+            y = int(input(a))
 
         except ValueError:
             pass
         else:
             break
-    return x
+    return y
 
 
 main()

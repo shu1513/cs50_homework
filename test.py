@@ -14,7 +14,7 @@ def digitize(n):
     list2 = []
     b = len(list)
     while b >= 0:
-        list2.append(list[b])
+        list2.append(list[b-1])
         b = b-1
 
     return list2

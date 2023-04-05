@@ -1,24 +1,25 @@
 import sys
 import cs50
 
-def main():
 
+def main():
     cents = get_cents()
 
     quaters = get_quaters(cents)
-    cents = cents - quaters*25
+    cents = cents - quaters * 25
 
     dimes = get_dimes(cents)
-    cents = cents - dimes*10
+    cents = cents - dimes * 10
 
     nickels = get_nickels(cents)
-    cents = cents - nickels*5
+    cents = cents - nickels * 5
 
     pennies = cents
 
     coins = int(quaters + dimes + nickels + pennies)
 
     print(coins)
+
 
 def get_cents():
     while True:
@@ -28,16 +29,20 @@ def get_cents():
     cents = round(change_owed % 1, 2) * 100
     return cents
 
+
 def get_quaters(cents):
-    quaters = int(cents/25)
+    quaters = int(cents / 25)
     return quaters
 
+
 def get_dimes(cents):
-    dimes = int(cents/10)
+    dimes = int(cents / 10)
     return dimes
 
+
 def get_nickels(cents):
-    nickels = int(cents/5)
+    nickels = int(cents / 5)
     return nickels
+
 
 main()

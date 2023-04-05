@@ -12,8 +12,10 @@ def digitize(n):
         list.append(int(i))
 
     list2 = []
-    for i in range(len(list)):
-        list2.append(list[i])
+    b = len(list)
+    while b >= 0:
+        list2.append(list[b])
+        b = b-1
 
     return list2
 if __name__ == "__main__":

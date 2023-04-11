@@ -1,1 +1,1 @@
-from 
+from test import square

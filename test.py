@@ -1,9 +1,9 @@
 def main():
-    hello()
+    a=square()
+print(a)
 
+def square(n):
+    return n**2
 
-def hello():
-    print("hello word")
-
-
+if __name__ = "__main
 main()

@@ -2,7 +2,7 @@ def main():
     a = square(13)
 
 
-print(a)
+    print(a)
 
 
 def square(n):

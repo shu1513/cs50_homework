@@ -1,9 +1,10 @@
-import cowsay
-
-
 def main():
-    x = input("x here ")
-    cowsay.cow(x)
 
 
-main()
+    a = [1,2]
+    b = ['a','b']
+    c =  b +a + "a"
+    print(c)
+
+if __name__ == "__main__":
+    main()

@@ -1,5 +1,5 @@
 def main():
-    a = square()
+    a = square(13)
 
 
 print(a)

@@ -5,5 +5,5 @@ print(a)
 def square(n):
     return n**2
 
-if __name__ = "__main
-main()
+if __name__ = "__main__":
+    main()

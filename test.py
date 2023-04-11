@@ -1,4 +1,4 @@
 def main():
-    a = ["hello world shu.", 1, 1.1, {'ab':'b', 'c':1, 'd':{'ae':6}}]
-    print(a)
+    a = [0,1,2,3,4,5,6,7]
+    print(a[8:2:-2])
 main()

@@ -1,12 +1,6 @@
 def main():
-    a = square(13)
-
-
-    print(a)
-
-
-def square(n):
-    return n**2
+    a = [0,1,2,3,4,5,6,7]
+    print(a[8:-9:1])
 
 
 if __name__ == "__main__":

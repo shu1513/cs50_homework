@@ -1,6 +1,6 @@
 def main():
 
-    a=perfect_score([["Charles", 90], ["Tony", 80], ["Alex", 100], ["jame",100]])
+    a=perfect_score([["Charles", 90], ["Tony", 80]])
     print(a)
 
 def perfect_score(student_info):

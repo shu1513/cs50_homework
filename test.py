@@ -1,7 +1,7 @@
 def main():
 
-    print(perfect_score([["Charles", 90], ["Tony", 80], ["Alex", 100]]))
-
+    a=perfect_score([["Charles", 90], ["Tony", 80], ["Alex", 100]])
+    print(a)
 
     def perfect_score(student_info):
         """Create a list that contains the name and grade of the first student to make a perfect score on the exam.

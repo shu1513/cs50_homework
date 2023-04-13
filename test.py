@@ -1,12 +1,20 @@
 def main():
-    a = [0,1,2,3,4,5,6,7]
-    for i in a:
-        if i == 2:
-            continue
-        elif i ==5:
-            break
-        else:
-            print(i)
+
+    print(perfect_score([["Charles", 90], ["Tony", 80], ["Alex", 100]]))
+
+
+    def perfect_score(student_info):
+        """Create a list that contains the name and grade of the first student to make a perfect score on the exam.
+
+        :param student_info: list - of [<student name>, <score>] lists.
+        :return: list - first `[<student name>, 100]` or `[]` if no student score of 100 is found.
+        """
+
+        perfect_score_list = []
+        for student in student_info:
+            if student[1] == 100:
+                perfect_score_list.append(student)
+        return perfect_score_list
 
 
 if __name__ == "__main__":

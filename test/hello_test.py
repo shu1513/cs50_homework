@@ -1,4 +1,4 @@
-from test import square
+from hello import square
 
 def test_positive():
     assert square(3) == 9

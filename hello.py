@@ -1,10 +1,10 @@
 def main():
+    print(square(3))
 
 
-    a = [1,2,2,3]
-    b=a.pop(0)
-    print(b)
-    print(a)
+def square(n):
+    return n**2
+
 
 if __name__ == "__main__":
     main()

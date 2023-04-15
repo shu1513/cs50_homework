@@ -1,6 +1,8 @@
 def main():
-    b = dic(name='Shu', age =33)
-    return b.pop('name', 'Junhua")
+    b = {"age": 33}
+    b['age']=31
+    print(b)
+
 
 if __name__ == "__main__":
     main()

@@ -1,7 +1,7 @@
 def main():
-    b = {"age": 33}
-    b['age']=31
-    print(b)
+    b = {'name':'shu',"age": 33}
+    for 'name' in b:
+        print(b['name'])
 
 
 if __name__ == "__main__":

@@ -1,6 +1,7 @@
 def main():
     b = {'hello','a',1,2}
-    if b.isdisjoint('a'):
+    a ={'a'}
+    if b.isdisjoint(a):
         print('yes')
 
 

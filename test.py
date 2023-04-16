@@ -1,10 +1,8 @@
 def main():
-    b = {'name','shu',"age", 33}
-    a = (13,12)
-    c = [14,15,16]
-    b.update({1,2,3}, a, c)
-    b.discard(16)
-    print(b)
+    b = 'hello'
+    a ='hello'
+    print(hash(a))
+    print(hash(b))
 
 
 

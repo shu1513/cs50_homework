@@ -1,6 +1,6 @@
 def main():
-    b = {'name':'shu',"age": 33}
-    del b['name']
+    b = ['name','shu',"age", 33]
+    b.pop('a',s)
     print(b)
 
 

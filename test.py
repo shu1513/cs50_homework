@@ -1,6 +1,6 @@
 def main():
     b = {'name':'shu',"age": 33}
-    b.del('name')
+    del b['name']
     print(b)
 
 

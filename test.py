@@ -1,8 +1,8 @@
 def main():
-    b = 'hello'
-    a ='hello'
-    print(hash(a))
-    print(hash(b))
+    b = {'hello','a',1,2}
+    if b.isdisjoint('a'):
+        print('yes')
+
 
 
 

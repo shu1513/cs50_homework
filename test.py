@@ -1,8 +1,8 @@
 def main():
-    print(my_function(a=1.1,b=2.1,c=3.1,1,2,3))
+    print(my_function(1,2,3))
 
-def my_function(*args):
-    return sum(args)
+def my_function(a,b,c,):
+    print(a)
 
 
 

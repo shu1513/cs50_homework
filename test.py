@@ -1,5 +1,5 @@
 def main():
-    a,b=1,'shu'
+    a,b,c,d=1,'shu',True
     print(a)
     print(b)
 

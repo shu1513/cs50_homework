@@ -1,7 +1,7 @@
 def main():
-    a,_,_,=1,'shu',True
+    a,_,**b={'a':1,'b':2,'c':3,'d':4}
 
-    print(a)
+    print(b)
 
 
 

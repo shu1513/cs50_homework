@@ -1,8 +1,9 @@
 def main():
     b = {'hello','a',1,2}
-    a ={'a'}
-    if b.isdisjoint(a):
+    if b.isdisjoint('dc'):
         print('yes')
+    else:
+        print('no')
 
 
 

@@ -2,7 +2,7 @@ def main():
     print(my_function(1,2,3))
 
 def my_function(a,b,c,):
-    print(a)
+    return a
 
 
 

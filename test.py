@@ -1,7 +1,7 @@
 def main():
-    print(my_fucntion(1,2,3,a=1.1,b=2.1,c=3.1))
+    print(my_function(a=1.1,b=2.1,c=3.1,1,2,3))
 
-def my_function(**kwargs, *args):
+def my_function(*args,**kwargs):
     return sum(args)
 
 

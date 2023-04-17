@@ -1,8 +1,7 @@
 def main():
-    a,b,c,=1,'shu',True
-    b,a=a,b
+    a,_,_,=1,'shu',True
+
     print(a)
-    print(b)
 
 
 

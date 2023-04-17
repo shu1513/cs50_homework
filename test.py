@@ -1,9 +1,9 @@
 def main():
-    a=[1,2,3,4,]
-    b=[5,6,7,8]
-    c = *a,*b
+    print(my_fucntion(1,2,3,a=1.1,b=2.1,c=3.1))
 
-    print(c)
+def my_function(*kwargs, *args)
+    return sum(args)
+
 
 
 

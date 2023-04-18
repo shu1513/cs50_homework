@@ -1,7 +1,8 @@
 def main():
-    a = {'a','b','c',}
+    a = ['a','b','c',]
     b= [1,2,3]
-    c=dict(zip(a,b))
+    z =(a,b)
+    c=dict(zip(*z))
     print(c)
 
 

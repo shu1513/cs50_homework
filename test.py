@@ -1,8 +1,8 @@
 def main():
-    a = ['a','b','c',]
-    b= [1,2,3]
-    z =(a,b)
-    c=dict(zip(*z))
+    *a,[_,*c] = ['a','b','c',[1,2,3,4,5]]
+
+    print(a)
+
     print(c)
 
 

@@ -1,15 +1,8 @@
 def main():
 
-    my_func(1,2,3,4,)
-
-def my_func(b,c,*a):
-
-    print(b)
-    print(c)
-    print(a)
-
-
-
+    values = [ [(2, "red"), (5, "blue"), (3, "orange")], [(4, "red"), (9, "blue"), (7, "orange")], [(8, "red"), (13,"blue"), (11, "orange")] ]
+    zipped = zip(*values)
+    print(zipped)
 
 
 

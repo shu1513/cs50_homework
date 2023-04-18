@@ -1,8 +1,8 @@
 def main():
-    print(my_function(1,2,3))
-
-def my_function(a,b,c,):
-    return a
+    a = {'a','b','c',}
+    b= [1,2,3]
+    c=dict(zip(a,b))
+    print(c)
 
 
 

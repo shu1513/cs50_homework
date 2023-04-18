@@ -1,9 +1,10 @@
 def main():
-    *a,[_,*c] = ['a','b','c',[1,2,3,4,5]]
+   dict_1={'a':1,'b':2}
+   dict_2={'c':3,'d':4,}
+   dict_3={**dict_1,**dict_2}
+   print(dict_3)
 
-    print(a)
 
-    print(c)
 
 
 

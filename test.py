@@ -1,8 +1,15 @@
 def main():
+    is_isogram("hello")
 
-    values = [ [(2, "red"), (5, "blue"), (3, "orange")], [(4, "red"), (9, "blue"), (7, "orange")], [(8, "red"), (13,"blue"), (11, "orange")] ]
-    zipped = zip(*values)
-    print(list(zipped))
+def is_isogram(string):
+    original = list(string.lower())
+    print (original)
+    new= list(set(original))
+    print (new)
+    if new == original:
+        return True
+    else:
+        return False
 
 
 

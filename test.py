@@ -10,7 +10,7 @@ def is_armstrong_number(number):
     i = 1
     while i < length + 1:
         a = copynumber % 10**i
-        sum = sum + a**i
+        sum = sum + a**length
         i += 1
         copynumber = copynumber // 10
     if sum == number:

@@ -17,6 +17,7 @@ def persistence(n):
             cpn = a
             a=1
             times += 1
+            strn = str(cpn)
         return times
 
 if __name__ == "__main__":

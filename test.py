@@ -1,24 +1,9 @@
 def main():
 
-    persistence(999)
-    print(a)
+    import functools
 
-def persistence(n):
-    strn=str(n)
-    a = 1
-    times=0
-    cpn = n
-    if cpn//10 == 0:
-        return times
-    else:
-        while cpn//10 !=0:
-            for i in strn:
-                a=a*int(i)
-            cpn = a
-            a=1
-            times += 1
-            strn = str(cpn)
-        return times
+    factorio=[5,4,3,2,1]
+    a = reduce
 
 if __name__ == "__main__":
     main()

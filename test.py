@@ -1,22 +1,23 @@
 def main():
 
-    a = is_armstrong_number(153)
+    persistence(999)
     print(a)
 
-def is_armstrong_number(number):
-    copynumber = number
-    sum = 0
-    length = len(str(copynumber))
-    i = 1
-    while i < length + 1:
-        a = copynumber % 10
-        sum = sum + a**length
-        i += 1
-        copynumber = copynumber // 10
-    if sum == number:
-        return True
+def persistence(n):
+    strn=str(n)
+    a = 1
+    times=0
+    cpn = n
+    if cpn//10 == 0:
+        return times
     else:
-        return False
+        while cpn//10 !=0:
+            for i in strn:
+                a=a*int(i)
+            cpn = a
+            a=1
+            times += 1
+        return times
 
 if __name__ == "__main__":
     main()

@@ -1,12 +1,13 @@
 def main():
 
-    x=sum_of_multiples(20,[3,5])
+    x=sum_of_multiples(20,[5,6])
     print(x)
 
 def sum_of_multiples(limit, multiples):
-    i = 1
+
     nset = set()
     for each in multiples:
+        i = 1
         while each * i < limit:
             nset.add(each * i)
             i += 1

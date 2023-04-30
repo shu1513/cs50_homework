@@ -1,10 +1,16 @@
 def main():
 
-    import functools
+    x=sum_of_multioples(20,[3,5])
+    print(x)
 
-    factorio=[5,4,3,2,1]
-    a = functools.reduce(lambda x,y: x*y, factorio)
-    print(a)
+def sum_of_multiples(limit, multiples):
+    i = 1
+    nset = set()
+    for each in multiples:
+        while each * i < limit:
+            nset.add(each * i)
+            i += 1
+    return sum(nset)
 
 if __name__ == "__main__":
     main()

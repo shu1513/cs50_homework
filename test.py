@@ -1,6 +1,6 @@
 def main():
 
-    x=sum_of_multioples(20,[3,5])
+    x=sum_of_multiples(20,[3,5])
     print(x)
 
 def sum_of_multiples(limit, multiples):

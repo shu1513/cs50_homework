@@ -1,10 +1,10 @@
 def main():
 
-    a = " Hello, World! "
+    a = " Hello, World! HH"
     for i in a:
         if i == "H":
-            a.replace(i,"C")
-    print(a)
+            b=a.replace(i,"C")
+    print(b)
 
 if __name__ == "__main__":
     main()

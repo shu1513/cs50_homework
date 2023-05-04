@@ -1,8 +1,10 @@
 def main():
 
-    a ={'a':1,'b':2}
+    a = " Hello, World! "
     for i in a:
-        print(i)
+        if i == "H":
+            i = "c"
+    print(a)
 
 if __name__ == "__main__":
     main()

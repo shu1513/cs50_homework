@@ -1,10 +1,10 @@
 def main():
 
-    a = " Hello, World! HH"
-    for i in a:
-        if i == "H":
-            b=a.replace(i,"C")
-    print(b)
+    a = "@."
+    if '@' in a and '.' in a:
+        print("valid")
+    else:
+        print('no')
 
 if __name__ == "__main__":
     main()

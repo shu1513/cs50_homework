@@ -1,7 +1,7 @@
 def main():
 
-    a = "@"
-    if '@' and '.' in a:
+    a = "."
+    if '@':
         print("valid")
     else:
         print('no')

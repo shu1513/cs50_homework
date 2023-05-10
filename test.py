@@ -1,15 +1,21 @@
+class Student:
+    ...
+
+
+
 def main():
 
 
     name = getstudent()
-    name[1] = "c"
-    print(f"{name[0]} {name[1]}")
+    print(f"{name.} {name[1]}")
 
 
 def getstudent():
     n = "a"
     h = "b"
-    return n, h
+    Student(n,h)
+    name = Student()
+    return
 
 if __name__ == "__main__":
     main()

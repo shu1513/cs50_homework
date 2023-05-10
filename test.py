@@ -13,7 +13,7 @@ def main():
 def getstudent():
     n = "a"
     h = "b"
-    a = Student(n,h)
+    a = Student(n, h)
     return a
 
 if __name__ == "__main__":

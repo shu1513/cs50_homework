@@ -6,15 +6,10 @@ class Student:
 def main():
 
 
-    name = getstudent()
-    print(f"{name.n} {name.h}")
-
-
-def getstudent():
-    n = "a"
-    h = "b"
-    a = Student(n, h)
-    return a
+    number = int(input("enter positive number here: "))
+    if number <0:
+        raise ShuError ("number must be positive")
+    print(number)
 
 if __name__ == "__main__":
     main()

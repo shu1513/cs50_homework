@@ -1,12 +1,13 @@
 class Student:
-    ...
+    def __init__(a):
+        print("hi")
 
 
 
 def main():
 
 
-    print(type(a))
+    a=Student()
 
 if __name__ == "__main__":
     main()

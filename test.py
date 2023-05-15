@@ -1,17 +1,15 @@
 class Student:
     n = 0
-    def __init__(self):
-        Student.n += 1
+    def __init__(self, a,b):
+        self.a=a
+        self.b=b
 
 
 
 def main():
 
-    a = "c"
-    print(id(a))
-    b()
-    print(id(a))
-    print(a)
+    z =Student(1)
+    print(z)
 
 def b():
     a = "b"

@@ -7,11 +7,12 @@ class Student:
 
 def main():
 
+    a = Student()
+    print(id(a))
 
-    a=Student()
-    b=Student()
-    c=Student()
-    print(c.n)
+def b():
+    a = "b"
+
 
 if __name__ == "__main__":
     main()

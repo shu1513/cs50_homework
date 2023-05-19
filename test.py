@@ -8,13 +8,8 @@ class Student:
 
 def main():
 
-    z =Student(1)
+    z = str('hello')
     print(z)
-
-def b():
-    a = "b"
-    print(id(a))
-    print(a)
 
 
 

@@ -8,8 +8,8 @@ class Student:
 
 def main():
 
-    z = str('hello')
-    print(z)
+
+    print(type(()))
 
 
 

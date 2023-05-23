@@ -19,9 +19,9 @@ class Student(Person):
 def main():
 
     x = Student(1,2,3)
-    print(Person.sayhi())
-    print(x.sayhello())
-    print(x.sayhi())
+    Person.sayhi()
+    x.sayhello()
+    x.sayhi()
     print(x.b)
     print(x.c)
 

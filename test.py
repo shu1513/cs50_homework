@@ -6,7 +6,7 @@ class Person:
 
 class Student(Person):
     def __init__(self, a, b, c):
-        def super().__init__(a,b):
+        def super().__init__(a,b)
         self.c=c
 
 

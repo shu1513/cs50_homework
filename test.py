@@ -13,8 +13,9 @@ class Student(Person):
 
 def main():
 
+    x = Student(1,2,3)
 
-    print(type(()))
+    print()
 
 
 

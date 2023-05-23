@@ -3,10 +3,15 @@ class Person:
     def __init__(self, a,b):
         self.a=a
         self.b=b
+    def sayhello(self):
+        print('hello')
+    @classmethod
+    def sayhi(cls):
+        print('hi')
 
 class Student(Person):
     def __init__(self, a, b, c):
-        def super().__init__(a,b)
+        Person.__init__(self,a,b)
         self.c=c
 
 
@@ -14,7 +19,9 @@ class Student(Person):
 def main():
 
     x = Student(1,2,3)
-
+    print(Person.sayhi())
+    print(x.sayhello())
+    print(x.sayhi())
     print(x.b)
     print(x.c)
 

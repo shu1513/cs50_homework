@@ -10,7 +10,12 @@ class Person:
         print('hi')
     @property
     def fullname(self):
-        return self.first + " " + self.last
+        return self._first + " " + self._last
+    @fullname.setter
+    def fullname(self, first, last):
+        self._first=first
+        self._last=last
+        return self._first + " " + self._last
 
 class Student(Person):
     def __init__(self, a, b, c):

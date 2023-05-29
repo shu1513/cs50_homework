@@ -1,7 +1,7 @@
 class Person:
     n = 0
-    def __init__(self,):
-        pass
+    def __init__(self,x):
+        self.fullname = x
 
     def sayhello(self):
         print('hello')
@@ -10,11 +10,11 @@ class Person:
         print('hi')
     @property
     def fullname(self):
-        return self._first + " " + self._last
+        return self._first
     @fullname.setter
-    def fullname(self, first, last):
+    def fullname(self, first):
         self._first=first
-        self._last=last
+
 
 
 class Student(Person):
@@ -26,7 +26,7 @@ class Student(Person):
 
 def main():
 
-    x = Person()
+    x = Person("yang")
     print(x.fullname)
 
 

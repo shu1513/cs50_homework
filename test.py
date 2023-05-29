@@ -1,6 +1,6 @@
 class Person:
     n = 0
-    def __init__(self, first,last):
+    def __init__(self,):
         pass
 
     def sayhello(self):
@@ -26,7 +26,7 @@ class Student(Person):
 
 def main():
 
-    x = Person('Shu', 'Yang')
+    x = Person()
     print(x.fullname)
 
 

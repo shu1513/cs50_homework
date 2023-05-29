@@ -9,7 +9,7 @@ class Person:
     def sayhi(cls):
         print('hi')
     def fullname(self):
-        return self.first, self.last
+        return self.first + " " + self.last
 
 class Student(Person):
     def __init__(self, a, b, c):

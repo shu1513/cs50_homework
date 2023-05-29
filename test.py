@@ -1,8 +1,7 @@
 class Person:
     n = 0
     def __init__(self, first,last):
-        self.first = first
-        self.last = last
+        self.fullname =
     def sayhello(self):
         print('hello')
     @classmethod

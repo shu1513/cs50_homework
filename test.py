@@ -8,6 +8,7 @@ class Person:
     @classmethod
     def sayhi(cls):
         print('hi')
+    @property
     def fullname(self):
         return self.first + " " + self.last
 
@@ -21,7 +22,7 @@ class Student(Person):
 def main():
 
     x = Person('Shu', 'Yang')
-    print(x.fullname())
+    print(x.fullname)
 
 
 

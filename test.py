@@ -11,7 +11,7 @@ class Person:
 
 def main():
 
-    x = Person('Shu',"Yang")
+    x = Person('Shu','Yang')
     print(x.fullname)
 
 if __name__ == "__main__":

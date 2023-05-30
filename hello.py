@@ -1,6 +1,8 @@
+a: set ={2,9,8,7,6,3,1,}
+
 def main():
 
-    a: set ={2,9,8,7,6,3,1,}
+
     sayit("hi")
 
 def sayit(it: str):

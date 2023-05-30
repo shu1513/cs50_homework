@@ -6,8 +6,8 @@ class Person:
     def fullname(self):
         return self._fullname
     @fullname.setter
-    def fullname(self, first, last):
-        self._fullname= f'''{first} {last}'''
+    def fullname(self, input):
+        self._fullname= input
 
 def main():
 

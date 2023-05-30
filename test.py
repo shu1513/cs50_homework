@@ -1,7 +1,7 @@
 class Person:
     n = 0
-    def __init__(self,x):
-        self.fullname = x
+    def __init__(self,first, last):
+        self.fullname = f'''{first} {last}'''
 
     def sayhello(self):
         print('hello')
@@ -10,10 +10,10 @@ class Person:
         print('hi')
     @property
     def fullname(self):
-        return self._first
+        return self._fullname
     @fullname.setter
-    def fullname(self, first):
-        self._first=first
+    def fullname(self, first, last):
+        self._fullname=f'''{first} {last}'''
 
 
 
@@ -26,7 +26,7 @@ class Student(Person):
 
 def main():
 
-    x = Person("yang")
+    x = Person('Shu',"yang")
     print(x.fullname)
 
 

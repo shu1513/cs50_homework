@@ -4,8 +4,10 @@ def main():
     print(sayhello(3))
 
 def sayhello(n: 'number_of_hellos') -> str:
+    result = ""
     for _ in range(n):
-        return "hello"
+        result += "hello\n"
+    return result
 
 
 

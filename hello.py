@@ -4,8 +4,9 @@ def main():
 
 
     b=['a','b','c']
-    a = map(str.upper, b)
-    print(*a)
+    c =(1,2,3)
+    _,*a = zip(b,c)
+    print([*a])
 
 
 

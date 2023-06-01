@@ -3,14 +3,15 @@
 def main():
 
 
-    b=['a','b','c']
-    
+    a={'a','b','c'}
+    yell(a)
 
 
 
 
-def yell(*args):
-    return
+
+def yell(words):
+    print([word.upper() for word in words])
 
 
 

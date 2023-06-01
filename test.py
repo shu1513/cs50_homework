@@ -10,16 +10,15 @@ class Person:
         if not input:
             raise ValueError ("need to type a name here")
         else:
-            self._fullname= input 
+            self._fullname= input
+    def sayhello(self):
+        print('hello')
 
 def main():
 
     x = Person('Shu','Yang')
-    print(x.fullname)
-    x.fullname = "hi"
-    print(x.fullname)
-    x.fullname = ""
-    print(x.fullname)
+    
+    x.sayhello()
 
 if __name__ == "__main__":
     main()

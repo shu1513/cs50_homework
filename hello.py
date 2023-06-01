@@ -3,8 +3,11 @@
 def main():
 
     a ={'a':1,'b':2,'c':3}
-    print(**a)
+    print(total(**a))
 
+
+def total(a,b,c):
+    return c-b-a
 
 
 

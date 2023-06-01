@@ -6,7 +6,7 @@ def main():
     print(total(**a))
 
 
-def total(a,b,c):
+def total(c,b,a):
     return c-b-a
 
 

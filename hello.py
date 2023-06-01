@@ -2,12 +2,12 @@
 
 def main():
 
-    a ={'b':2,'c':3,'a':1}
-    print(total(**a))
+    print(total(2,3,'hi'))
 
 
-def total(c,b,a):
-    return c-b-a
+
+def total(*args):
+    return args[0]*args[1]*args[2]
 
 
 

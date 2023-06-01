@@ -2,9 +2,8 @@
 
 def main():
 
-    print(hello(*(3,12,14)))
-def hello(b,c,d):
-    return b+c+d
+    a ={'a':1,'b':2,'c':3}
+    print(**a)
 
 
 

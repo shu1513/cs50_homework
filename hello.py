@@ -2,7 +2,10 @@
 
 def main():
 
-    print(total(**{'a':2,'b':3,'c':'h'}))
+
+    b=['a','b','c']
+    a = map(str.upper, b)
+    print(a)
 
 
 

@@ -2,7 +2,7 @@
 
 def main():
 
-    print(hello(*{3,12,3}))
+    print(hello(*{3,12,13}))
 def hello(b,c,d):
     return b+c+d
 

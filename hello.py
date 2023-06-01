@@ -7,7 +7,7 @@ def main():
 
 
 def total(**kwargs):
-    return kwargs[a]*kwargs[b]*kwargs[c]
+    return kwargs['a']*kwargs['b']*kwargs['c']
 
 
 

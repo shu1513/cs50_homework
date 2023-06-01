@@ -1,8 +1,11 @@
 
 
 def main():
-    a = 1
-    print(a,'hello')
+
+    print(hello(*{3,12,3}))
+def hello(b,c,d):
+    return b+c+d
+
 
 
 

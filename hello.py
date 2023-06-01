@@ -1,13 +1,8 @@
 
 
 def main():
-    print(sayhello(3))
-
-def sayhello(n: 'number_of_hellos') -> str:
-    result = ""
-    for _ in range(n):
-        result += "hello\n"
-    return result
+    a = 1
+    print(a,'hello')
 
 
 

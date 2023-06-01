@@ -5,7 +5,7 @@ def main():
 
     b=['a','b','c']
     a = map(str.upper, b)
-    print(a)
+    print(*a)
 
 
 

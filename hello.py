@@ -3,15 +3,10 @@
 def main():
 
 
-    a={'a','b','c'}
-    yell(a)
-
-
-
-
-
-def yell(words):
-    print([word.upper() for word in words])
+    a=['a','b','c']
+    b =[1,2,3]
+    c = {item:value for item in a for value in b}
+    print(c)
 
 
 

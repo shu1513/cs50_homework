@@ -1,4 +1,5 @@
-
+class Sentence:
+    
 
 def main():
 

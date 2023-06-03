@@ -17,10 +17,8 @@ class Sentence:
 
 def main():
 
-    m
+    my_sentence = sentence('This is a test')
 
-def sentence(string):
-    pass
 
 def my_range(start, end):
     current = start

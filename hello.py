@@ -8,9 +8,9 @@ class Sentence:
         if i >= len(self.content):
             raise StopIteration
         else:
-            for word in self.content:
-                return word
-                i += 1
+            word = self.content[i]
+            i += 1
+            return word
 
 
 

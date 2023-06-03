@@ -1,13 +1,10 @@
 class Sentence:
-    
+    def __init__(self,string):
+        
 
 def main():
 
 
-    a=['a','b','c']
-    b =[1,2,3]
-    c = {item:value for item in a for value in b}
-    print(c)
 
 
 

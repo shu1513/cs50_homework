@@ -29,8 +29,9 @@ def my_range(start, end):
 def sentence(string):
     stringlist=string.split()
     i = 0
-    while i < len(stringlist)
+    while i < len(stringlist):
         yield len[i]
+        i += 1
 
 
 

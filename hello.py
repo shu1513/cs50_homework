@@ -7,7 +7,8 @@ class Sentence:
         if self.content:
             raise StopIteration
         else:
-            
+            for i in self.content:
+                yield i
 
 
 

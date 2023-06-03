@@ -4,7 +4,10 @@ class Sentence:
     def __iter__(self):
         return self
     def __next__(self):
-        if self.content
+        if self.content:
+            raise StopIteration
+        else:
+            
 
 
 

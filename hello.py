@@ -18,6 +18,8 @@ class Sentence:
 def main():
 
     my_sentence = sentence('This is a test')
+    for word in my_sentence:
+        print(word)
 
 
 def my_range(start, end):
@@ -30,7 +32,7 @@ def sentence(string):
     stringlist=string.split()
     i = 0
     while i < len(stringlist):
-        yield len[i]
+        yield stringlist[i]
         i += 1
 
 

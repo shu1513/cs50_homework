@@ -4,11 +4,13 @@ class Sentence:
     def __iter__(self):
         return self
     def __next__(self):
-        if self.content:
+        i = 0
+        if i >= len(self.content):
             raise StopIteration
         else:
-            for i in self.content:
-                yield i
+            for word in self.content:
+                return word
+                i += 1
 
 
 

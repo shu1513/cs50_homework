@@ -1,15 +1,16 @@
 class Sentence:
     def __init__(self,string):
         self.content = string.split()
+        self.i = 0
     def __iter__(self):
         return self
     def __next__(self):
 
-        if i >= len(self.content):
+        if self.i >= len(self.content):
             raise StopIteration
         else:
-            word = self.content[i]
-            i += 1
+            word = self.content[self.i]
+            self.i += 1
             return word
 
 
@@ -20,8 +21,7 @@ def main():
         print(word)
 
 def sentence(string):
-    for word in string.split():
-        yield word
+
 
 
 

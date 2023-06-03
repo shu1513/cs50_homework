@@ -4,7 +4,7 @@ class Sentence:
     def __iter__(self):
         return self
     def __next__(self):
-        i = 0
+
         if i >= len(self.content):
             raise StopIteration
         else:

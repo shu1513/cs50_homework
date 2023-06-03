@@ -5,7 +5,8 @@ class Sentence:
 def main():
 
 def sentence(string):
-    for word in (string.split()
+    for word in string.split():
+        yield word
 
 
 

@@ -1,9 +1,11 @@
 class Sentence:
     def __init__(self,string):
-        
+
 
 def main():
 
+def sentence(string):
+    for word in (string.split()
 
 
 

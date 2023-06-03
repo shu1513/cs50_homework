@@ -1,6 +1,10 @@
 class Sentence:
     def __init__(self,string):
         self = string.split()
+    def __iter__(self):
+        return self
+    def __next__(self):
+        
 
 
 def main():

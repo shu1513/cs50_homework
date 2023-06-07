@@ -12,7 +12,7 @@ def sayhello(name):
     return f'''hello, {name}'''
 
 def square(number):
-   return number+number
+   return number*number
 
 if __name__ == "__main__":
     main()

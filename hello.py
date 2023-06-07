@@ -6,7 +6,7 @@ def main():
 
    x=2
 
-   print('a', str(lambda x: x**2))
+   print('a', (lambda x: x**2)(x))
 
 
 

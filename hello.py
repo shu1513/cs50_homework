@@ -11,7 +11,7 @@ def main():
 def sayhello(name):
     return f'''hello, {name}'''
 
-def calculate(number):
+def square(number):
    return number**2
 
 if __name__ == "__main__":

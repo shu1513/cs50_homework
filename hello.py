@@ -4,9 +4,12 @@
 
 def main():
 
-   x=2
+   name = input("what's your name? ")
+   print (sayhello(name))
 
-   print('a', (lambda x: x**2)(x))
+
+def sayhello(user_input):
+    return f'''hello {user_input}'''
 
 
 

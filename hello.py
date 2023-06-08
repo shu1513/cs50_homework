@@ -1,7 +1,4 @@
 
-
-
-
 def main():
 
    user_input = input("input here ")
@@ -13,6 +10,7 @@ def sayhello(name):
 
 def square(number):
    return number*number
+
 
 if __name__ == "__main__":
     main()

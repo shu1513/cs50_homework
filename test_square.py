@@ -1,3 +1,5 @@
+import pytest
+
 from hello import square
 
 def test_positive():
@@ -11,4 +13,6 @@ def test_negative():
 def test_zero():
     assert square(0)==0
 
-def 
+def test_str():
+    with pytest.raises(TypeError):
+        square('a')

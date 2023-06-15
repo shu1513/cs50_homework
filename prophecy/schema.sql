@@ -1,1 +1,1 @@
-CREATE TABLE 
+CREATE TABLE students (id INTEGER, )

@@ -14,6 +14,6 @@ db.execute(
 )
 
 with open('students.csv', 'r') as file:
-    reader = csv.DictReader(file)
-    print(reader)
+    reader = csv.reader(file)
+    print(next(reader))
 

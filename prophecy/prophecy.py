@@ -1,4 +1,4 @@
-Import CSV
-From CS50 import SQL
+import csv
+from cs50 import SQL
 
-open('final.db' 'w').close()
+open('final.db', 'w').close()

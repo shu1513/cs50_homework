@@ -19,8 +19,8 @@ with open('students.csv', 'r') as file:
     for row in reader:
         if row[house] not in houses:
             houses[row[house]]=row[head]
-    for row in reader:
-        db.execute('INSERT INTO houses(house, head) VALUES(?,?)' )
+    for house in houses:
+        id=db.execute('INSERT INTO houses(house, head) VALUES(?,?)', house, houses[house])
     for row in reader:
         id = db.execute('INSERT INTO studnames(name) VALUES(?)', row[student_name])
         db.execute('INSERT INTO assignments(student_id) VALUES(?)', id)

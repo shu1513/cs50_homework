@@ -14,7 +14,11 @@ db.execute(
 )
 
 with open('students.csv', 'r') as file:
-    reader = csv.reader(file)
+    reader = csv.DictReader(file)
+    houses=[]
+    for row in reader:
+        if row[house] not in houses:
+            houses.append([row[house],row[head]])
     for row in reader:
         db.execute('INSERT INTO houses(house, head) VALUES(?,?)' )
     for row in reader:

@@ -15,5 +15,6 @@ db.execute(
 
 with open('students.csv', 'r') as file:
     reader = csv.reader(file)
-    print(next(reader))
+    for row in reader:
+        
 

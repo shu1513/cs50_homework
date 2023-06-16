@@ -16,7 +16,7 @@ db.execute(
 with open('students.csv', 'r') as file:
     reader = csv.reader(file)
     for row in reader:
-        i
+        db.execute('INSERT INTO houses(house) VALUES' )
     for row in reader:
         db.execute('INSERT INTO studnames(name) VALUES(?)', row[student_name])
         db.execute('INSERT INTO assignments(student_id) VALUES(?)', row[id])

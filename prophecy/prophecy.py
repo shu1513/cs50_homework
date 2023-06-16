@@ -25,6 +25,7 @@ with open('students.csv', 'r') as file:
     for row in reader:
         id = db.execute('INSERT INTO studnames(name) VALUES(?)', row[student_name])
         db.execute('INSERT INTO assignments(student_id) VALUES(?)', id)
-        if row[house] == "Slytherin
+        if row[house] == "Slytherin":
+            db.execute('INSERT INTO assignments(house_id) VALUES(?)', )
 
 

@@ -18,8 +18,8 @@ with open('students.csv', 'r') as file:
     for row in reader:
         db.execute('INSERT INTO houses(house, head) VALUES(?,?)' )
     for row in reader:
-        db.execute('INSERT INTO studnames(name) VALUES(?)', row[student_name])
-        db.execute('INSERT INTO assignments(student_id) VALUES(?)', row[id])
+        id = db.execute('INSERT INTO studnames(name) VALUES(?)', row[student_name])
+        db.execute('INSERT INTO assignments(student_id) VALUES(?)', id)
 
 
 

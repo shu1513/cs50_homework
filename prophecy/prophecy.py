@@ -13,4 +13,6 @@ db.execute(
     "CREATE TABLE assignments(student_id INTEGER NOT NULL, house_id INTEGER NOT NULL, FOREIGN KEY(student_id) REFERENCES stunames(id), FOREIGN KEY(house_id) REFERENCES houses(id))"
 )
 
+with open('students.csv', 'r') as file:
+    reader = csv.DictReader(file)
 

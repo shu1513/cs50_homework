@@ -7,7 +7,7 @@ db.execute(
     "CREATE TABLE stunames(id INTEGER NOT NULL, name TEXT NOT NULL, PRIMARY KEY(id))"
 )
 db.execute(
-    "CREATE TABLE houses(id INTEGER NOT NULL, house TEXT NOT NULL, PRIMARY KEY(id))"
+    "CREATE TABLE houses(id INTEGER NOT NULL, house TEXT NOT NULL, head TEXT NOT NULL, PRIMARY KEY(id))"
 )
 db.execute(
     "CREATE TABLE assignments(student_id INTEGER NOT NULL, house_id INTEGER NOT NULL, FOREIGN KEY(student_id) REFERENCES stunames(id), FOREIGN KEY(house_id) REFERENCES houses(id))"
@@ -16,7 +16,7 @@ db.execute(
 with open('students.csv', 'r') as file:
     reader = csv.reader(file)
     for row in reader:
-        db.execute('INSERT INTO houses(house) VALUES' )
+        db.execute('INSERT INTO houses(house, head) VALUES(?,?)' )
     for row in reader:
         db.execute('INSERT INTO studnames(name) VALUES(?)', row[student_name])
         db.execute('INSERT INTO assignments(student_id) VALUES(?)', row[id])

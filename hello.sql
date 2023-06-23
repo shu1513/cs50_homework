@@ -1,0 +1,1 @@
+CREATE TABLE hello(id INTEGER, name TEXT, number INTEGER, PRIMARY KEY(id));

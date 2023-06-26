@@ -39,3 +39,4 @@ As the thief was leaving the bakery, they called someone who talked to them for 
 
 
 
+SELECT name FROM people WHERE id IN (SELECT person_id FROM account_result) AND license_plate IN (SELECT license_plate FROM license_result) AND phone_number IN (SELECT caller FROM calls_result);

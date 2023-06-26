@@ -12,4 +12,15 @@ As the thief was leaving the bakery, they called someone who talked to them for 
 | 264 | 2021 | 7     | 28  | 10   | 20     | exit     | G412CB7       |
 | 265 | 2021 | 7     | 28  | 10   | 21     | exit     | L93JTIZ       |
 | 266 | 2021 | 7     | 28  | 10   | 23     | exit     | 322W7JE       |
-| 267 | 2021 | 7     | 28  | 10   | 23     | exit     | 0NTHK55   
+| 267 | 2021 | 7     | 28  | 10   | 23     | exit     | 0NTHK55
+
+| id  | account_number | year | month | day |  atm_location  | transaction_type | amount |
++-----+----------------+------+-------+-----+----------------+------------------+--------+
+| 246 | 28500762       | 2021 | 7     | 28  | Leggett Street | withdraw         | 48     |
+| 264 | 28296815       | 2021 | 7     | 28  | Leggett Street | withdraw         | 20     |
+| 266 | 76054385       | 2021 | 7     | 28  | Leggett Street | withdraw         | 60     |
+| 267 | 49610011       | 2021 | 7     | 28  | Leggett Street | withdraw         | 50     |
+| 269 | 16153065       | 2021 | 7     | 28  | Leggett Street | withdraw         | 80     |
+| 288 | 25506511       | 2021 | 7     | 28  | Leggett Street | withdraw         | 20     |
+| 313 | 81061156       | 2021 | 7     | 28  | Leggett Street | withdraw         | 30     |
+| 336 | 26013199       | 2021 | 7     | 28  | Leggett Street | withdraw         | 35     |

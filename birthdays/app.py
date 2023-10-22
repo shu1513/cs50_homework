@@ -32,7 +32,7 @@ def index():
 
     else:
 
-        db.excute()
+        db.excute(select * from birthdays)
 
         return render_template("index.html")
 

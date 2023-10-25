@@ -49,4 +49,4 @@ def index():
 def delete():
     id = request.form.get("id")
     if id:
-        db.execute("")
+        db.execute("DELETE FROM birthdays WHERE id = ?", id)

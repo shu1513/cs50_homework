@@ -27,6 +27,7 @@ def index():
     if request.method == "POST":
 
         name = request.form.get("name")
+        month = request.form.get("month")
 
         return redirect("/")
 

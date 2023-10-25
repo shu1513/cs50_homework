@@ -45,3 +45,6 @@ def index():
         return render_template("index2.html", birthdays=birthdays)
 
 
+@app.route("/delete", methods=["POST"])
+def delete():
+    

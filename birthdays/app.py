@@ -33,7 +33,7 @@ def index():
         if not name or not month or not day:
             return render_template("failure.html")
 
-        db.execute("INSERT INTO birthdays ()")
+        db.execute("INSERT INTO birthdays (name, month, day) VALUES(?,?,?)", name, month, day)
 
         return redirect("/")
 

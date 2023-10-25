@@ -9,10 +9,10 @@
 {% endblock %}
 
 {% block show_birthday %}
-    <% for brithday in birthdays %>
+    {% for brithday in birthdays %}
     <tr>
         <td>{{ birthday.name }}</td>
         <td>{{ brithday[month] }}/{{ birthday[day] }}</td>
     </tr>
-    <% endfor %>
+    {% endfor %}
 {% endblock %}

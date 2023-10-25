@@ -30,8 +30,9 @@ def index():
         month = request.form.get("month")
         day = request.form.get("day")
 
-        if not name or month or day
-        
+        if not name or not month or not day:
+            return render_template("failure.html")
+
 
         db.execute("")
         return redirect("/")

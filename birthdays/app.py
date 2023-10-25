@@ -47,4 +47,6 @@ def index():
 
 @app.route("/delete", methods=["POST"])
 def delete():
-    
+    id = request.form.get("id")
+    if id:
+        db.execute("")

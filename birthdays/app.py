@@ -26,7 +26,7 @@ def after_request(response):
 def index():
     if request.method == "POST":
 
-        name = 
+        name = request.form.get("name")
 
         return redirect("/")
 

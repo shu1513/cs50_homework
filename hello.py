@@ -1,15 +1,10 @@
 
 def main():
 
-   user_input = input("input here ")
-   print (sayhello(user_input))
+   class Test:
+       names['john','nathan','shu']
 
-
-def sayhello(name):
-    return f'''hello, {name}'''
-
-def square(number):
-   return number*number
+   test=
 
 
 if __name__ == "__main__":

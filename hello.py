@@ -8,7 +8,9 @@ def main():
 
         @classmethod
         def get(cls):
-            name = input(')
+            name = input('name')
+            reuturn cls(name)
+        
 
 if __name__ == "__main__":
     main()

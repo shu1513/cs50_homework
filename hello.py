@@ -8,11 +8,11 @@ def main():
 
         @classmethod
         def get(cls):
-            name = input('name')
-            reuturn cls(name)
+            name = input('name: ')
+            return cls(name)
 
-    student=Student.get()
-    print(student)
+
+    print(Student.get())
 
 if __name__ == "__main__":
     main()

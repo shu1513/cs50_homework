@@ -2,7 +2,7 @@
 def main():
 
    class Test:
-       names['john','nathan','shu']
+       names=['john','nathan','shu']
 
    test=Test()
    print(test.names[0])

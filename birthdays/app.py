@@ -12,6 +12,7 @@ app.config["TEMPLATES_AUTO_RELOAD"] = True
 # Configure CS50 Library to use SQLite database
 db = SQL("sqlite:///birthdays.db")
 
+DATA = ['Name','Month','Day']
 
 @app.after_request
 def after_request(response):
@@ -42,7 +43,7 @@ def index():
 
         birthdays = db.execute("select * from birthdays")
 
-        return render_template("index2.html", birthdays=birthdays)
+        return render_template("index2.html", birthdays=birthdays, datas = DATAS)
 
 
 @app.route("/delete", methods=["POST"])

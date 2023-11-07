@@ -20,6 +20,7 @@
                     <input name="month" type="text" placeholder="Month">
                     <input name="day" type="text" placeholder="Day">-->
                     <% for datum in data %>
+                    <input name= datum.lower() type="text" placeholder=datum>
                     <% endfor %>
                     <button type="submit">submit</button>
 

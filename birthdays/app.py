@@ -27,9 +27,9 @@ def after_request(response):
 def index():
     if request.method == "POST":
 
-        name = request.form.get("name")
-        month = request.form.get("month")
-        day = request.form.get("day")
+        name = request.form.get(DATA[0])
+        month = request.form.get(DATA[1])
+        day = request.form.get(DATA[2])
 
         if not name or not month or not day:
             return render_template("failure.html")

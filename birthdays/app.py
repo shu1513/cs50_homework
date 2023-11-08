@@ -44,7 +44,7 @@ def index():
 
         birthdays = db.execute("select * from birthdays")
 
-        return render_template("index2.html", birthdays=birthdays, data=DATA)
+        return render_template("index2.html", birthdays=birthdays, data=DATA_LOWER)
 
 
 @app.route("/delete", methods=["POST"])

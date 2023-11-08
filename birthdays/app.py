@@ -13,7 +13,6 @@ app.config["TEMPLATES_AUTO_RELOAD"] = True
 db = SQL("sqlite:///birthdays.db")
 
 DATA = ['Name','Month','Day']
-DATA_LOWER = [word.lower() for word in DATA]
 
 @app.after_request
 def after_request(response):
@@ -44,7 +43,7 @@ def index():
 
         birthdays = db.execute("select * from birthdays")
 
-        return render_template("index2.html", birthdays=birthdays, data=DATA_LOWER)
+        return render_template("index2.html", birthdays=birthdays, data=DATA)
 
 
 @app.route("/delete", methods=["POST"])

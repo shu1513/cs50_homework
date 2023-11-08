@@ -13,6 +13,7 @@ app.config["TEMPLATES_AUTO_RELOAD"] = True
 db = SQL("sqlite:///birthdays.db")
 
 DATA = ['Name','Month','Day']
+DATA_LOWER = [word.lower() for word in DATA]
 
 @app.after_request
 def after_request(response):

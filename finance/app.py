@@ -12,11 +12,12 @@ from flask_talisman import Talisman
 # Configure application
 app = Flask(__name__)
 
+# Basic Talisman setup with HSTS and HSTS preload
 talisman = Talisman(
     app,
-    force_https=True,
-    preload=True,  # Enable HSTS preload
-    include_subdomains=True,  # Include subdomains in HSTS policy
+    force_https=True,            # Enforce HTTPS
+    strict_transport_security=True,  # Enable HSTS
+    preload=True,                # Enable HSTS preload
 )
 
 # Custom filter

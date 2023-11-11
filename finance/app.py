@@ -12,7 +12,6 @@ from flask_talisman import Talisman
 # Configure application
 app = Flask(__name__)
 
-
 # Custom filter
 app.jinja_env.filters["usd"] = usd
 

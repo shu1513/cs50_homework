@@ -12,26 +12,11 @@ from flask_talisman import Talisman
 # Configure application
 app = Flask(__name__)
 
-# Security configurations
-csp = {
-    'default-src': '\'self\'',
-    'img-src': '*',
-    'style-src': ['\'self\'', 'https://stackpath.bootstrapcdn.com', '\'unsafe-inline\''],
-    'script-src': ['\'self\'', 'https://code.jquery.com', '\'unsafe-inline\''],
-}
-
+# Basic Talisman setup without custom CSP rules
 talisman = Talisman(
     app,
-    content_security_policy=csp,
-    force_https=True,
-    strict_transport_security=True,
-    referrer_policy='same-origin',
-    feature_policy={
-        'geolocation': '\'none\'',
-        'camera': '\'none\'',
-    }
+    force_https=True,  # Enforce HTTPS
 )
-
 
 # Custom filter
 app.jinja_env.filters["usd"] = usd

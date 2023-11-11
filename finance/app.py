@@ -11,7 +11,6 @@ from flask_talisman import Talisman
 
 # Configure application
 app = Flask(__name__)
-Talisman(app)
 
 
 # Custom filter

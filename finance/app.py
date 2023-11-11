@@ -12,10 +12,11 @@ from flask_talisman import Talisman
 # Configure application
 app = Flask(__name__)
 
-# Basic Talisman setup without custom CSP rules
 talisman = Talisman(
     app,
-    force_https=True,  # Enforce HTTPS
+    force_https=True,
+    preload=True,  # Enable HSTS preload
+    include_subdomains=True,  # Include subdomains in HSTS policy
 )
 
 # Custom filter

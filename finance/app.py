@@ -16,22 +16,21 @@ app = Flask(__name__)
 csp = {
     'default-src': '\'self\'',
     'img-src': '*',
-    'style-src': ['\'self\'', 'https://stackpath.bootstrapcdn.com'],
-    'script-src': ['\'self\'', 'https://code.jquery.com'],
+    'style-src': ['\'self\'', 'https://stackpath.bootstrapcdn.com', '\'unsafe-inline\''],
+    'script-src': ['\'self\'', 'https://code.jquery.com', '\'unsafe-inline\''],
 }
 
 talisman = Talisman(
     app,
     content_security_policy=csp,
-    force_https=True,  # Enforce HTTPS
-    strict_transport_security=True,  # Enable HSTS
-    referrer_policy='same-origin',  # Set Referrer Policy to 'same-origin'
+    force_https=True,
+    strict_transport_security=True,
+    referrer_policy='same-origin',
     feature_policy={
-        'geolocation': '\'none\'',  # Disable geolocation feature
-        'camera': '\'none\'',  # Disable camera feature
+        'geolocation': '\'none\'',
+        'camera': '\'none\'',
     }
 )
-
 
 
 # Custom filter

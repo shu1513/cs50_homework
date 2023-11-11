@@ -7,10 +7,15 @@ from werkzeug.security import check_password_hash, generate_password_hash
 
 from helpers import apology, login_required, lookup, usd
 
-from flask_talisman import Talisman
 
 # Configure application
 app = Flask(__name__)
+
+# Set HSTS header after each request
+@app.after_request
+def add_hsts_header(response):
+    response.headers['Strict-Transport-Security'] = 'max-age=31536000; includeSubDomains; preload'
+    return response
 
 # Custom filter
 app.jinja_env.filters["usd"] = usd

@@ -11,7 +11,12 @@ from flask_talisman import Talisman
 
 # Configure application
 app = Flask(__name__)
-Talisman(app)
+
+talisman = Talisman(
+    app,
+    strict_transport_security=True,  # Enable HSTS
+)
+
 
 # Custom filter
 app.jinja_env.filters["usd"] = usd

@@ -11,11 +11,7 @@ from flask_talisman import Talisman
 
 # Configure application
 app = Flask(__name__)
-
-talisman = Talisman(
-    app,
-    strict_transport_security=True,  # Enable HSTS
-)
+Talisman(app)
 
 
 # Custom filter

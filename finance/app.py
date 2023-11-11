@@ -7,8 +7,32 @@ from werkzeug.security import check_password_hash, generate_password_hash
 
 from helpers import apology, login_required, lookup, usd
 
+from flask_talisman import Talisman
+
 # Configure application
 app = Flask(__name__)
+
+# Security configurations
+csp = {
+    'default-src': '\'self\'',
+    'img-src': '*',
+    'style-src': ['\'self\'', 'https://stackpath.bootstrapcdn.com'],
+    'script-src': ['\'self\'', 'https://code.jquery.com'],
+}
+
+talisman = Talisman(
+    app,
+    content_security_policy=csp,
+    force_https=True,  # Enforce HTTPS
+    strict_transport_security=True,  # Enable HSTS
+    referrer_policy='same-origin',  # Set Referrer Policy to 'same-origin'
+    feature_policy={
+        'geolocation': '\'none\'',  # Disable geolocation feature
+        'camera': '\'none\'',  # Disable camera feature
+    }
+)
+
+
 
 # Custom filter
 app.jinja_env.filters["usd"] = usd

@@ -119,11 +119,13 @@ def register():
         return redirect("/")
     else:
         if request.method == "POST":
+            existing_user = db.execute("SELECT * FROM users WHERE username = ?", request.form.get("username"))
             if not request.form.get("username"):
                 return apology("must provide username", 403)
             elif not request.form.get("password"):
                 return apology("must provide password", 403)
-            elif db.execute("SELECT * FROM users WHERE username = ?", request.form.get("username"))
+            elif existing_user:
+                reutrn apology("this username already exist, please choose another", 403)
 
 
     return apology("TODO")

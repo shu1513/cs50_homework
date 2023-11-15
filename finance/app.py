@@ -124,8 +124,12 @@ def register():
                 return apology("must provide username", 403)
             elif not request.form.get("password"):
                 return apology("must provide password", 403)
+            elif not request.form.get("re-enter password"):
+                return apology("must re-enter password", 403)
             elif existing_user:
-                reutrn apology("this username already exist, please choose another", 403)
+                return apology("this username already exist, please choose another", 403)
+            elif request.form.get("re-enter password") != request.form.get("password"):
+                return apology("passwords words must match", 403)
 
 
     return apology("TODO")

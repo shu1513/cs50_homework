@@ -119,7 +119,8 @@ def register():
         return redirect("/")
     else:
         if request.method == "POST":
-            
+            if not request.form.get("username"):
+                return apology("must provide username", 403)
 
     return apology("TODO")
 

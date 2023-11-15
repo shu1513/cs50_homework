@@ -123,8 +123,8 @@ def register():
                 return apology("must provide username", 403)
             elif not request.form.get("password"):
                 return apology("must provide password", 403)
-            else:
-                
+            elif db.execute("SELECT * FROM users WHERE username = ?", request.form.get("username"))
+
 
     return apology("TODO")
 

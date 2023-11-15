@@ -118,7 +118,8 @@ def register():
     if 'id' in session:
         return redirect("/")
     else:
-        if
+        if request.method == "POST":
+            
 
     return apology("TODO")
 

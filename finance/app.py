@@ -116,7 +116,9 @@ def quote():
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if session[id]:
-        alert()
+        return redirect("/")
+    else:
+        if 
 
     return apology("TODO")
 

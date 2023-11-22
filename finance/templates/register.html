@@ -1,15 +1,18 @@
 {% extends "layout.html" %}
 
+{% block head %}
+<style>
+    .valid {
+      color: green;
+    }
+    .invalid {
+      color: red;
+    }
+</style>
+{% endblock %}
+
 {% block title %}
     Register
-    <style>
-        .valid {
-          color: green;
-        }
-        .invalid {
-          color: red;
-        }
-    </style>
 {% endblock %}
 
 {% block main %}

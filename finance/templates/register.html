@@ -31,7 +31,11 @@
         </div>
         <div class="mb-3">
             <label for="confirm_password">Confirm Password:</label>
-            <input class="form-control mx-auto w-auto" maxlength="16" id="confirm_password" name="password" placeholder="Re-enter password" type="password" required>
+            <input class="form-control mx-auto w-auto" maxlength="16" id="confirm_password"
+            name="password" placeholder="Re-enter password" type="password"
+            oninput="checkPasswordMatch()" required>
+            <span id="confirmationMessage"></span>
+            <span id="confirmationIcon"></span><br>
         </div>
         <button class="btn btn-primary" type="submit">Register</button>
     </form>

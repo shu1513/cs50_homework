@@ -39,9 +39,44 @@
             type="password"
             oninput="checkPasswordMatch()"
             required>
-            <span id="confirmationMessage"></span>
-            <span id="confirmationIcon"></span><br>
+            <span id="confirmation_message"></span>
+            <span id="confirmation_icon"></span><br>
         </div>
         <button class="btn btn-primary" type="submit">Register</button>
     </form>
+
+    <script>
+        function validateForm() {
+          var password = document.getElementById("password").value;
+          var confirm_password = document.getElementById("confirm_password").value;
+
+          if (password != confirm_password) {
+            document.getElementById("confirmation_message").innerHTML = "Passwords do not match";
+            document.getElementById("confirmation_message").className = "invalid";
+            return false;
+          }
+
+          document.getElementById("confirmation_message").innerHTML = "Passwords match";
+          document.getElementById("confirmation_message").className = "valid";
+
+          return true;
+        }
+
+        function checkPasswordMatch() {
+          var password = document.getElementById("password").value;
+          var confirm_password = document.getElementById("confirm_password").value;
+          var confirmation_icon = document.getElementById("confirmation_icon");
+          var confirmation_message = document.getElementById("confirmation_message");
+
+          if (password === confirm_password && confirm_password !== "") {
+            confirmationIcon.innerHTML = '<span class="valid">&#10004;</span>';
+            confirmationMessage.innerHTML = "Passwords match";
+            confirmationMessage.className = "valid";
+          } else {
+            confirmationIcon.innerHTML = '';
+            confirmationMessage.innerHTML = "Passwords do not match";
+            confirmationMessage.className = "invalid";
+          }
+        }
+      </script>
 {% endblock %}

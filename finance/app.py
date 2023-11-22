@@ -132,7 +132,6 @@ def register():
                 return apology("passwords words must match", 403)
 
 
-    return apology("TODO")
 
 
 @app.route("/sell", methods=["GET", "POST"])

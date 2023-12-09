@@ -119,7 +119,7 @@ def register():
         return redirect("/")
     else:
         if request.method == "POST":
-            existing_user = db.execute("SELECT * FROM users WHERE username = ?", request.form.get("username")).fetchone()
+            existing_user = db.execute("SELECT * FROM users WHERE username = ?", request.form.get("username"))
             if not request.form.get("username"):
                 return apology("must provide username", 403)
             elif not request.form.get("password"):

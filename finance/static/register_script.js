@@ -1,8 +1,8 @@
 //javacript for password confirmations in the register.html page.
 
   function validateForm() {
-    let password = document.getElementById("password").value;
-    let confirmPassword = document.getElementById("confirmPassword").value;
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirmPassword").value;
 
     if (password != confirmPassword) {
       document.getElementById("confirmationMessage").innerHTML = "Passwords do not match";
@@ -17,8 +17,8 @@
   }
 
   function checkPasswordMatch() {
-    let password = document.getElementById("password").value;
-    let confirmPassword = document.getElementById("confirmPassword").value;
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirmPassword").value;
     const confirmationIcon = document.getElementById("confirmationIcon");
     const confirmationMessage = document.getElementById("confirmationMessage");
 

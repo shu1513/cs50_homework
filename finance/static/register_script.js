@@ -20,7 +20,7 @@
     let password = document.getElementById("password").value;
     let confirmPassword = document.getElementById("confirmPassword").value;
     const confirmationIcon = document.getElementById("confirmationIcon");
-    let confirmationMessage = document.getElementById("confirmationMessage");
+    const confirmationMessage = document.getElementById("confirmationMessage");
 
     if (password === confirmPassword && confirmPassword !== "") {
       confirmationIcon.innerHTML = '<span class="valid">&#10004;</span>';

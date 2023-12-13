@@ -4,7 +4,7 @@
     const password = document.getElementById("password").value;
     const confirmPassword = document.getElementById("confirmPassword").value;
 
-    if (password != confirmPassword && /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,16}$/.test(password)) {
+    if (password != confirmPassword && !/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,16}$/.test(password)) {
       document.getElementById("confirmationMessage").innerHTML = "Passwords do not match";
       document.getElementById("confirmationMessage").className = "invalid";
       return false;

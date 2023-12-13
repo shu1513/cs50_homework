@@ -5,8 +5,14 @@
     const confirmPassword = document.getElementById("confirmPassword").value;
     const confirmationIcon = document.getElementById("confirmationIcon");
 
-    if (password != confirmPassword || !/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,16}$/.test(password)) {
-      document.getElementById("confirmationMessage").innerHTML = "Passwords or confirmation password invalid";
+    if (password != confirmPassword) {
+      document.getElementById("confirmationMessage").innerHTML = "Passwords do not match";
+      document.getElementById("confirmationMessage").className = "invalid";
+      confirmationIcon.innerHTML = '';
+      return false;
+    }
+    elif (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,16}$/.test(password)){
+      document.getElementById("confirmationMessage").innerHTML = "Password doesn't meet criteria";
       document.getElementById("confirmationMessage").className = "invalid";
       confirmationIcon.innerHTML = '';
       return false;

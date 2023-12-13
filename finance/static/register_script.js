@@ -36,5 +36,6 @@
   }
 
   function passwordGuide() {
+    const password = document.getElementByID("password").value;
     
   }

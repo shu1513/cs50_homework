@@ -26,9 +26,11 @@
       confirmationIcon.innerHTML = '<span class="valid">&#10004;</span>';
       confirmationMessage.innerHTML = "Passwords match";
       confirmationMessage.className = "valid";
+      return true
     } else {
       confirmationIcon.innerHTML = '';
       confirmationMessage.innerHTML = "Passwords do not match";
       confirmationMessage.className = "invalid";
+      return false
     }
   }

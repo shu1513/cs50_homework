@@ -1,10 +1,10 @@
 //javacript for password confirmations in the register.html page.
 
-/*  function validateForm() {
+  function validateForm() {
     const password = document.getElementById("password").value;
     const confirmPassword = document.getElementById("confirmPassword").value;
 
-    if (password != confirmPassword) {
+    if (password != confirmPassword && /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,16}$/.test(password)) {
       document.getElementById("confirmationMessage").innerHTML = "Passwords do not match";
       document.getElementById("confirmationMessage").className = "invalid";
       return false;
@@ -15,14 +15,14 @@
 
     return true;
   }
-*/
+
   function checkPasswordMatch() {
     const password = document.getElementById("password").value;
     const confirmPassword = document.getElementById("confirmPassword").value;
     const confirmationIcon = document.getElementById("confirmationIcon");
     const confirmationMessage = document.getElementById("confirmationMessage");
 
-    if (password === confirmPassword && confirmPassword !== "" && /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,16}$/.test(password)) {
+    if (password === confirmPassword && confirmPassword !== "") {
       confirmationIcon.innerHTML = '<span class="valid">&#10004;</span>';
       confirmationMessage.innerHTML = "Passwords match";
       confirmationMessage.className = "valid";

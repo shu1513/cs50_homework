@@ -119,10 +119,11 @@ def register():
         return redirect("/")
     else:
         if request.method == "POST":
+            password = request.form.get("password")
             existing_user = db.execute("SELECT * FROM users WHERE username = ?", request.form.get("username"))
             if not request.form.get("username"):
                 return apology("must provide username", 403)
-            elif not request.form.get("password"):
+            elif not password:
                 return apology("must provide password", 403)
             elif not request.form.get("confirmPassword"):
                 return apology("must re-enter password", 403)
@@ -130,7 +131,7 @@ def register():
                 return apology("this username already exist, please choose another", 403)
             elif request.form.get("confirmPassword") != request.form.get("password"):
                 return apology("passwords words must match", 403)
-            elif len(request.form.get("password")) < 8 or 
+            elif len(password) < 8 or 
             else:
                 return render_template("login.html")
         else:

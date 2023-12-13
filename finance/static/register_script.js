@@ -3,6 +3,7 @@
   function validateForm() {
     const password = document.getElementById("password").value;
     const confirmPassword = document.getElementById("confirmPassword").value;
+    const confirmationIcon = document.getElementById("confirmationIcon");
 
     if (password != confirmPassword) {
       document.getElementById("confirmationMessage").innerHTML = "Passwords do not match";

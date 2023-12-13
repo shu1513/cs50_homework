@@ -3,10 +3,12 @@
   function validateForm() {
     const password = document.getElementById("password").value;
     const confirmPassword = document.getElementById("confirmPassword").value;
+    const confirmationIcon = document.getElementById("confirmationIcon");
 
     if (password != confirmPassword || !/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,16}$/.test(password)) {
-      document.getElementById("confirmationMessage").innerHTML = "Passwords do not match";
+      document.getElementById("confirmationMessage").innerHTML = "Passwords or confirmation password invalid";
       document.getElementById("confirmationMessage").className = "invalid";
+      confirmationIcon.innerHTML = '';
       return false;
     }
     else {

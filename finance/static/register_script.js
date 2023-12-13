@@ -39,7 +39,7 @@
     const password = document.getElementByID("password").value;
     const passwordGuide = document.getElementByID("passwordGuide").value;
     if (!re.match(r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]', password)) {
-      
+      passwordguide.innerht
     }
 
   }

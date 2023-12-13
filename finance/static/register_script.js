@@ -1,4 +1,4 @@
-//javacript for password confirmations in the register.html page.
+  //javacript for password confirmations in the register.html page.
 
   function validateForm() {
     const password = document.getElementById("password").value;

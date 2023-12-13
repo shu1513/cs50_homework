@@ -131,7 +131,7 @@ def register():
                 return apology("this username already exist, please choose another", 403)
             elif request.form.get("confirmPassword") != request.form.get("password"):
                 return apology("passwords words must match", 403)
-            elif len(password) < 8 or 
+            elif len(password) < 8 or not 
             else:
                 return render_template("login.html")
         else:

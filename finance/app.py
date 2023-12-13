@@ -131,9 +131,11 @@ def register():
                 return apology("this username already exist, please choose another", 403)
             elif request.form.get("confirmPassword") != request.form.get("password"):
                 return apology("passwords words must match", 403)
-            elif len(password) < 8 or not any(char.isupper() for char in password) or \
+            elif len(password) < 8 or \
+                not any(char.isupper() for char in password) or \
                 not any(char.islower() for char in password) or \
-                not any(char.isdigit() for char in password)or not any(char in '@$!%*?&' for char in password):
+                not any(char.isdigit() for char in password)or \
+                not any(char in '@$!%*?&' for char in password):
                 return apology("passwords must be a between 8 to 16 digits long, contain one upper case letter, one lower case letter, one numeric digit, and one special character (example: @$!%*?&)", 403)
 
 

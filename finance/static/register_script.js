@@ -9,9 +9,10 @@
       document.getElementById("confirmationMessage").className = "invalid";
       return false;
     }
-
+    else {
     document.getElementById("confirmationMessage").innerHTML = "Passwords match";
     document.getElementById("confirmationMessage").className = "valid";
+    }
 
     return true;
   }

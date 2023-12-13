@@ -11,11 +11,15 @@ from helpers import apology, login_required, lookup, usd
 # Configure application
 app = Flask(__name__)
 
+
 # Set HSTS header after each request
 @app.after_request
 def add_hsts_header(response):
-    response.headers['Strict-Transport-Security'] = 'max-age=31536000; includeSubDomains; preload'
+    response.headers[
+        "Strict-Transport-Security"
+    ] = "max-age=31536000; includeSubDomains; preload"
     return response
+
 
 # Custom filter
 app.jinja_env.filters["usd"] = usd
@@ -68,7 +72,6 @@ def login():
 
     # User reached route via POST (as by submitting a form via POST)
     if request.method == "POST":
-
         # Ensure username was submitted
         if not request.form.get("username"):
             return apology("must provide username", 403)
@@ -78,10 +81,14 @@ def login():
             return apology("must provide password", 403)
 
         # Query database for username
-        rows = db.execute("SELECT * FROM users WHERE username = ?", request.form.get("username"))
+        rows = db.execute(
+            "SELECT * FROM users WHERE username = ?", request.form.get("username")
+        )
 
         # Ensure username exists and password is correct
-        if len(rows) != 1 or not check_password_hash(rows[0]["hash"], request.form.get("password")):
+        if len(rows) != 1 or not check_password_hash(
+            rows[0]["hash"], request.form.get("password")
+        ):
             return apology("invalid username and/or password", 403)
 
         # Remember which user has logged in
@@ -115,12 +122,14 @@ def quote():
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
-    if 'id' in session:
+    if "id" in session:
         return redirect("/")
     else:
         if request.method == "POST":
             password = request.form.get("password")
-            existing_user = db.execute("SELECT * FROM users WHERE username = ?", request.form.get("username"))
+            existing_user = db.execute(
+                "SELECT * FROM users WHERE username = ?", request.form.get("username")
+            )
             if not request.form.get("username"):
                 return apology("must provide username", 403)
             elif not password:
@@ -128,23 +137,27 @@ def register():
             elif not request.form.get("confirmPassword"):
                 return apology("must re-enter password", 403)
             elif existing_user:
-                return apology("this username already exist, please choose another", 403)
+                return apology(
+                    "this username already exist, please choose another", 403
+                )
             elif request.form.get("confirmPassword") != request.form.get("password"):
                 return apology("passwords words must match", 403)
-            elif len(password) < 8 or \
-                not any(char.isupper() for char in password) or \
-                not any(char.islower() for char in password) or \
-                not any(char.isdigit() for char in password)or \
-                not any(char in '@$!%*?&' for char in password):
-                return apology("passwords must be a between 8 to 16 digits long, contain one upper case letter, one lower case letter, one numeric digit, and one special character (example: @$!%*?&)", 403)
-
+            elif (
+                len(password) < 8
+                or not any(char.isupper() for char in password)
+                or not any(char.islower() for char in password)
+                or not any(char.isdigit() for char in password)
+                or not any(char in "@$!%*?&" for char in password)
+            ):
+                return apology(
+                    "passwords must be a between 8 to 16 digits long, contain one upper case letter, one lower case letter, one numeric digit, and one special character (example: @$!%*?&)",
+                    403,
+                )
 
             else:
                 return render_template("login.html")
         else:
             return render_template("register.html")
-
-
 
 
 @app.route("/sell", methods=["GET", "POST"])

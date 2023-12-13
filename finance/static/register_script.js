@@ -11,7 +11,7 @@
       confirmationIcon.innerHTML = '';
       return false;
     }
-    elif (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,16}$/.test(password)){
+    else if (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,16}$/.test(password)){
       document.getElementById("confirmationMessage").innerHTML = "Password doesn't meet criteria";
       document.getElementById("confirmationMessage").className = "invalid";
       confirmationIcon.innerHTML = '';

@@ -22,7 +22,7 @@
     const confirmationIcon = document.getElementById("confirmationIcon");
     const confirmationMessage = document.getElementById("confirmationMessage");
 
-    if (password === confirmPassword && confirmPassword !== "") {
+    if (password === confirmPassword) {
       confirmationIcon.innerHTML = '<span class="valid">&#10004;</span>';
       confirmationMessage.innerHTML = "Passwords match";
       confirmationMessage.className = "valid";

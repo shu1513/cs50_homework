@@ -37,6 +37,8 @@
 
   function passwordGuide() {
     const password = document.getElementByID("password").value;
-    
+    if (re.match(r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]', password)) {
+      
+    }
 
   }

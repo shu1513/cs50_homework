@@ -158,7 +158,7 @@ def register():
 
             else:
 
-                db.excute("INSERT INTO users (username, hash) VALUES (?, ?)", (username, value2))
+                db.excute("INSERT INTO users (username, hash) VALUES (?, ?)", (username, generate_password_hash(password)))
                 session =userId
                 return redirect("/")
         else:

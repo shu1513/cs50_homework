@@ -48,11 +48,11 @@
     const password = document.getElementById("password").value;
     const passwordGuide = document.getElementById("passwordGuide");
     if (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,16}$/.test(password)) {
-      passwordGuide.innerHTML= "password should be 8-16 long containing contains at least <br>one lowercase letter, one uppercase letter, one digit, and one symbol."
+      passwordGuide.innerHTML= "8-16 long containing contains at least 1 uppercase and 1 lowercase letter, 1 digit, and 1 symbol."
       passwordGuide.style.color="red"
     }
     else {
-      passwordGuide.innerHTML= "password should be 8-16 long containing contains at least <br>one lowercase letter, one uppercase letter, one digit, and one symbol."
+      passwordGuide.innerHTML= "8-16 long containing contains at least 1 uppercase and 1 lowercase letter, 1 digit, and 1 symbol."
       passwordGuide.style.color="green"
     }
   }

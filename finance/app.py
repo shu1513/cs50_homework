@@ -151,7 +151,7 @@ def register():
                 or not any(char in string.punctuation for char in password)
             ):
                 return apology(
-                    "8 to 16 digits long, At least 1 upper case letter and 1 lower case letter, one numeric digit, and one special character (example: @$!%*?&)",
+                    "Passwords must be 8 to 16 digits long, containing at least 1 upper case letter and 1 lower case letter, one numeric digit, and one special character (example: @$!%*?&)",
                     403,
                 )
 

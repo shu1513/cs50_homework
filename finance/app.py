@@ -158,8 +158,9 @@ def register():
 
             else:
 
-                db.excute("INSERT INTO users (username, hash) VALUES (?, ?)", (username, generate_password_hash(password)))
-                session =userId
+                db.execute("INSERT INTO users (username, hash) VALUES (?, ?)", (username, generate_password_hash(password)))
+                userId= db.execute("SELECT id FROM users WHERE username = ?", username)
+                session["id"] = userId
                 return redirect("/")
         else:
             return render_template("register.html")

@@ -1,5 +1,7 @@
   //javacript for password confirmations in the register.html page.
 
+  import sqlite3 from 'sqlite3';
+  
   function usernameDuplicate() {
     const username = document.getElementById("password").value;
     const usernames_list = db.execute(select* from users

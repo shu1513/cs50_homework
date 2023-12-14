@@ -5,8 +5,11 @@
   function usernameDuplicate() {
     const db = new sqlite3.Database('finance.db');
     const username = document.getElementById("password").value;
-    const usernames_list = db.execute(select* from users
-    if username in usernames_list
+    const usernames_list = db.all(SELECT * FROM users);
+    if (username in usernames_list) {
+      document.getElementById("usernameDuplicate").innerHTML = "This username already exist";
+      document.getElementById("usernameDuplicate").style.color = "red";
+    }
   }
 
   function validateForm() {

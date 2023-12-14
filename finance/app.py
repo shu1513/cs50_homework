@@ -163,7 +163,9 @@ def register():
                 session["id"] = user[0]["id"]
                 return redirect("/")
         else:
-            return render_template("register.html")
+                if session.get("id") is not None:
+                    return redirect("/")
+                return render_template("register.html")
 
 
 @app.route("/sell", methods=["GET", "POST"])

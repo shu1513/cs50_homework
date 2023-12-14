@@ -156,6 +156,7 @@ def register():
                 )
 
             else:
+                
                 redirect render_template("/")
         else:
             return render_template("register.html")

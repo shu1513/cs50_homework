@@ -2,8 +2,8 @@
 
   function usernameDuplicate() {
     const username = document.getElementById("password").value;
-    const usernames_list = select 
-    if username in
+    const usernames_list = db.execute(select* from users
+    if username in usernames_list
   }
 
   function validateForm() {

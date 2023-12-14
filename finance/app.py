@@ -156,8 +156,8 @@ def register():
                 )
 
             else:
-                db.excute("INSERT INTO your_table (column1, column2) VALUES (?, ?)", (value1, value2))
-
+                db.excute("INSERT INTO users (username, hash) VALUES (?, ?)", (value1, value2))
+                session =userId
                 return redirect("/")
         else:
             return render_template("register.html")

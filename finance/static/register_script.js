@@ -1,5 +1,11 @@
   //javacript for password confirmations in the register.html page.
 
+  function usernameDuplicate() {
+    const username = document.getElementById("password").value;
+    const usernames_list = select 
+    if username in
+  }
+
   function validateForm() {
     const password = document.getElementById("password").value;
     const confirmPassword = document.getElementById("confirmPassword").value;

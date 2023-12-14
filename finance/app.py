@@ -123,7 +123,7 @@ def quote():
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
-    if session.get("id") is not None:
+    if session["id"]:
         return redirect("/")
     else:
         if request.method == "POST":
@@ -163,9 +163,8 @@ def register():
                 session["id"] = user[0]["id"]
                 return redirect("/")
         else:
-                if session.get("id") is not None:
-                    return redirect("/")
-                return render_template("register.html")
+
+            return render_template("register.html")
 
 
 @app.route("/sell", methods=["GET", "POST"])

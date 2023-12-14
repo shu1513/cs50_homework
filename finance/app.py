@@ -123,7 +123,7 @@ def quote():
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
-    if session.get("id"):
+    if session.get("user_id"):
         return redirect("/")
     else:
         if request.method == "POST":
@@ -160,7 +160,7 @@ def register():
 
                 db.execute("INSERT INTO users (username, hash) VALUES (?, ?)", username, generate_password_hash(password))
                 user= db.execute("SELECT id FROM users WHERE username = ?", username)
-                session["id"] = user[0]["id"]
+                session["user_id"] = user[0]["id"]
                 return redirect("/")
         else:
             return render_template("register.html")

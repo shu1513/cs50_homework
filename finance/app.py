@@ -163,7 +163,6 @@ def register():
                 session["id"] = user[0]["id"]
                 return redirect("/")
         else:
-
             return render_template("register.html")
 
 

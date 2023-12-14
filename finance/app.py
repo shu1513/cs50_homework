@@ -127,6 +127,7 @@ def register():
         return redirect("/")
     else:
         if request.method == "POST":
+            username = request.form.get("username")
             password = request.form.get("password")
             existing_user = db.execute(
                 "SELECT * FROM users WHERE username = ?", request.form.get("username")
@@ -156,7 +157,8 @@ def register():
                 )
 
             else:
-                db.excute("INSERT INTO users (username, hash) VALUES (?, ?)", (value1, value2))
+
+                db.excute("INSERT INTO users (username, hash) VALUES (?, ?)", (username, value2))
                 session =userId
                 return redirect("/")
         else:

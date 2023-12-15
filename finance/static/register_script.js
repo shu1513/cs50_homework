@@ -86,10 +86,10 @@
     if (password.length >= 8 && password.length <+ 16) {
       passwordGuide1.innerHTML ="<span class='valid'>&#10004;</span>8-16 characters";
     }
-    if (/[A-Z]/.test(password) && /[a-a]/.test(password)){
+    if (/[A-Z]/.test(password) && /[a-z]/.test(password)){
       passwordGuide2.innerHTML ="<span class='valid'>&#10004;</span> at least 1 uppercase and 1 lowercase letter";
     }
-   if (/\d/.test(password) && /\W/.test(password)) {
+    if (/\d/.test(password) && /\W/.test(password)) {
       passwordGuide3.innerHTML ="<span class='valid'>&#10004;</span> 1 digit, and 1 symbol (ex: @ ! $ = )";
     }
     else {

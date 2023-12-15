@@ -3,7 +3,7 @@
   const sqlite3 = require('sqlite3').verbose();
   const db = new sqlite3.Database('finance.db');
 
-  function checkUsernameDuplicate() {
+  function checkUsername() {
       const username = document.getElementById("username").value;
 
       // Fetch all usernames from the database
@@ -17,11 +17,13 @@
 
           if (isDuplicate) {
               // Display an error message if the username already exists
-              document.getElementById("usernameDuplicate").innerHTML = "This username already exists";
-              document.getElementById("usernameDuplicate").style.color = "red";
+              document.getElementById("usernameCheck").innerHTML = "This username already exists. please choose another";
+              document.getElementById("usernameCheck").style.color = "red";
+              return false;
           } else {
               // Clear the error message if the username is not a duplicate
               document.getElementById("usernameDuplicate").innerHTML = "";
+              return true;
                   }
           });
         }

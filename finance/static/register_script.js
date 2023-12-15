@@ -24,7 +24,7 @@
               document.getElementById("usernameDuplicate").innerHTML = "";
                   }
           });
-          }
+        }
 
   // Example of how to call the function (e.g., on a button click)
   // document.getElementById("checkUsernameButton").addEventListener("click", checkUsernameDuplicate);

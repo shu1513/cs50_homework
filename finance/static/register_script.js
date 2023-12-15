@@ -88,8 +88,8 @@
     }
     else {
 
-      passwordGuide1.innerHTML = "<span class="invalid">&#10008;</span> 8-16 characters";
-      passwordGuide2.innerHTML ="<span class="invalid">&#10008;</span> at least 1 uppercase and 1 lowercase letter";
-      passwordGuide3.innerHTML =".innerHTML = "<span class="invalid">&#10008;</span> 1 digit, and 1 symbol (ex: @ ! $ = ";
+      passwordGuide1.innerHTML = "<span class='invalid'>&#10008;</span> 8-16 characters";
+      passwordGuide2.innerHTML ="<span class='invalid'>&#10008;</span> at least 1 uppercase and 1 lowercase letter";
+      passwordGuide3.innerHTML ="<span class='invalid'>&#10008;</span> 1 digit, and 1 symbol (ex: @ ! $ = ";
     }
   }

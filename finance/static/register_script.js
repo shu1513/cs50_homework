@@ -77,15 +77,18 @@
   }
 
   function passwordGuide() {
+    const passwordIcon1 = document.getElementById("passwordIcon1");
+    const passwordIcon2 = document.getElementById("passwordIcon2");
+    const passwordIcon3 = document.getElementById("passwordIcon3");
     const password = document.getElementById("password").value;
     document.getElementById("passwordGuide1").innerHTML= "8-16 characters";
     document.getElementById("passwordGuide2").innerHTML= "at least 1 uppercase and 1 lowercase letter";
     document.getElementById("passwordGuide3").innerHTML= "1 digit, and 1 symbol (ex: @ ! $ = ";
     if (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,16}$/.test(password)) {
- 
+
     }
     else {
-      passwordGuide.innerHTML= "8-16 long containing contains at least 1 uppercase and 1 lowercase letter, 1 digit, and 1 symbol."
+
 
     }
   }

@@ -83,8 +83,8 @@
     const passwordGuide2 = document.getElementById("passwordGuide2");
     const passwordGuide3 = document.getElementById("passwordGuide3");
 
-    if (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,16}$/.test(password)) {
-      passwordGuide1.innerHTML ='1'
+    if (password.length >= 8 && password.length <+ 16) {
+      passwordGuide1.innerHTML ="<span class='valid'>&#10004;</span>8-16 characters"
     }
     else {
 

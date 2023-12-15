@@ -9,8 +9,7 @@
       // Fetch all usernames from the database
       db.all("SELECT * FROM users", (err, usernames_list) => {
           if (err) {
-              console.error(err.message);
-              return;
+              throw err;
           }
 
           // Check if the entered username already exists

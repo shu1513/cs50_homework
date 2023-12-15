@@ -84,7 +84,7 @@
     const passwordGuide3 = document.getElementById("passwordGuide3");
 
     if (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,16}$/.test(password)) {
-
+      passwordGuide1.innerHTML ='1'
     }
     else {
 

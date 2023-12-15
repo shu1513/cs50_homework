@@ -20,10 +20,10 @@
     <form id="registrationForm" onsubmit="return validateForm()" action="/register" method="post">
         <div class="mb-3">
             <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username" name="username" placeholder="Username" type="text" required onsubmit="checkUsername()">
-            <span>8-32 characters long</span>
-            <span>at least 1 letter and 1 number</span>
-            <span>no special characters</span>
-            <span id="usernamecheck"></span>
+            <div>8-32 characters long</div>
+            <div>at least 1 letter and 1 number</div>
+            <div>no special characters</div>
+            <div id="usernamecheck"></div>
         </div>
         <div class="mb-3">
             <input autocomplete="off" class="form-control mx-auto w-auto" type="email" id="email" name="email"placeholder="email">

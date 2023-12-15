@@ -69,7 +69,7 @@
       confirmationMessage.className = "valid";
       return true
     } else {
-      confirmationIcon.innerHTML = '';
+      confirmationIcon.innerHTML = '<span class="invalid">&#10008;</span>';
       confirmationMessage.innerHTML = "Passwords do not match";
       confirmationMessage.className = "invalid";
       return false

@@ -83,13 +83,13 @@
     const passwordGuide2 = document.getElementById("passwordGuide2");
     const passwordGuide3 = document.getElementById("passwordGuide3");
 
-/*    if (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,16}$/.test(password)) {
+    if (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,16}$/.test(password)) {
       passwordGuide1.innerHTML ='1'
     }
     else {
-*/
+
       passwordGuide1.innerHTML = "<span class='invalid'>&#10008;</span> 8-16 characters";
       passwordGuide2.innerHTML ="<span class='invalid'>&#10008;</span> at least 1 uppercase and 1 lowercase letter";
       passwordGuide3.innerHTML ="<span class='invalid'>&#10008;</span> 1 digit, and 1 symbol (ex: @ ! $ = )";
-/*    } */
+    }
   }

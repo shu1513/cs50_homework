@@ -21,3 +21,13 @@ nav .navbar-brand .green
 {
     color: #2e944b;
 }
+
+/* red X and green V for check marks */
+
+.valid {
+    color: green;
+}
+
+.invalid {
+    color: red;
+}

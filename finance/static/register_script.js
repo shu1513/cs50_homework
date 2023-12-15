@@ -8,7 +8,9 @@
     const usernames_list = db.all("SELECT * FROM users");
 
     for name in usernames_list:
-    if name["username"] = username
+    if name["username"] = username:
+    document.getElementById("usernameDuplicate").innerHTML = "This username already exist";
+    document.getElementById("usernameDuplicate").style.color = "red";
 
     if (username in usernames_list) {
       document.getElementById("usernameDuplicate").innerHTML = "This username already exist";

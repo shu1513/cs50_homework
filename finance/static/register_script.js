@@ -86,6 +86,7 @@
     if (password.length >= 8 && password.length <+ 16) {
       passwordGuide1.innerHTML ="<span class='valid'>&#10004;</span>8-16 characters"
     }
+    else if (p)
     else {
 
       passwordGuide1.innerHTML = "<span class='invalid'>&#10008;</span> 8-16 characters";

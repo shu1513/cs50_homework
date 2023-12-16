@@ -23,7 +23,7 @@
         usernameGuide3.innerHTML ="<span class='valid'>&#10004;</span> no special characters";
       }
 
-      // Fetch all usernames from the database
+/*      // Fetch all usernames from the database
       db.all("SELECT * FROM users", (err, usernames_list) => {
           if (err) {
               throw err;
@@ -43,6 +43,7 @@
               return true;
                   }
           });
+  */
         }
 
   // Example of how to call the function (e.g., on a button click)

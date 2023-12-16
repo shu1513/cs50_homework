@@ -8,12 +8,12 @@
       const usernameGuide1 = document.getElementById("usernameGuide1");
       const usernameGuide2 = document.getElementById("usernameGuide2");
       const usernameGuide3 = document.getElementById("usernameGuide3");
-      usernameGuide1.innerHTML = "<span class='invalid'>&#10008;</span> 8-32 characters";
+      usernameGuide1.innerHTML = "<span class='invalid'>&#10008;</span> 8-16 characters";
       usernameGuide2.innerHTML ="<span class='invalid'>&#10008;</span> at least 1 letter and 1 number";
       usernameGuide3.innerHTML ="<span class='invalid'>&#10008;</span> no special characters";
 
-      if (password.length >= 8 && password.length <+ 16) {
-        passwordGuide1.innerHTML ="<span class='valid'>&#10004;</span>8-16 characters";
+      if (username.length >= 8 && username.length <+ 16) {
+        usernameGuide1.innerHTML ="<span class='valid'>&#10004;</span> 8-16 characters";
       }
       if (/[A-Z]/.test(password) && /[a-z]/.test(password)){
         passwordGuide2.innerHTML ="<span class='valid'>&#10004;</span> at least 1 uppercase and 1 lowercase letter";

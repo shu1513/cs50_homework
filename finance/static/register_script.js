@@ -125,4 +125,12 @@
 
   }
 
-  
+  function validatequote() {
+    const quote = document.getElementById("quote").value;
+    if (!quote) {
+      return false
+    }
+
+    return true
+
+  }

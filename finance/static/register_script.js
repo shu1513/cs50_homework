@@ -4,7 +4,7 @@
   const db = new sqlite3.Database('finance.db');
 
 
-  function checkUsername() {
+    async function checkUsername() {
       const username = document.getElementById("username").value;
       const usernameGuide1 = document.getElementById("usernameGuide1");
       const usernameGuide2 = document.getElementById("usernameGuide2");
@@ -23,6 +23,30 @@
         usernameGuide3.innerHTML ="<span class='valid'>&#10004;</span> no special characters";
       }
 
+            // Fetch all usernames from the database
+      const usernames_list = await new Promise((resolve, reject) => {
+        db.all("SELECT * FROM users", (err, result) => {
+          if (err) {
+            reject(err);
+          } else {
+            resolve(result);
+          }
+        });
+      });
+
+      // Check if the entered username already exists
+      const isDuplicate = usernames_list.some(name => name.username === username);
+
+      if (isDuplicate) {
+        // Display an error message if the username already exists
+        document.getElementById("usernameCheck").innerHTML = "This username already exists. Please choose another.";
+        document.getElementById("usernameCheck").style.color = "red";
+        return false;
+      } else {
+        // Clear the error message if the username is not a duplicate
+        document.getElementById("usernameCheck").innerHTML = "";
+        return true;
+      }
 /*      // Fetch all usernames from the database
       db.all("SELECT * FROM users", (err, usernames_list) => {
           if (err) {

@@ -2,6 +2,10 @@
 
   const sqlite3 = require('sqlite3').verbose();
   const db = new sqlite3.Database('finance.db');
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+  const confirmPassword = document.getElementById("confirmPassword").value;
+  const confirmationIcon = document.getElementById("confirmationIcon");
 
   function usernameValidation() {
     const isValid = (username.length >= 8 && username.length <= 16) &&
@@ -12,7 +16,7 @@
   }
 
   function checkUsername() {
-      const username = document.getElementById("username").value;
+
       const usernameGuide1 = document.getElementById("usernameGuide1");
       const usernameGuide2 = document.getElementById("usernameGuide2");
       const usernameGuide3 = document.getElementById("usernameGuide3");
@@ -57,9 +61,9 @@
 
 
   function validateForm() {
-    const password = document.getElementById("password").value;
-    const confirmPassword = document.getElementById("confirmPassword").value;
-    const confirmationIcon = document.getElementById("confirmationIcon");
+
+
+
 
     if (password != confirmPassword) {
       document.getElementById("confirmationMessage").innerHTML = "Passwords do not match";
@@ -82,9 +86,8 @@
   }
 
   function checkPasswordMatch() {
-    const password = document.getElementById("password").value;
-    const confirmPassword = document.getElementById("confirmPassword").value;
-    const confirmationIcon = document.getElementById("confirmationIcon");
+
+
     const confirmationMessage = document.getElementById("confirmationMessage");
 
     if (password === confirmPassword) {
@@ -102,7 +105,7 @@
 
   function passwordGuide() {
 
-    const password = document.getElementById("password").value;
+
     const passwordGuide1 = document.getElementById("passwordGuide1");
     const passwordGuide2 = document.getElementById("passwordGuide2");
     const passwordGuide3 = document.getElementById("passwordGuide3");

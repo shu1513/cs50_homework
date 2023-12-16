@@ -22,7 +22,7 @@
       if (!/\W/.test(username)) {
         usernameGuide3.innerHTML ="<span class='valid'>&#10004;</span> no special characters";
       }
-      
+
     }
 /*      // Fetch all usernames from the database
       db.all("SELECT * FROM users", (err, usernames_list) => {
@@ -124,3 +124,5 @@
     }
 
   }
+
+  

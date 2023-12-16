@@ -56,9 +56,9 @@
     const confirmationIcon = document.getElementById("confirmationIcon");
     const username = document.getElementById("username").value;
 
-    if (!username.length >= 8 && username.length <= 16 &&
+    if (!(username.length >= 8 && username.length <= 16 &&
     /\d/.test(username) && /[a-zA-Z]/.test(username) &&
-    !/\W/.test(username)) {
+    !/\W/.test(username))) {
       return false
     }
 

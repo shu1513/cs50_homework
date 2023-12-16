@@ -63,7 +63,14 @@
     const password = document.getElementById("password").value;
     const confirmPassword = document.getElementById("confirmPassword").value;
     const confirmationIcon = document.getElementById("confirmationIcon");
-    
+    const username = document.getElementById("username").value;
+
+    if (!(username.length >= 8 && username.length <= 16) &&
+    /\d/.test(username) && /[a-zA-Z]/.test(username) &&
+    !/\W/.test(username)) {
+      return false
+    }
+
     if (password != confirmPassword) {
       document.getElementById("confirmationMessage").innerHTML = "Passwords do not match";
       document.getElementById("confirmationMessage").className = "invalid";

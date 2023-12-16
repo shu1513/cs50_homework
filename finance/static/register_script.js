@@ -5,12 +5,12 @@
 
   function checkUsername() {
       const username = document.getElementById("username").value;
-      const usernameGuide1 = document.getElementById("passwordGuide1");
-      const usernameGuide2 = document.getElementById("passwordGuide2");
-      const usernameGuide3 = document.getElementById("passwordGuide3");
-      passwordGuide1.innerHTML = "<span class='invalid'>&#10008;</span> 8-16 characters";
-      passwordGuide2.innerHTML ="<span class='invalid'>&#10008;</span> at least 1 uppercase and 1 lowercase letter";
-      passwordGuide3.innerHTML ="<span class='invalid'>&#10008;</span> 1 digit, and 1 symbol (ex: @ ! $ = )";
+      const usernameGuide1 = document.getElementById("usernameGuide1");
+      const usernameGuide2 = document.getElementById("usernameGuide2");
+      const usernameGuide3 = document.getElementById("usernameGuide3");
+      usernameGuide1.innerHTML = "<span class='invalid'>&#10008;</span> 8-32 characters";
+      usernameGuide2.innerHTML ="<span class='invalid'>&#10008;</span> at least 1 letter and 1 number";
+      usernameGuide3.innerHTML ="<span class='invalid'>&#10008;</span> no special characters";
 
       if (password.length >= 8 && password.length <+ 16) {
         passwordGuide1.innerHTML ="<span class='valid'>&#10004;</span>8-16 characters";

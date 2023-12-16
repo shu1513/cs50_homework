@@ -4,7 +4,11 @@
   const db = new sqlite3.Database('finance.db');
 
   function usernameValidation() {
-    
+    const isValid = (username.length >= 8 && username.length <= 16) &&
+                    /\d/.test(username) && /[a-zA-Z]/.test(username) &&
+                    !/\W/.test(username);
+
+    return isValid; // Return true if the form should be submitted, false otherwise
   }
 
   function checkUsername() {

@@ -2,10 +2,7 @@
 
   const sqlite3 = require('sqlite3').verbose();
   const db = new sqlite3.Database('finance.db');
-  const username = document.getElementById("username").value;
-  const password = document.getElementById("password").value;
-  const confirmPassword = document.getElementById("confirmPassword").value;
-  const confirmationIcon = document.getElementById("confirmationIcon");
+
 
   function usernameValidation() {
     const username = document.getElementById("username").value;

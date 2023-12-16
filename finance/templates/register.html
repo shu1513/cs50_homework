@@ -12,9 +12,9 @@
     <form id="registrationForm" onsubmit="return validateForm()" action="/register" method="post">
         <div class="mb-3">
             <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username" name="username" placeholder="Username" type="text" required oninput="checkUsername()">
-            <div>8-32 characters long</div>
-            <div>at least 1 letter and 1 number</div>
-            <div>no special characters</div>
+            <div id ="usernameGuide1">8-32 characters long</div>
+            <div id ="usernameGuide2">at least 1 letter and 1 number</div>
+            <div id ="usernameGuide3">no special characters</div>
             <div id="usernamecheck"></div>
         </div>
         <div class="mb-3">

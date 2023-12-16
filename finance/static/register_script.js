@@ -5,6 +5,22 @@
 
   function checkUsername() {
       const username = document.getElementById("username").value;
+      const usernameGuide1 = document.getElementById("passwordGuide1");
+      const usernameGuide2 = document.getElementById("passwordGuide2");
+      const usernameGuide3 = document.getElementById("passwordGuide3");
+      passwordGuide1.innerHTML = "<span class='invalid'>&#10008;</span> 8-16 characters";
+      passwordGuide2.innerHTML ="<span class='invalid'>&#10008;</span> at least 1 uppercase and 1 lowercase letter";
+      passwordGuide3.innerHTML ="<span class='invalid'>&#10008;</span> 1 digit, and 1 symbol (ex: @ ! $ = )";
+
+      if (password.length >= 8 && password.length <+ 16) {
+        passwordGuide1.innerHTML ="<span class='valid'>&#10004;</span>8-16 characters";
+      }
+      if (/[A-Z]/.test(password) && /[a-z]/.test(password)){
+        passwordGuide2.innerHTML ="<span class='valid'>&#10004;</span> at least 1 uppercase and 1 lowercase letter";
+      }
+      if (/\d/.test(password) && /\W/.test(password)) {
+        passwordGuide3.innerHTML ="<span class='valid'>&#10004;</span> 1 digit, and 1 symbol (ex: @ ! $ = )";
+      }
 
       // Fetch all usernames from the database
       db.all("SELECT * FROM users", (err, usernames_list) => {

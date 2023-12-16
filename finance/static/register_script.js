@@ -3,6 +3,10 @@
   const sqlite3 = require('sqlite3').verbose();
   const db = new sqlite3.Database('finance.db');
 
+  function usernameValidation() {
+    
+  }
+
   function checkUsername() {
       const username = document.getElementById("username").value;
       const usernameGuide1 = document.getElementById("usernameGuide1");

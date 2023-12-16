@@ -8,6 +8,7 @@
   const confirmationIcon = document.getElementById("confirmationIcon");
 
   function usernameValidation() {
+    const username = document.getElementById("username").value;
     const isValid = (username.length >= 8 && username.length <= 16) &&
                     /\d/.test(username) && /[a-zA-Z]/.test(username) &&
                     !/\W/.test(username);
@@ -16,7 +17,7 @@
   }
 
   function checkUsername() {
-
+      const username = document.getElementById("username").value;
       const usernameGuide1 = document.getElementById("usernameGuide1");
       const usernameGuide2 = document.getElementById("usernameGuide2");
       const usernameGuide3 = document.getElementById("usernameGuide3");
@@ -62,8 +63,8 @@
 
   function validateForm() {
 
-
-
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirmPassword").value;
 
     if (password != confirmPassword) {
       document.getElementById("confirmationMessage").innerHTML = "Passwords do not match";
@@ -86,9 +87,10 @@
   }
 
   function checkPasswordMatch() {
-
-
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirmPassword").value;
     const confirmationMessage = document.getElementById("confirmationMessage");
+    const confirmationIcon = document.getElementById("confirmationIcon");
 
     if (password === confirmPassword) {
       confirmationIcon.innerHTML = '<span class="valid">&#10004;</span>';
@@ -105,7 +107,7 @@
 
   function passwordGuide() {
 
-
+    const password = document.getElementById("password").value;
     const passwordGuide1 = document.getElementById("passwordGuide1");
     const passwordGuide2 = document.getElementById("passwordGuide2");
     const passwordGuide3 = document.getElementById("passwordGuide3");

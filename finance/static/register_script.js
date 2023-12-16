@@ -15,8 +15,8 @@
       if (username.length >= 8 && username.length <+ 16) {
         usernameGuide1.innerHTML ="<span class='valid'>&#10004;</span> 8-16 characters";
       }
-      if (/[A-Z]/.test(password) && /[a-z]/.test(password)){
-        passwordGuide2.innerHTML ="<span class='valid'>&#10004;</span> at least 1 uppercase and 1 lowercase letter";
+      if (/\d/.test(username) && /[a-zA-Z]/.test(username)){
+        passwordGuide2.innerHTML ="<span class='valid'>&#10004;</span> at least 1 letter and 1 number";
       }
       if (/\d/.test(password) && /\W/.test(password)) {
         passwordGuide3.innerHTML ="<span class='valid'>&#10004;</span> 1 digit, and 1 symbol (ex: @ ! $ = )";

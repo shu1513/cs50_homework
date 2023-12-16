@@ -18,7 +18,7 @@
       if (/\d/.test(username) && /[a-zA-Z]/.test(username)){
         passwordGuide2.innerHTML ="<span class='valid'>&#10004;</span> at least 1 letter and 1 number";
       }
-      if (!/\W/.test(password)) {
+      if (!/\W/.test(username)) {
         passwordGuide3.innerHTML ="<span class='valid'>&#10004;</span> 1 digit, and 1 symbol (ex: @ ! $ = )";
       }
 

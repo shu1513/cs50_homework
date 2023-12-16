@@ -12,7 +12,7 @@
       usernameGuide2.innerHTML ="<span class='invalid'>&#10008;</span> at least 1 letter and 1 number";
       usernameGuide3.innerHTML ="<span class='invalid'>&#10008;</span> no special characters";
 
-      if (username.length >= 8 && username.length <+ 16) {
+      if (username.length >= 8 && username.length <= 16) {
         usernameGuide1.innerHTML ="<span class='valid'>&#10004;</span> 8-16 characters";
       }
       if (/\d/.test(username) && /[a-zA-Z]/.test(username)){
@@ -102,7 +102,7 @@
     passwordGuide2.innerHTML ="<span class='invalid'>&#10008;</span> at least 1 uppercase and 1 lowercase letter";
     passwordGuide3.innerHTML ="<span class='invalid'>&#10008;</span> 1 digit, and 1 symbol (ex: @ ! $ = )";
 
-    if (password.length >= 8 && password.length <+ 16) {
+    if (password.length >= 8 && password.length <= 16) {
       passwordGuide1.innerHTML ="<span class='valid'>&#10004;</span>8-16 characters";
     }
     if (/[A-Z]/.test(password) && /[a-z]/.test(password)){

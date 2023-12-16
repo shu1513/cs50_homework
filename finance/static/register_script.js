@@ -66,17 +66,17 @@
     const password = document.getElementById("password").value;
     const confirmPassword = document.getElementById("confirmPassword").value;
     const confirmationIcon = document.getElementById("confirmationIcon");
-    
+
     if (password != confirmPassword) {
       document.getElementById("confirmationMessage").innerHTML = "Passwords do not match";
       document.getElementById("confirmationMessage").className = "invalid";
-      confirmationIcon.innerHTML = '';
+      confirmationIcon.innerHTML = '<span class="valid">&#10004;</span>';
       return false;
     }
     else if (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,16}$/.test(password)){
       document.getElementById("confirmationMessage").innerHTML = "Password doesn't meet criteria";
       document.getElementById("confirmationMessage").className = "invalid";
-      confirmationIcon.innerHTML = '';
+      confirmationIcon.innerHTML = '<span class="invalid">&#10008;</span>';
       return false;
     }
     else {

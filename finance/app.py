@@ -118,7 +118,7 @@ def logout():
 @login_required
 def quote():
     if request.method == "POST":
-        
+        return apology("TODO")
     else:
         return render_template("quote.html")
 

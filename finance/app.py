@@ -124,9 +124,14 @@ def quote():
         else:
             stock_info = lookup(symbol)
             if not stock_info:
-                return apology ("invlaid symbol")
+                return apology("invlaid symbol")
             else:
-                return render_template("quoted.html", company_name = stock_info[])
+                return render_template(
+                    "quoted.html",
+                    company_name=stock_info["name"],
+                    company_symbol=stock_info["symbol"],
+                    price_per_share=usd(stock_info["price"]),
+                )
     else:
         return render_template("quote.html")
 
@@ -167,9 +172,12 @@ def register():
                 )
 
             else:
-
-                db.execute("INSERT INTO users (username, hash) VALUES (?, ?)", username, generate_password_hash(password))
-                user= db.execute("SELECT id FROM users WHERE username = ?", username)
+                db.execute(
+                    "INSERT INTO users (username, hash) VALUES (?, ?)",
+                    username,
+                    generate_password_hash(password),
+                )
+                user = db.execute("SELECT id FROM users WHERE username = ?", username)
                 session["user_id"] = user[0]["id"]
                 return redirect("/")
         else:

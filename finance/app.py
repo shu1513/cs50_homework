@@ -126,7 +126,7 @@ def quote():
             if not stock_info:
                 return apology ("invlaid symbol")
             else:
-                return apology("hi")
+                return render_template("quoted.html", company_name = stock_info[])
     else:
         return render_template("quote.html")
 

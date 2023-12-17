@@ -4,7 +4,7 @@ function validatequote() {
     const quoteGuide = document.getElementById("quoteGuide");
     if (!quote) {
         quoteGuide.innerHTML ="Please enter stock symbol"
-        quoteGuide.style.color=red
+        quoteGuide.style.color="red"
       return false
     }
     else {

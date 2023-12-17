@@ -118,11 +118,15 @@ def logout():
 @login_required
 def quote():
     if request.method == "POST":
-        quote = request.form.get("quote")
-        if not quote:
+        symbol = request.form.get("quote")
+        if not symbol:
             return apology("Need to enter stock symbol")
         else:
-            return apology("TODO")
+            stock_info = lookup(symbol)
+            if not stock_info:
+                return apology ("invlaid symbol")
+            else:
+                return apology("hi")
     else:
         return render_template("quote.html")
 

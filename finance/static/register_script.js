@@ -130,7 +130,7 @@
     if (!quote) {
       return false
     }
-
-    return true
-
+    else {
+      return true
+    }
   }

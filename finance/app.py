@@ -78,14 +78,6 @@ def buy():
                 )
             except ValueError:
                 return apology ("Invalid Shares")
-            """if not shares_str.isdigit():
-                return apology("shares must be a number")
-            else:
-                shares =shares_str.isdigit()
-                elif shares != float(shares_str):
-                            return apology("shares must be an integer")
-                """
-
     else:
         return render_template("buy.html")
 

@@ -65,9 +65,7 @@ def buy():
         else:
             try:
                 shares = int(shares_str)
-                if shares != float(shares_str):
-                    return apology("shares must be an integer")
-                elif shares <= 0:
+                if shares <= 0:
                     return apology("minimum 1 share")
                 else:
                     return render_template(

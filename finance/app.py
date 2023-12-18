@@ -56,7 +56,7 @@ def buy():
     if request.method == "POST":
         symbol = request.form.get("symbol")
         stock_info = lookup(symbol)
-        shares_str = intrequest.form.get("shares")
+        shares_str = request.form.get("shares")
 
 
         if not symbol or not stock_info:

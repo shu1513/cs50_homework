@@ -68,12 +68,8 @@ def buy():
                 if shares <= 0:
                     return apology("minimum 1 share")
                 else:
-                    return render_template(
-                        "quoted.html",
-                        company_name=stock_info["name"],
-                        company_symbol=stock_info["symbol"],
-                        price_per_share=usd(stock_info["price"]),
-                )
+                    
+
             except ValueError:
                 return apology ("Invalid Shares")
     else:

@@ -55,8 +55,12 @@ def index():
 def buy():
     if request.method == "POST":
         symbol = request.form.get("symbol")
+        shares = request.form.get("shares")
         if not symbol:
-            return apology("Need to enter stock symbol")
+            return apology("Please enter stock symbol")
+        elif not shares or shares <= 0:
+            return apology("invalid shares")
+
         else:
             stock_info = lookup(symbol)
             if not stock_info:

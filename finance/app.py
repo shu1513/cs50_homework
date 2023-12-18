@@ -60,7 +60,7 @@ def buy():
             return apology("Please enter stock symbol")
         elif not shares_str:
             return apology("Please enter number of shares")
-        
+       else:
             try:
                 shares = int(shares_str)
                 if shares != float(shares_str):

@@ -65,7 +65,8 @@ def buy():
                 shares = int(shares_str)
                 if shares != float(shares_str):
                     return apology("number of shares must be an integer")
-                else
+            except ValuError:
+                return apology("number of shares must be an integer")
 
         else:
             stock_info = lookup(symbol)

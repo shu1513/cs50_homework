@@ -58,7 +58,6 @@ def buy():
         stock_info = lookup(symbol)
         shares_str = request.form.get("shares")
 
-
         if not symbol or not stock_info:
             return apology("Invalid stock symbol")
         elif not shares_str:

@@ -68,7 +68,7 @@ def buy():
             except ValuError:
                 return apology("number of shares must be an integer")
 
-        else:
+        
             stock_info = lookup(symbol)
             if not stock_info:
                 return apology("invlaid symbol")

@@ -62,20 +62,21 @@ def buy():
             return apology("Invalid stock symbol")
         elif not shares_str:
             return apology("please enter numer of shares")
-        elif not shares_str.isdigit():
-            return apology("shares must be a number")
         else:
-            shares = int(shares_str)
-            if shares != float(shares_str):
-                        return apology("shares must be an integer")
-            elif shares <= 0:
-                    return apology("minimum 1 share")
+            if not shares_str.isdigit():
+                return apology("shares must be a number")
             else:
-                return render_template(
-                    "quoted.html",
-                    company_name=stock_info["name"],
-                    company_symbol=stock_info["symbol"],
-                    price_per_share=usd(stock_info["price"]),
+                shares =shares_str.isdigit()
+                elif shares != float(shares_str):
+                            return apology("shares must be an integer")
+                elif shares <= 0:
+                        return apology("minimum 1 share")
+                else:
+                    return render_template(
+                        "quoted.html",
+                        company_name=stock_info["name"],
+                        company_symbol=stock_info["symbol"],
+                        price_per_share=usd(stock_info["price"]),
                 )
     else:
         return render_template("buy.html")

@@ -68,6 +68,7 @@ def buy():
                 if shares <= 0:
                     return apology("minimum 1 share")
                 else:
+                    price_per_share = usd(stock_info[price])
                     
 
             except ValueError:

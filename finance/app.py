@@ -61,15 +61,15 @@ def buy():
         if not symbol or not stock_info:
             return apology("Invalid stock symbol")
         elif not shares_str:
-            return apology("invald shares")
+            return apology("please enter numer of shares")
         elif not shares_str.isdigit():
-            return apology("invald shares")
+            return apology("shares must be a number")
         else:
             shares = int(shares_str)
             if shares != float(shares_str):
-                        return apology("invalid")
+                        return apology("shares must be an integer")
             elif shares <= 0:
-                    return apology("invalid shares")
+                    return apology("minimum 1 share")
             else:
                 return render_template(
                     "quoted.html",

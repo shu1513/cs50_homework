@@ -55,7 +55,7 @@ def index():
 def buy():
     if request.method == "POST":
         symbol = request.form.get("symbol")
-        shares = request.form.get("shares")
+        shares = int(request.form.get("shares"))
         if not symbol:
             return apology("Please enter stock symbol")
         elif not shares or shares <= 0:

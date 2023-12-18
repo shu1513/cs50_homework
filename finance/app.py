@@ -68,8 +68,8 @@ def buy():
                 if shares <= 0:
                     return apology("minimum 1 share")
                 else:
-                    price_per_share = usd(stock_info[price])
-                    user_cash = db.excute("SELECT cash FROM users WHERE id = ?", session["user_id"])
+                    price_per_share = usd(stock_info["price"])
+                    user_cash = int(db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])[0]["cash"])
                     if user_cash < price_per_share * shares:
                         return apology("not enough cash")
 

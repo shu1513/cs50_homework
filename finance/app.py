@@ -63,14 +63,17 @@ def buy():
         elif not shares_str:
             return apology("please enter numer of shares")
         else:
-            if not shares_str.isdigit():
+            try:
+                shares=int(shares_str)
+            except 
+            """if not shares_str.isdigit():
                 return apology("shares must be a number")
             else:
                 shares =shares_str.isdigit()
                 elif shares != float(shares_str):
                             return apology("shares must be an integer")
                 elif shares <= 0:
-                        return apology("minimum 1 share")
+                        return apology("minimum 1 share")"""
                 else:
                     return render_template(
                         "quoted.html",

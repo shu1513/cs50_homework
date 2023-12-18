@@ -63,14 +63,9 @@ def buy():
             return apology("Invalid stock symbol")
         elif not shares:
             return apology("Please enter number of shares")
-        else:
-            try:
-                if shares != float(shares_str):
+        elif shares != float(shares_str):
                     return apology("number of shares must be an integer")
-            except ValuError:
-                return apology("number of shares must be an integer")
-
-
+        else:
             return render_template(
                 "quoted.html",
                 company_name=stock_info["name"],

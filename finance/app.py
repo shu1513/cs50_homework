@@ -64,18 +64,19 @@ def buy():
             return apology("invald shares")
         elif not shares_str.isdigit():
             return apology("invald shares")
-        shares = int(shares_str)
-        elif shares != float(shares_str):
-                    return apology("invalid")
-        elif shares <= 0:
-                return apology("invalid shares")
         else:
-            return render_template(
-                "quoted.html",
-                company_name=stock_info["name"],
-                company_symbol=stock_info["symbol"],
-                price_per_share=usd(stock_info["price"]),
-            )
+            shares = int(shares_str)
+            if shares != float(shares_str):
+                        return apology("invalid")
+            elif shares <= 0:
+                    return apology("invalid shares")
+            else:
+                return render_template(
+                    "quoted.html",
+                    company_name=stock_info["name"],
+                    company_symbol=stock_info["symbol"],
+                    price_per_share=usd(stock_info["price"]),
+                )
     else:
         return render_template("buy.html")
 

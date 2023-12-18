@@ -64,7 +64,7 @@ def buy():
             return apology("please enter numer of shares")
         else:
             try:
-                shares=int(shares_str)
+                shares = int(shares_str)
                 if shares != float(shares_str):
                     return apology("shares must be an integer")
                 elif shares <= 0:

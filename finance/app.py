@@ -54,7 +54,7 @@ def index():
 @login_required
 def buy():
     if request.method == "POST":
-        symbol = request.form.get("quote")
+        symbol = request.form.get("symbol")
         if not symbol:
             return apology("Need to enter stock symbol")
         else:
@@ -69,7 +69,7 @@ def buy():
                     price_per_share=usd(stock_info["price"]),
                 )
     else:
-        return render_template("quote.html")
+        return render_template("buy.html")
 
 
 @app.route("/history")

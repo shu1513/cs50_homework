@@ -68,17 +68,17 @@ def buy():
             except ValuError:
                 return apology("number of shares must be an integer")
 
-        
-            stock_info = lookup(symbol)
-            if not stock_info:
-                return apology("invlaid symbol")
-            else:
-                return render_template(
-                    "quoted.html",
-                    company_name=stock_info["name"],
-                    company_symbol=stock_info["symbol"],
-                    price_per_share=usd(stock_info["price"]),
-                )
+
+        stock_info = lookup(symbol)
+        if not stock_info:
+            return apology("invlaid symbol")
+        else:
+            return render_template(
+                "quoted.html",
+                company_name=stock_info["name"],
+                company_symbol=stock_info["symbol"],
+                price_per_share=usd(stock_info["price"]),
+            )
     else:
         return render_template("buy.html")
 

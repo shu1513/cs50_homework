@@ -57,14 +57,19 @@ def buy():
         symbol = request.form.get("symbol")
         stock_info = lookup(symbol)
         shares_str = intrequest.form.get("shares")
-        shares = int(shares_str)
+
 
         if not symbol or not stock_info:
             return apology("Invalid stock symbol")
-        elif not shares:
-            return apology("Please enter number of shares")
+        elif not shares_str:
+            return apology("invald shares")
+        elif not shares_str.isdigit():
+            return apology("invald shares")
+        shares = int(shares_str)
         elif shares != float(shares_str):
-                    return apology("number of shares must be an integer")
+                    return apology("invalid")
+        elif shares <= 0:
+                return apology("invalid shares")
         else:
             return render_template(
                 "quoted.html",

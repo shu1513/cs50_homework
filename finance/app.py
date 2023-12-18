@@ -55,11 +55,17 @@ def index():
 def buy():
     if request.method == "POST":
         symbol = request.form.get("symbol")
-        shares = int(request.form.get("shares"))
+        shares_str = intrequest.form.get("shares")
         if not symbol:
             return apology("Please enter stock symbol")
-        elif not shares or shares <= 0:
-            return apology("invalid shares")
+        elif not shares_str:
+            return apology("Please enter number of shares")
+        elif:
+            try:
+                shares = int(shares_str)
+                if shares != float(shares_str):
+                    return apology("number of shares must be an integer")
+                else
 
         else:
             stock_info = lookup(symbol)

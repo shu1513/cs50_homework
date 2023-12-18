@@ -69,7 +69,7 @@ def buy():
                     return apology("minimum 1 share")
                 else:
                     price_per_share = usd(stock_info[price])
-                    user_cash = db.excute(SELECT )
+                    user_cash = db.excute(SELECT cash FROM users WHERE id = )
                     if price_per_share * shares
 
             except ValueError:

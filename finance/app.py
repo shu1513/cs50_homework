@@ -56,13 +56,13 @@ def buy():
     if request.method == "POST":
         symbol = request.form.get("symbol")
         shares_str = intrequest.form.get("shares")
+        shares = int(shares_str)
         if not symbol:
             return apology("Please enter stock symbol")
-        elif not shares_str:
+        elif not shares:
             return apology("Please enter number of shares")
         else:
             try:
-                shares = int(shares_str)
                 if shares != float(shares_str):
                     return apology("number of shares must be an integer")
             except ValuError:

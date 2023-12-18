@@ -70,8 +70,8 @@ def buy():
                 else:
                     price_per_share = usd(stock_info["price"])
                     user_cash = int(db.execute("SELECT cash FROM users WHERE id = ?", (session["user_id"]))[0]["cash"])
-                    if user_cash < price_per_share * shares:
-                        return apology("not enough cash")
+                    #if user_cash < price_per_share * shares:
+                    return apology(user_cash)
 
             except ValueError:
                 return apology ("Invalid Shares")

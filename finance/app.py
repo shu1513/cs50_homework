@@ -73,7 +73,7 @@ def buy():
                     user_cash = float(user_cash_list[0]["cash"])
 
                     if user_cash < price_per_share * shares:
-                        return apology("hi")
+                        return render_template("bought.html",user_cash = user_cash,price_per_share=price_per_share)
 
             except ValueError:
                 return apology ("Invalid Shares")

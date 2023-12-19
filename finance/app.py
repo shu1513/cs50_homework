@@ -73,7 +73,7 @@ def buy():
                     user_cash = float(user_cash_list[0]["cash"])
                     print("Price per share:", price_per_share)
                     print("User cash:", user_cash)
-                    
+
                     if user_cash < price_per_share * shares:
                         return apology("hi")
 

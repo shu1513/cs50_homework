@@ -71,8 +71,6 @@ def buy():
                     price_per_share = float(usd(stock_info["price"]))
                     user_cash_list = db.execute("SELECT cash FROM users WHERE id = ?", (session["user_id"]))
                     user_cash = float(user_cash_list[0]["cash"])
-                    print("Price per share:", price_per_share)
-                    print("User cash:", user_cash)
 
                     if user_cash < price_per_share * shares:
                         return apology("hi")

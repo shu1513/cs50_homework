@@ -68,12 +68,12 @@ def buy():
                 if shares <= 0:
                     return apology("minimum 1 share")
                 else:
-                    price_per_share = float(usd(stock_info["price"]))
-                    """user_cash_list = db.execute("SELECT cash FROM users WHERE id = ?", (session["user_id"]))
+                    price_per_share = float(stock_info["price"])
+                    user_cash_list = db.execute("SELECT cash FROM users WHERE id = ?", (session["user_id"]))
                     user_cash = float(user_cash_list[0]["cash"])
 
   #                  if user_cash < price_per_share * shares:"""
-                    return render_template("bought.html",price_per_share=price_per_share)
+                    return render_template("bought.html",user_cash=user_cash)
 
             except ValueError:
                 return apology ("Invalid Shares")

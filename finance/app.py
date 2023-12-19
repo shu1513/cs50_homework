@@ -69,9 +69,10 @@ def buy():
                     return apology("minimum 1 share")
                 else:
                     price_per_share = usd(stock_info["price"])
-                    user_cash = int(db.execute("SELECT cash FROM users WHERE id = ?", (session["user_id"]))[0]["cash"])
-                    #if user_cash < price_per_share * shares:
-                    return apology(user_cash)
+                    user_cash_list = db.execute("SELECT cash FROM users WHERE id = ?", (session["user_id"]))
+                    user_cash =user_cash_list[0]["price"]
+                    if user_cash < price_per_share * shares:
+                        return apology("hi")
 
             except ValueError:
                 return apology ("Invalid Shares")

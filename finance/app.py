@@ -73,10 +73,10 @@ def buy():
                     user_cash = float(user_cash_list[0]["cash"])
                     cost_of_stock = price_per_share * shares
 
-                    if user_cash < price_per_share * shares:
+                    if user_cash < cost_of_stock:
                         return apology("not enough cash")
                     else:
-                        return render_template("bought.html",user_cash=user_cash, cost_of_stock=cost_of_stock)
+                        return render_template("index.html")
 
             except ValueError:
                 return apology ("Invalid Shares")

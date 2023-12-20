@@ -74,7 +74,7 @@ def buy():
                     cost_of_stock = price_per_share * shares
 
                     if user_cash < price_per_share * shares:
-                        return apology("hi")
+                        return apology("not enough cash")
                     else:
                         return render_template("bought.html",user_cash=user_cash, cost_of_stock=cost_of_stock)
 

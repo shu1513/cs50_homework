@@ -80,7 +80,7 @@ def buy():
                     else:
                         stock_lookup = db.excute("SELECT stock_symbol FROM stocks WHERE stock_symbol = ?", symbol)
                         if not stock_lookup:
-                            db.excute("INSERT INTO stocks ")
+                            db.excute("INSERT INTO stocks (stock_symbol) VALUES ")
 
             except ValueError:
                 return apology ("Invalid Shares")

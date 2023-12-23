@@ -83,7 +83,7 @@ def buy():
                         #if not in the database then add it into the stock database
                         if not stock_lookup:
                             db.execute("INSERT INTO stocks (stock_symbol) VALUES (?)", symbol)
-                            stock_lookup = db.excute("SELECT stock_id FROM stocks WHERE stock_symbol = ?", symbol)
+                            stock_lookup = db.execute("SELECT stock_id FROM stocks WHERE stock_symbol = ?", symbol)
                         # add it into stock ownership of this user
                         db.execute("INSERT INTO ownership (user_id, stock_id, quantity) VALUES (?,?,?)",int(session["user_id"]),int(stock_lookup[0][stock_id]),shares)
                         # add this transaction into history

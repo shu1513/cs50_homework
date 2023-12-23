@@ -83,6 +83,10 @@ def buy():
                         #if not in the database then add it into the stock database
                         if not stock_lookup:
                             db.excute("INSERT INTO stocks (stock_symbol) VALUES (?)", symbol)
+                        # add it into stock ownership of this user
+                        
+                        # add this transaction into history
+
 
 
             except ValueError:

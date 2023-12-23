@@ -97,6 +97,9 @@ def buy():
     else:
         return render_template("buy.html")
 
+@app.route("/test")
+def test():
+    return render_template("test.html")
 
 @app.route("/history")
 @login_required

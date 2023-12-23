@@ -78,9 +78,12 @@ def buy():
                         return apology("not enough cash")
                     #do this on the user side too
                     else:
+                        #see if the stock in the the database
                         stock_lookup = db.excute("SELECT stock_symbol FROM stocks WHERE stock_symbol = ?", symbol)
+                        #if not in the database then add it into the stock database
                         if not stock_lookup:
-                            db.excute("INSERT INTO stocks (stock_symbol) VALUES ")
+                            db.excute("INSERT INTO stocks (stock_symbol) VALUES (?)",)
+
 
             except ValueError:
                 return apology ("Invalid Shares")

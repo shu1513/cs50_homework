@@ -103,7 +103,9 @@ def buy():
 
 @app.route("/test")
 def test():
-    return render_template("test.html", test=db.execute("SELECT * FROM ownership"), updated_cash=updated_cash)
+     cash_info =db.execute("select cash from users where id=?",int(session["user_id"]))
+     updated_cash = float(cash_info[0]["cash"])
+     return render_template("test.html", test=db.execute("SELECT * FROM ownership"),updated_cash=updated_cash)
 
 @app.route("/history")
 @login_required

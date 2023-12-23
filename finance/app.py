@@ -99,7 +99,7 @@ def buy():
 
 @app.route("/test")
 def test():
-    return render_template("test.html")
+    return render_template("test.html", test=db.execute("SELECT * FROM ownership"))
 
 @app.route("/history")
 @login_required

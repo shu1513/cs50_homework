@@ -92,7 +92,7 @@ def buy():
                         db.execute("UPDATE users SET cash = ? WHERE id = ?", updated_cash,user_id)
                         # add this transaction into history
                         test = db.execute("SELECT * FROM ownership")
-                        return render_template("test.html", test=test)
+                        return render_template("test.html", test=test,updated_cash)
 
 
 
@@ -103,7 +103,7 @@ def buy():
 
 @app.route("/test")
 def test():
-    return render_template("test.html", test=db.execute("SELECT * FROM ownership"))
+    return render_template("test.html", test=db.execute("SELECT * FROM ownership"),updated_cash)
 
 @app.route("/history")
 @login_required

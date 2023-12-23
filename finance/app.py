@@ -73,6 +73,7 @@ def buy():
                     user_cash_list = db.execute("SELECT cash FROM users WHERE id = ?", (session["user_id"]))
                     user_cash = float(user_cash_list[0]["cash"])
                     cost_of_stock = price_per_share * shares
+                    user_id = int(session["user_id"])
 
                     if user_cash < cost_of_stock:
                         return apology("not enough cash")
@@ -85,10 +86,10 @@ def buy():
                             db.execute("INSERT INTO stocks (stock_symbol) VALUES (?)", symbol)
                             stock_lookup = db.execute("SELECT stock_id FROM stocks WHERE stock_symbol = ?", symbol)
                         # add it into stock ownership of this user
-                        db.execute("INSERT INTO ownership (user_id, stock_id, quantity) VALUES (?,?,?)",int(session["user_id"]),int(stock_lookup[0]["stock_id"]),shares)
+                        db.execute("INSERT INTO ownership (user_id, stock_id, quantity) VALUES (?,?,?)",user_id,int(stock_lookup[0]["stock_id"]),shares)
                         # minus the owner's cash
                         updated_cash = user_cash - price_per_share*shares
-                        db.execute("UPDATE users SET cash = ?", updated_cash)
+                        db.execute("UPDATE users SET cash = ? WHERE id = ?", updated_cash,user_id)
                         # add this transaction into history
                         test = db.execute("SELECT * FROM ownership")
                         return render_template("test.html", test=test)

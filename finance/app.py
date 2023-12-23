@@ -87,7 +87,7 @@ def buy():
                         # add it into stock ownership of this user
                         db.execute("INSERT INTO ownership (user_id, stock_id, quantity) VALUES (?,?,?)",int(session["user_id"]),int(stock_lookup[0][]),shares)
                         # add this transaction into history
-                        db.execute("")
+                        db.execute("SELECT * FROM ")
 
 
 

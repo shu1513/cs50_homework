@@ -76,8 +76,11 @@ def buy():
 
                     if user_cash < cost_of_stock:
                         return apology("not enough cash")
+                    #do this on the user side too
                     else:
-                        return render_template("index.html")
+                        stock_lookup = db.excute("SELECT stock_symbol FROM stocks WHERE stock_symbol = ?", symbol)
+                        if not stock_lookup:
+                            db.excute("INSERT )
 
             except ValueError:
                 return apology ("Invalid Shares")

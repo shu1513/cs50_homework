@@ -95,7 +95,6 @@ def buy():
                         return render_template("test.html", test=test, updated_cash=updated_cash)
 
 
-
             except ValueError:
                 return apology ("Invalid Shares")
     else:

@@ -6,7 +6,6 @@ function checkShares() {
         document.getElementById("sharesGuide").style.color = "red"
     }
     else {
-        document.getElementById("sharesGuide").innerHTML = "<span>&#10004;</span>"
-        document.getElementById("sharesGuide").style.color = "green"
+        document.getElementById("sharesGuide").innerHTML = ""
     }
 }

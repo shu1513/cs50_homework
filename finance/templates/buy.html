@@ -10,8 +10,10 @@
             <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="symbol" name="symbol" placeholder="Symbol" type="text" required>
         </div>
         <div class="mb-3">
-            <input class="form-control mx-auto w-auto" id="shares" name="shares" placeholder="Shares" type="number" min="1" required >
+            <input class="form-control mx-auto w-auto" id="shares" name="shares" placeholder="Shares" type="number" min="1" required oninput="checkShares()">
+            <div id = "sharesGuide"></div>
         </div>
         <button class="btn btn-primary" type="submit">Buy</button>
     </form>
+    <script src="{{ url_for('static', filename='buy_script.js') }}"></script>
 {% endblock %}

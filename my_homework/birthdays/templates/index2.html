@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block add_birthday %}
+<form action="/" method="post">
+    <!--<input name="name" type="text" placeholder="Name" required>
+    <input name="month" type="text" placeholder="Month" required>
+    <input name="day" type="text" placeholder="Day" required>-->
+    {% for datum in data %}
+        <input name = {{ datum }} type "text" placeholder= {{ datum.title() }} required>
+    {% endfor %}
+    <button type="submit">submit</button>
+{% endblock %}
+
+{% block show_birthdays %}
+    {% for birthday in birthdays %}
+    <tr>
+        <td>{{ birthday.name }}</td>
+        <td>{{ birthday.month }}/{{ birthday.day }}</td>
+        <td>
+            <form action="/delete" method="post">
+                <input name="id" type="hidden" value="{{ birthday.id}}">
+                <input type="submit" value="delete">
+            </form>
+        </td>
+    </tr>
+    {% endfor %}
+{% endblock %}
